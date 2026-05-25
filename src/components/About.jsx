@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <section className="py-16 md:py-24 bg-white">
-      <div className="max-w-[1240px] mx-auto px-6 sm:px-12 lg:px-16 grid gap-10 md:gap-16 md:grid-cols-[1.15fr_1fr] items-center">
+      <div className="max-w-10/12 mx-auto px-6 sm:px-12 lg:px-16 grid gap-10 md:gap-16 md:grid-cols-[1.15fr_1fr] items-center">
         
         {/* Left Side: Custom Asymmetric Rounded Image */}
         <div className="w-full">
@@ -15,11 +15,11 @@ export default function About() {
 
         {/* Right Side: Structured Typography Section */}
         <div className="flex flex-col justify-center pr-2">
-          <h2 className="text-[28px] sm:text-[32px] md:text-[36px] font-bold text-[#005ba9] tracking-normal uppercase leading-tight">
+          <h2 className="heading  text-[#005ba9] ">
             WHO WE ARE
           </h2>
 
-          <p className="mt-4 text-[14px] sm:text-[15px] text-zinc-600 font-normal leading-[1.7] max-w-[520px]">
+          <p className="mt-4 text ">
             Port City BPO is a Business Process Outsourcing (BPO) company. Our organisation is an 
             Authorised Person approved by the Colombo Port City Economic Commission (CPCEC).
           </p>

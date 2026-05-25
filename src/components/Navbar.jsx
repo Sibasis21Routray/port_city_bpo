@@ -2,19 +2,42 @@ import { useState, useRef, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 
 const subServices = [
-  { id: "customer", label: "Customer Service Outsourcing" },
-  { id: "technical", label: "Technical Support Outsourcing" },
-  { id: "data", label: "Data Entry and Processing Outsourcing" },
-  { id: "humanresources", label: "Human Resources Outsourcing" },
-  { id: "finance", label: "Finance and Accounting Outsourcing" },
-  { id: "marketing", label: "Marketing Outsourcing" },
+  {
+    id: "customer-service-outsourcing",
+    label: "Customer Service Outsourcing",
+  },
+  {
+    id: "technical-support-outsourcing",
+    label: "Technical Support Outsourcing",
+  },
+  {
+    id: "data-entry-and-processing-outsourcing",
+    label: "Data Entry and Processing Outsourcing",
+  },
+  {
+    id: "human-resources-outsourcing",
+    label: "Human Resources Outsourcing",
+  },
+  {
+    id: "finance-and-accounting-outsourcing",
+    label: "Finance and Accounting Outsourcing",
+  },
+  {
+    id: "marketing-outsourcing",
+    label: "Marketing Outsourcing",
+  },
 ];
 
 const aboutItems = [
-  { id: "who", label: "Who We Are" },
-  { id: "coverage", label: "Coverage" },
-  { id: "board", label: "Board of Directors" },
+  { id: "who-we-are", label: "Who We Are" },
+  { id: "board-of-directors", label: "Board of Directors" },
   { id: "leadership", label: "Leadership" },
+  { id: "geo-coverage", label: "Coverage" },
+];
+
+const newsroomItems = [
+  { id: "team-events", label: "Team Events" },
+  { id: "corporate-social-responsibility", label: "Corporate Social Responsibility" },
 ];
 
 const DropdownArrow = ({ isOpen }) => (
@@ -32,21 +55,27 @@ export default function Navbar() {
   const location = useLocation();
   const [showServices, setShowServices] = useState(false);
   const [showAbout, setShowAbout] = useState(false);
+  const [showNewsroom, setShowNewsroom] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [showMobileServices, setShowMobileServices] = useState(false);
   const [showMobileAbout, setShowMobileAbout] = useState(false);
+  const [showMobileNewsroom, setShowMobileNewsroom] = useState(false);
   
   const servicesTimeoutRef = useRef(null);
   const aboutTimeoutRef = useRef(null);
+  const newsroomTimeoutRef = useRef(null);
   const servicesRef = useRef(null);
   const aboutRef = useRef(null);
+  const newsroomRef = useRef(null);
 
   const handleNavigate = (path) => {
     navigate(path);
     setShowServices(false);
     setShowAbout(false);
+    setShowNewsroom(false);
     setShowMobileServices(false);
     setShowMobileAbout(false);
+    setShowMobileNewsroom(false);
     setMobileOpen(false);
   };
 
@@ -76,11 +105,25 @@ export default function Navbar() {
     }, 150);
   };
 
+  const handleNewsroomMouseEnter = () => {
+    if (newsroomTimeoutRef.current) {
+      clearTimeout(newsroomTimeoutRef.current);
+    }
+    setShowNewsroom(true);
+  };
+
+  const handleNewsroomMouseLeave = () => {
+    newsroomTimeoutRef.current = setTimeout(() => {
+      setShowNewsroom(false);
+    }, 150);
+  };
+
   // Cleanup timeouts on unmount
   useEffect(() => {
     return () => {
       if (servicesTimeoutRef.current) clearTimeout(servicesTimeoutRef.current);
       if (aboutTimeoutRef.current) clearTimeout(aboutTimeoutRef.current);
+      if (newsroomTimeoutRef.current) clearTimeout(newsroomTimeoutRef.current);
     };
   }, []);
 
@@ -93,6 +136,7 @@ export default function Navbar() {
     if (path === "/services") return "services";
     if (path.startsWith("/about")) return "about";
     if (path.startsWith("/service")) return "services";
+    if (path.startsWith("/newsroom")) return "newsroom";
     return "home";
   };
 
@@ -101,12 +145,25 @@ export default function Navbar() {
   const linkClass = (page) =>
     page === active
       ? "text-[#FFCC00] font-bold tracking-tight text-[14px] lg:text-[14.5px] border-b-4 border-[#FFCC00] pb-1"
-      : "text-white font-medium hover:text-[#FFCC00] transition-colors duration-150 tracking-tight text-[14px] lg:text-[14.5px]";
+      : "text-[#4dacf9] font-medium hover:text-[#FFCC00] transition-colors duration-150 tracking-tight text-[14px] lg:text-[14.5px]";
+
+  // Handle mobile menu item clicks
+  const handleMobileServiceClick = () => {
+    navigate("/services");
+    setShowMobileServices(false);
+    setMobileOpen(false);
+  };
+
+  const handleMobileAboutClick = () => {
+    navigate("/about");
+    setShowMobileAbout(false);
+    setMobileOpen(false);
+  };
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-black text-white font-sans border-b border-white/10 select-none">
       {/* Primary Bar Component Header */}
-      <div className="max-w-[1400px] mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-20 h-16 sm:h-20 lg:h-24">
+      <div className=" mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-20 h-16 sm:h-20 lg:h-24">
 
         {/* Logo - Left on desktop, centered on mobile */}
         <div className="flex-1 lg:flex-none">
@@ -144,6 +201,7 @@ export default function Navbar() {
           >
             <button
               type="button"
+              onClick={() => handleNavigate("/services")}
               className={`${linkClass("services")} bg-transparent border-none cursor-pointer p-0 flex items-center`}
             >
               Services <DropdownArrow isOpen={showServices} />
@@ -189,6 +247,7 @@ export default function Navbar() {
           >
             <button
               type="button"
+              onClick={() => handleNavigate("/about")}
               className={`${linkClass("about")} bg-transparent border-none cursor-pointer p-0 flex items-center`}
             >
               About Us <DropdownArrow isOpen={showAbout} />
@@ -217,13 +276,41 @@ export default function Navbar() {
             )}
           </div>
 
-          <button
-            type="button"
-            onClick={() => handleNavigate("/newsroom")}
-            className={`${linkClass("newsroom")} bg-transparent border-none cursor-pointer p-0 flex items-center`}
+          {/* Newsroom Mega Menu Toggle Link - NOT CLICKABLE on desktop */}
+          <div 
+            className="relative"
+            ref={newsroomRef}
+            onMouseEnter={handleNewsroomMouseEnter}
+            onMouseLeave={handleNewsroomMouseLeave}
           >
-            Newsroom <DropdownArrow isOpen={false} />
-          </button>
+            <div
+              className={`${linkClass("newsroom")} flex items-center cursor-default`}
+            >
+              Newsroom <DropdownArrow isOpen={showNewsroom} />
+            </div>
+
+            {/* Newsroom Mega Menu Container - Column layout */}
+            {showNewsroom && (
+              <div
+                className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-64 bg-white rounded-lg shadow-2xl z-50"
+                onMouseEnter={handleNewsroomMouseEnter}
+                onMouseLeave={handleNewsroomMouseLeave}
+              >
+                <div className="py-4">
+                  {newsroomItems.map((item) => (
+                    <button
+                      key={item.id}
+                      type="button"
+                      onClick={() => handleNavigate(`/newsroom/${item.id}`)}
+                      className="w-full px-6 py-3 text-left text-[14px] text-gray-700 hover:text-[#FFCC00] hover:bg-gray-50 font-medium transition-colors border-none bg-transparent cursor-pointer"
+                    >
+                      {item.label}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
 
           <button
             type="button"
@@ -289,7 +376,7 @@ export default function Navbar() {
                 <button 
                   type="button" 
                   onClick={() => handleNavigate("/")} 
-                  className="w-full text-left py-2 text-zinc-200 hover:text-[#FFCC00] block font-medium bg-transparent border-none cursor-pointer transition-colors"
+                  className="w-full text-left py-2 text-[#4dacf9] hover:text-[#FFCC00] block font-medium bg-transparent border-none cursor-pointer transition-colors"
                 >
                   Home
                 </button>
@@ -297,10 +384,13 @@ export default function Navbar() {
                 <div>
                   <button
                     type="button"
-                    onClick={() => setShowMobileServices((s) => !s)}
-                    className="w-full text-left py-2 text-zinc-200 hover:text-[#FFCC00] flex justify-between items-center font-medium bg-transparent border-none cursor-pointer transition-colors"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setShowMobileServices((s) => !s);
+                    }}
+                    className="w-full text-left py-2 text-[#4dacf9] hover:text-[#FFCC00] flex justify-between items-center font-medium bg-transparent border-none cursor-pointer transition-colors"
                   >
-                    <span>Services</span>
+                    <span onClick={handleMobileServiceClick}>Services</span>
                     <DropdownArrow isOpen={showMobileServices} />
                   </button>
                   {showMobileServices && (
@@ -321,7 +411,7 @@ export default function Navbar() {
                 <button 
                   type="button" 
                   onClick={() => handleNavigate("/value")} 
-                  className="w-full text-left py-2 text-zinc-200 hover:text-[#FFCC00] block font-medium bg-transparent border-none cursor-pointer transition-colors"
+                  className="w-full text-left py-2 text-[#4dacf9] hover:text-[#FFCC00] block font-medium bg-transparent border-none cursor-pointer transition-colors"
                 >
                   Value Proposition
                 </button>
@@ -329,10 +419,13 @@ export default function Navbar() {
                 <div>
                   <button
                     type="button"
-                    onClick={() => setShowMobileAbout((s) => !s)}
-                    className="w-full text-left py-2 text-zinc-200 hover:text-[#FFCC00] flex justify-between items-center font-medium bg-transparent border-none cursor-pointer transition-colors"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setShowMobileAbout((s) => !s);
+                    }}
+                    className="w-full text-left py-2 text-[#4dacf9] hover:text-[#FFCC00] flex justify-between items-center font-medium bg-transparent border-none cursor-pointer transition-colors"
                   >
-                    <span>About Us</span>
+                    <span onClick={handleMobileAboutClick}>About Us</span>
                     <DropdownArrow isOpen={showMobileAbout} />
                   </button>
                   {showMobileAbout && (
@@ -350,19 +443,37 @@ export default function Navbar() {
                   )}
                 </div>
 
-                <button 
-                  type="button" 
-                  onClick={() => handleNavigate("/newsroom")}
-                  className="w-full text-left py-2 text-zinc-200 hover:text-[#FFCC00] flex justify-between items-center font-medium bg-transparent border-none cursor-pointer transition-colors"
-                >
-                  <span>Newsroom</span>
-                  <DropdownArrow isOpen={false} />
-                </button>
+                <div>
+                  <button
+                    type="button"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setShowMobileNewsroom((s) => !s);
+                    }}
+                    className="w-full text-left py-2 text-[#4dacf9] hover:text-[#FFCC00] flex justify-between items-center font-medium bg-transparent border-none cursor-pointer transition-colors"
+                  >
+                    <span>Newsroom</span>
+                    <DropdownArrow isOpen={showMobileNewsroom} />
+                  </button>
+                  {showMobileNewsroom && (
+                    <div className="pl-4 mt-2 space-y-2 border-l border-white/20">
+                      {newsroomItems.map((n) => (
+                        <button 
+                          key={n.id} 
+                          onClick={() => handleNavigate(`/newsroom/${n.id}`)} 
+                          className="block w-full text-left py-2 text-[14px] text-zinc-400 hover:text-[#FFCC00] transition-colors bg-transparent border-none cursor-pointer"
+                        >
+                          {n.label}
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </div>
 
                 <button 
                   type="button" 
                   onClick={() => handleNavigate("/careers")} 
-                  className="w-full text-left py-2 text-zinc-200 hover:text-[#FFCC00] block font-medium bg-transparent border-none cursor-pointer transition-colors"
+                  className="w-full text-left py-2 text-[#4dacf9] hover:text-[#FFCC00] block font-medium bg-transparent border-none cursor-pointer transition-colors"
                 >
                   Careers
                 </button>
@@ -370,7 +481,7 @@ export default function Navbar() {
                 <button 
                   type="button" 
                   onClick={() => handleNavigate("/contact")} 
-                  className="w-full text-left py-2 text-zinc-200 hover:text-[#FFCC00] block font-medium bg-transparent border-none cursor-pointer transition-colors"
+                  className="w-full text-left py-2 text-[#4dacf9] hover:text-[#FFCC00] block font-medium bg-transparent border-none cursor-pointer transition-colors"
                 >
                   Contact Us
                 </button>

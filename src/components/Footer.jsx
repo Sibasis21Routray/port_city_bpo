@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="bg-black text-white pt-12 pb-8 font-sans border-t border-zinc-900 select-none">
       {/* Upper Information Layout Grid */}
-      <div className="max-w-[1400px] mx-auto px-6 sm:px-12 lg:px-20 grid gap-10 grid-cols-1 md:grid-cols-[1.2fr_2.2fr_2.2fr] items-start text-[14px]">
+      <div className="max-w-10/12 mx-auto grid gap-10 grid-cols-1 md:grid-cols-[1.2fr_2.2fr_2.2fr] items-start text-[14px]">
         
         {/* Column 1: Clean Structured Navigation Links */}
         <div>

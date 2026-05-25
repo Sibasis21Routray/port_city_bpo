@@ -8,25 +8,33 @@ import ValueProposition from "./pages/ValueProposition";
 import Services from "./pages/Services";
 import ServiceDetail from "./pages/ServiceDetail";
 import About from "./pages/About";
+import AboutLanding from "./pages/AboutLanding";
+import Team_event, { TeamEventDetail } from "./pages/Team_event";
+import Corporate_social_responsibility, { CSRDetail } from "./pages/Corporate_social_responsibility";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <div className="min-h-screen flex flex-col">
+       <ScrollToTop />
       <Navbar />
-      <main className="flex-grow pt-20 sm:pt-24">
+      <main className="flex-grow pt-10 sm:pt-24">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/value" element={<ValueProposition />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/about" element={<AboutLanding />} />
           <Route path="/about/:section" element={<About />} />
           <Route path="/service/:id" element={<ServiceDetail />} />
-          <Route path="/newsroom" element={<Home />} />
+          <Route path="/newsroom/corporate-social-responsibility" element={<Corporate_social_responsibility />} />
+          <Route path="/newsroom/corporate-social-responsibility/:id" element={<CSRDetail/>} />
+          <Route path="/newsroom/team-events" element={<Team_event/>} />
+          <Route path="/newsroom/team-events/:id" element={<TeamEventDetail/>} />
         </Routes>
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

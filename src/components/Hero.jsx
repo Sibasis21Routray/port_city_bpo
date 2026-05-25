@@ -20,7 +20,7 @@ const slidesData = [
     heading: "Build Your Dream Business",
     subheading: "Stronger, Together",
     image: "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/Home-page-3-solutions-desktop-V2.jpg",
-    mobileImage: "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/Home-page-3-solutions-mobile.jpg",
+    mobileImage: "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/Home-page-3-solutions-mobile-V2.jpg",
   },
 ];
 
@@ -85,7 +85,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative h-screen max-h-[600px] sm:max-h-[700px] md:h-[580px] lg:h-[680px] w-full overflow-hidden bg-[#1a1c1e]">
+    <section className="relative h-screen max-h-[600px] sm:max-h-[700px] md:h-[580px] lg:h-[680px] w-full overflow-hidden bg-[#1a1c1e] -mt-6 md:mt-0">
       <div className="relative w-full h-full">
         {slidesData.map((slide, index) => {
           const isActive = index === currentSlide;
@@ -124,7 +124,7 @@ export default function Hero() {
               {/* <div className="absolute inset-0 bg-black/50 md:bg-gradient-to-r md:from-[#216b9e]/95 md:via-[#297fb9]/85 md:to-transparent pointer-events-none" /> */}
 
               {/* Content Box */}
-              <div className="relative max-w-[1400px] mx-auto h-full flex items-start md:items-center px-5 sm:px-8 md:px-12 lg:px-24 pt-10 md:pt-0">
+              <div className="relative max-w-10/12 mx-auto h-full flex items-start md:items-center px-5 sm:px-8 md:px-12 lg:px-24 pt-10 md:pt-0">
                 <div className="w-full md:w-[55%] lg:w-[50%] select-none text-center md:text-left">
                   <h1 className="text-5xl xs:text-5xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-white leading-tight md:leading-[1.1] whitespace-pre-line drop-shadow-lg">
                     {slide.heading}

@@ -36,7 +36,7 @@ const ConnectBanner = ({
   // Additional styling
   containerClassName = "",
   overlayClassName = "",
-  innerContainerClassName = "relative z-10 max-w-[1400px] w-full mx-auto px-6 sm:px-12 lg:px-24 grid md:grid-cols-[1.2fr_1fr] items-center h-full pt-10 md:pt-0",
+  innerContainerClassName = "relative z-10 max-w-10/12 w-full mx-auto  grid md:grid-cols-[1.2fr_1fr] items-center h-full pt-10 md:pt-0",
   leftColumnClassName = "text-white flex flex-col justify-center",
   buttonContainerClassName = "mt-8 mb-6 md:mb-0 relative inline-block self-start",
   

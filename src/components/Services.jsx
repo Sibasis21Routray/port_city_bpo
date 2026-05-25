@@ -26,11 +26,11 @@ const services = [
 
 export default function Services() {
   return (
-    <section className="py-16 md:py-24 bg-[#f8f9fa]">
-      <div className="max-w-[1240px] mx-auto px-6 sm:px-12 lg:px-16">
+    <section className="py-16 md:py-14 bg-[#f5f5f5]">
+      <div className="max-w-10/12 mx-auto px-6 sm:px-12 lg:px-16">
         
         {/* Section Heading */}
-        <h2 className="text-[28px] sm:text-[32px] font-bold text-[#005ca9] tracking-normal uppercase mb-10 md:mb-12">
+        <h2 className="heading text-[#005ca9] tracking-normal uppercase mb-10 md:mb-12">
           WHAT WE OFFER?
         </h2>
 
@@ -49,11 +49,11 @@ export default function Services() {
 
               {/* Text Meta Content Stack */}
               <div className="pt-5 pb-2 px-3 text-center flex flex-col items-center">
-                <h3 className="text-[17px] sm:text-[18px] font-bold text-black leading-snug tracking-tight">
+                <h3 className="subheading ">
                   {item.title}
                 </h3>
 
-                <p className="mt-2.5 text-[13px] sm:text-[14px] text-zinc-600 font-normal leading-[1.6] max-w-[340px]">
+                <p className="mt-2.5 text">
                   {item.desc}
                 </p>
               </div>
@@ -63,7 +63,7 @@ export default function Services() {
 
         {/* Lower Call-To-Action Element Group */}
         <div className="text-center mt-12 md:mt-16 flex flex-col items-center">
-          <p className="font-bold text-[16px] sm:text-[17px] text-black tracking-tight mb-5">
+          <p className="subheading mb-5">
             See more of what we can offer!
           </p>
 
@@ -76,7 +76,7 @@ export default function Services() {
             <button
               onClick={() => onNavigate && onNavigate("contact")}
               type="button"
-              className="relative z-10 inline-flex items-center justify-between bg-[#f8f9fa] px-6 py-3 min-w-[160px] text-[14px] font-bold text-black tracking-tight shadow-md hover:bg-white transition-colors duration-150 cursor-pointer focus:outline-none"
+              className="relative z-10 inline-flex items-center justify-between bg-[#f8f9fa] px-6 py-3 min-w-[160px] text-[18px] font-bold text-black tracking-tight shadow-md hover:bg-white transition-colors duration-150 cursor-pointer focus:outline-none"
             >
               <span>Explore All Our Services</span>
               <svg 

@@ -1,7 +1,5 @@
 import { Check, Star } from "lucide-react";
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import heroImg from "../assets/hero.png";
 import ConnectBanner from "../components/ConnectBanner";
 
 export default function ValueProposition() {
@@ -34,7 +32,7 @@ export default function ValueProposition() {
 ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white ">
       <Navbar active="value" />
 
      <header className="relative w-full min-h-[440px] md:min-h-[480px] lg:min-h-[520px] flex items-center overflow-hidden bg-[#0c1e3a]">
@@ -50,8 +48,8 @@ export default function ValueProposition() {
   />
 
   {/* Content Structural Container */}
-  <div className="relative z-10 w-full max-w-[1240px] mx-auto px-6 sm:px-12 md:px-16 lg:px-20 py-16">
-    <div className="max-w-[650px] text-white flex flex-col items-start text-left">
+  <div className="relative z-10 w-full max-w-10/12 mx-auto px-6 sm:px-12 md:px-16 lg:px-20 py-16">
+    <div className=" text-white flex flex-col items-center text-center">
       
       {/* Main Title Header */}
       <h1 className="text-[36px] sm:text-[46px] md:text-[56px] lg:text-[64px] font-bold tracking-tight leading-[1.1] text-white font-sans">
@@ -59,7 +57,7 @@ export default function ValueProposition() {
       </h1>
       
       {/* Secondary Subtitle Accent */}
-      <p className="mt-3 text-[15px] sm:text-[17px] md:text-[19px] font-medium tracking-wide text-white/90">
+      <p className="mt-3 subheading font-medium tracking-wide text-white/90 ">
         Port City BPO's Competitive Edge
       </p>
 
@@ -67,7 +65,7 @@ export default function ValueProposition() {
   </div>
 </header>
 
-      <main className="max-w-7xl mx-auto px-6 py-16">
+      <main className="max-w-10/12 mx-auto px-6 py-16">
   {/* First row - 3 cards */}
   <div className="grid md:grid-cols-3 gap-8">
     {cards.slice(0, 3).map((c) => (
@@ -75,8 +73,8 @@ export default function ValueProposition() {
         <div className="w-full h-[40vh] bg-gray-100 rounded-xl overflow-hidden shadow-md">
           <img src={c.img} alt={c.title} className="w-full h-full object-cover" />
         </div>
-        <h3 className="font-bold text-lg">{c.title}</h3>
-        <p className="text-sm text-gray-600">{c.text}</p>
+        <h3 className="font-bold subheading">{c.title}</h3>
+        <p className="text text-gray-600">{c.text}</p>
       </div>
     ))}
   </div>
@@ -88,8 +86,8 @@ export default function ValueProposition() {
       <div className="w-full h-[40vh] mx-auto rounded-xl overflow-hidden shadow-md">
         <img src={c.img} alt={c.title} className="w-full h-full object-cover" />
       </div>
-      <h4 className="font-bold text-lg">{c.title}</h4>
-      <p className="text-sm text-gray-600">{c.text}</p>
+      <h4 className="font-bold subheading">{c.title}</h4>
+      <p className="text text-gray-600">{c.text}</p>
     </div>
   ))}
 </div>
@@ -112,7 +110,6 @@ export default function ValueProposition() {
           />
        
 
-      <Footer />
     </div>
   );
 }
