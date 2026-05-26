@@ -12,7 +12,7 @@ const teamEventsData = {
     date: "5 May 2026",
     shortDescription:
       "Sinhala and Tamil New Year Celebrations at Port City BPO...",
-      thumbnail: "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2026/05/4-1-1024x858.png",
+      thumbnail: "/public/teamevents/tamilnewyear/tamilnewyearcelebrations.png",
     description: `Port City BPO celebrated the Sinhala and Tamil New Year with great enthusiasm and cultural spirit. The event brought together employees from all backgrounds to participate in traditional games, enjoy festive meals, and embrace the rich cultural heritage of Sri Lanka.
 
 Our celebration featured traditional customs, joyful moments, and shared experiences that reflected the spirit of Avurudu. From warm interactions to festive activities, the event created an atmosphere filled with positivity and connection. It was a meaningful opportunity for our employees to appreciate our heritage while strengthening the bond we share as one team at Port City BPO.
@@ -23,15 +23,16 @@ We extend our heartfelt wishes to everyone for a joyful, prosperous, and blessed
 
 සුභ අලුත් අවුරුද්දක් වේවා! இனிய புத்தாண்டு நல்வாழ்த்துக்கள்!`,
     photos: [
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2026/05/5-1-1024x858.png",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2026/05/6-1-1024x858.png",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2026/05/7-1-1024x858.png",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2026/05/8-1-1024x858.png",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2026/05/4-1-1024x858.png",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2026/05/3-1-scaled.png",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2026/05/2-1-1024x858.png",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2026/05/1-1-scaled.png",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2026/05/9-1-scaled.png",
+      "/public/teamevents/tamilnewyear/1-tamilnewyear.png",
+      "/public/teamevents/tamilnewyear/2-tamilnewyear.png",
+      "/public/teamevents/tamilnewyear/3-tamilnewyear.png",
+      "/public/teamevents/tamilnewyear/4-tamilnewyear.png",
+      "/public/teamevents/tamilnewyear/5-tamilnewyear.png",
+      "/public/teamevents/tamilnewyear/6-tamilnewyear.png",
+      "/public/teamevents/tamilnewyear/7-tamilnewyear.png",
+      "/public/teamevents/tamilnewyear/8-tamilnewyear.png",
+      "/public/teamevents/tamilnewyear/9-tamilnewyear.png",
+      "/public/teamevents/tamilnewyear/10-tamilnewyear.png",
     ],
   },
   "womens-day-2026": {
@@ -40,19 +41,25 @@ We extend our heartfelt wishes to everyone for a joyful, prosperous, and blessed
     date: "10 March 2026",
     shortDescription:
       "Celebrating the Strength and Impact of Women Around the World...",
-      thumbnail:"https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2026/03/2-1024x858.png",
-    description: `International Women's Day at Port City BPO was a celebration of the incredible women who drive our organization forward. The event featured inspiring speeches from female leaders, panel discussions on women in the workplace, and recognition of outstanding contributions by women across all departments.
+      thumbnail:"/public/teamevents/womenaroundworld/womenaroundworld.png",
+    description: `On the occasion of International Women’s Day, we take a moment to celebrate the remarkable women who continue to inspire, lead, and shape our world in countless ways.
 
-We organized workshops on professional development, work-life balance, and leadership skills specifically tailored for women. The celebration also included cultural performances, networking sessions, and a special awards ceremony honoring women who have made significant impacts in their roles.
+Women play an invaluable role in every sphere of life — as leaders, professionals, caregivers, innovators, and changemakers. Their resilience, dedication, and passion continue to drive progress within families, workplaces, communities, and societies across the globe.
 
-This event reinforced our commitment to gender equality and creating an environment where women can thrive professionally and personally.`,
+At Port City BPO, we recognize and deeply appreciate the incredible contributions of women who bring talent, creativity, and strength to everything they do. Their perspectives, ideas, and leadership help create more inclusive, collaborative, and forward-thinking environments.
+
+International Women’s Day is not only a celebration but also a reminder of the importance of empowering women, supporting equality, and creating opportunities for women to grow and succeed. By uplifting and supporting women, we build stronger organizations and a more balanced and equitable future for everyone.
+
+Today, and every day, we celebrate the achievements, resilience, and inspiring journeys of women everywhere.
+
+Happy International Women’s Day to all the incredible women around the world.`,
     photos: [
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2026/03/14-1024x858.png",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2026/03/11-1024x858.png",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2026/03/4-1024x858.png",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2026/03/2-1024x858.png",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2026/03/8-1024x858.png",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2026/03/6-1024x858.png",
+      "/public/teamevents/womenaroundworld/1-womenaroundworld.png",
+      "/public/teamevents/womenaroundworld/2-womenaroundworld.png",
+      "/public/teamevents/womenaroundworld/3-womenaroundworld.png",
+      "/public/teamevents/womenaroundworld/4-womenaroundworld.png",
+      "/public/teamevents/womenaroundworld/5-womenaroundworld.png",
+      "/public/teamevents/womenaroundworld/6-womenaroundworld.png",
     ],
   },
   "talent-lift-2026": {
@@ -61,21 +68,25 @@ This event reinforced our commitment to gender equality and creating an environm
     date: "23 February 2026",
     shortDescription:
       "Port City BPO Showcases Career Pathways at Talent Lift 2026...",
-      thumbnail:"https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2026/02/2-1024x858.png",
-    description: `Port City BPO participated in Talent Lift 2026, one of Sri Lanka's premier career fairs, connecting with aspiring professionals and showcasing exciting career opportunities in the BPO industry. Our booth attracted hundreds of job seekers eager to learn about the dynamic work environment at Port City BPO.
+      thumbnail:"/public/teamevents/careerpath/careerpath.png",
+    description: `Port City BPO proudly participated in Talent Lift 2026, the annual career fair organized by The Open
 
-Our HR team conducted on-the-spot interviews, career guidance sessions, and portfolio reviews. We highlighted our commitment to employee development, innovative work culture, and the diverse career paths available within our organization.
+University of Sri Lanka. The event brought together a dynamic crowd of undergraduates and graduates seeking guidance, industry exposure, and meaningful career opportunities.
 
-The event was a tremendous success, resulting in numerous job offers and building a strong pipeline of future talent for various departments across the company.`,
+Our team engaged with hundreds of students throughout the day, sharing insights into the evolving BPO industry, emerging skill demands, and the diverse growth pathways available at Port City BPO. The event served as a valuable platform to highlight our commitment to talent development, youth empowerment, and building a future-ready workforce for Sri Lanka.
+
+Our presence at Talent Lift reinforced our dedication to supporting the next generation of professionals and strengthening industry-academic partnerships across the country.
+
+As we continue to expand and innovate, Port City BPO remains committed to creating pathways that uplift talent, inspire ambition, and contribute to shaping Sri Lanka’s future workforce.`,
     photos: [
-     "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2026/02/8-2048x1717.png",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2026/02/7-2048x1717.png",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2026/02/6-2048x1717.png",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2026/02/5-2048x1717.png",
-        "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2026/02/4-2048x1717.png",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2026/02/3-2048x1717.png",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2026/02/1-2048x1717.png",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2026/02/2-2048x1717.png"
+     "/public/teamevents/careerpath/1-careerpathways.png",
+      "/public/teamevents/careerpath/2-careerpathways.png",
+      "/public/teamevents/careerpath/3-careerpathways.png",
+      "/public/teamevents/careerpath/4-careerpathways.png",
+        "/public/teamevents/careerpath/5-careerpathways.png",
+      "/public/teamevents/careerpath/6-careerpathways.png",
+      "/public/teamevents/careerpath/7-careerpathways.png",
+      "/public/teamevents/careerpath/8-careerpathways.png"
     ],
   },
   "new-year-2026-welcome": {
@@ -84,19 +95,19 @@ The event was a tremendous success, resulting in numerous job offers and buildin
     date: "10 January 2026",
     shortDescription:
       "A Shared Welcome to 2026 To welcome 2026, we gathered...",
-       thumbnail:"https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2026/01/10-1-1024x858.png",
-    description: `Port City BPO welcomed the New Year 2026 with a grand celebration that brought together all employees for a day of reflection, gratitude, and excitement for the future. The event featured inspiring messages from leadership, team-building activities, and a look back at the achievements of the past year.
+       thumbnail:"/public/teamevents/welcome2026/welcome2026.png",
+    description: `To welcome 2026, we gathered in the spirit of togetherness. Our celebration was built around a shared meal and the easy comfort of fellowship.
 
-Employees shared their New Year resolutions, participated in goal-setting workshops, and enjoyed cultural performances. A special awards ceremony recognized outstanding contributions from the previous year.
+The morning centred on the warmth of good food and the steady hum of conversation. As we shared dishes and stories, we naturally turned our focus toward the new year, embracing its warmth among our family.
 
-The celebration strengthened our sense of community and set a positive tone for a year of growth, innovation, and shared success.`,
+It was a heartfelt and grounded beginning moment of community to carry with us into all that 2026 will bring.`,
     photos: [
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2026/01/10-1-2048x1717.png",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2026/01/1-1-2048x1717.png",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2026/01/4-2-2048x1717.png",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2026/01/4-2-2048x1717.png",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2026/01/3-1-2048x1717.png",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2026/01/6-1-2048x1717.png",
+      "/public/teamevents/welcome2026/1-welcome2026.png",
+      "/public/teamevents/welcome2026/2-welcome2026.png",
+      "/public/teamevents/welcome2026/3-welcome2026.png",
+      "/public/teamevents/welcome2026/4-welcome2026.png",
+      "/public/teamevents/welcome2026/5-welcome2026.png",
+      "/public/teamevents/welcome2026/6-welcome2026.png",
     ],
       
   },
@@ -106,19 +117,19 @@ The celebration strengthened our sense of community and set a positive tone for 
     date: "10 January 2026",
     shortDescription:
       "Secret Santa celebration 2025 Port City BPO was filled with...",
-       thumbnail:"https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2026/01/4-1-1024x1024.png",
-    description: `The Secret Santa celebration at Port City BPO brought the magic of the holiday season to our workplace. Employees participated in the gift exchange tradition, spreading joy and fostering a sense of camaraderie across departments.
+       thumbnail:"/public/teamevents/santacelebration/santacelebrations2025.png",
+    description: `Port City BPO was filled with more than just the usual buzz of productivity it was alive with the whispered excitement and twinkling anticipation of our Secret Santa celebration.
 
-The event included festive decorations, holiday music, a special lunch, and the eagerly awaited gift exchange where colleagues surprised each other with thoughtful presents. Laughter and holiday cheer filled every corner of our office.
+Gifts appeared like quiet surprises, wrapped in holiday cheer and thoughtful mystery. The air hummed with laughter, genuine smiles, and the warm joy of discovering not just presents, but the kindness behind them. It was a beautiful reminder of the wonderful team spirit and connection that make our workplace special.
 
-This celebration highlighted the warm, family-like culture at Port City BPO, where employees genuinely care for one another and celebrate together.`,
+A heartfelt thank you to everyone who participated and helped orchestrate this lovely tradition. Here’s to carrying this spark of festive warmth and camaraderie with us into the new year.`,
     photos: [
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2026/01/10-2048x2048.png",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2026/01/11-2048x2048.png",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2026/01/13-1-2048x2048.png",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2026/01/4-1-2048x2048.png",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2026/01/8-2048x2048.png",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2026/01/9-2048x2048.png"
+      "/public/teamevents/santacelebration/1-santacelebration.png",
+      "/public/teamevents/santacelebration/2-santacelebration.png",
+      "/public/teamevents/santacelebration/3-santacelebration.png",
+      "/public/teamevents/santacelebration/4-santacelebration.png",
+      "/public/teamevents/santacelebration/5-santacelebration.png",
+      "/public/teamevents/santacelebration/6-santacelebration.png"
     ],
   },
   "ica-marathon-2025": {
@@ -126,18 +137,18 @@ This celebration highlighted the warm, family-like culture at Port City BPO, whe
     title: "More Than Just a Finish Line: Port City BPO runs the ICA 2025",
     date: "10 January 2026",
     shortDescription: "More Than Just a Finish Line: Port City BPO runs...",
-     thumbnail:"https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2026/01/3-1024x724.png",
-    description: `Port City BPO employees participated in the ICA Marathon 2025, demonstrating our commitment to health, wellness, and teamwork. A dedicated team of runners from across the company trained together and completed various race categories, from the full marathon to the fun run.
+     thumbnail:"/public/teamevents/halfmarathon/halfmarathon2025.png",
+    description: `It wasn’t just about the miles. It was in the rhythmic sound of thousands of footsteps hitting the pavement in sync and the high-fives from strangers that gave us a second wind just when we needed it most. We didn’t just move as runners; we moved as part of the city’s heartbeat.
 
-Beyond the athletic achievement, the event served as a fundraiser for local charities, with Port City BPO matching employee donations. The company's running team wore custom-designed jerseys, becoming a visible symbol of our corporate spirit.
+In our day-to-day, we focus on precision and KPIs. But on the pavement, we were reminded that our greatest strength is our connection. Crossing the finish line breathless and sweaty wasn’t just about the medals it was about the shared pride of knowing we did it together.
 
-The marathon experience strengthened bonds among participants and showcased Port City BPO's vibrant, energetic culture to the wider community.`,
+We are incredibly proud of our team for their spirit and for representing Port City BPO.`,
     photos: [
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2026/01/3-2048x1448.png",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2026/01/4-2048x1448.png",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2026/01/5-2048x1448.png",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2026/01/1-2048x1448.png",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2026/01/2-2048x1448.png"
+      "/public/teamevents/halfmarathon/1-halfmarathon.png",
+      "/public/teamevents/halfmarathon/2-halfmarathon.png",
+      "/public/teamevents/halfmarathon/3-halfmarathon.png",
+      "/public/teamevents/halfmarathon/4-halfmarathon.png",
+      "/public/teamevents/halfmarathon/5-halfmarathon.png"
     ],
   },
   "chinese-new-year-2025": {
@@ -145,16 +156,16 @@ The marathon experience strengthened bonds among participants and showcased Port
     title: "Port City BPO: Chinese New Year 2025",
     date: "29 January 2025",
     shortDescription: "Gong Xi Fa Cai!",
-     thumbnail:"https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/CNY2.jpeg",
+     thumbnail:"/public/teamevents/chainesenewyear/chainesenewyeear.jpg",
     description: `Port City BPO celebrated Chinese New Year 2025 with vibrant festivities honoring the Year of the Dragon. The office was decorated in traditional red and gold, and employees enjoyed authentic Chinese cuisine, cultural performances, and the traditional exchange of red envelopes (Ang Pao).
 
 The celebration included a Lion Dance performance, which brought energy and good fortune to our workplace. Employees learned about Chinese New Year traditions and participated in calligraphy workshops.
 
 This event reflected our commitment to cultural diversity and creating an inclusive environment where all traditions are celebrated and respected.`,
     photos: [
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/CNY2.jpeg",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/CNY3-1024x768.jpeg",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/CNY1-1024x768.jpeg",
+      "/public/teamevents/chainesenewyear/1-chinesenewyear.jpg",
+      "/public/teamevents/chainesenewyear/2-chinesenewyear.jpg",
+      "/public/teamevents/chainesenewyear/3-chinesenewyear.jpg",
     ],
   },
   "thai-pongal-2025": {
@@ -162,28 +173,28 @@ This event reflected our commitment to cultural diversity and creating an inclus
     title: "Port City BPO: Thai Pongal Celebration",
     date: "16 January 2025",
     shortDescription: "Thai Pongal 2025",
-     thumbnail:"https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/TP1-1024x1024.jpg",
+     thumbnail:"/public/teamevents/pongal/pongol.jpg",
     description: `Port City BPO celebrated Thai Pongal, the Tamil harvest festival, with traditional rituals and festivities. The celebration included the preparation of Pongal (sweet rice dish) in new clay pots, traditional kolam (rangoli) decorations, and cultural performances by employees.
 
 Team members learned about the significance of thanking the Sun God for a bountiful harvest and participated in traditional games. A special feast featuring authentic Tamil cuisine brought everyone together in celebration.
 
 This event demonstrated our respect for Tamil culture and traditions, fostering an inclusive workplace where all cultural celebrations are acknowledged.`,
     photos: [
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/TP7-1024x1024.jpg",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/TP19.jpeg",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/TP3-1024x1024.jpg",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/TP22.jpeg",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/TP8-1024x1024.jpg",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/TP13-1024x768.jpeg",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/TP21.jpeg",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/TP6-1024x1024.jpg",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/TP2-1024x1024.jpg",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/TP17.jpeg",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/TP20.jpeg",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/TP4-1024x1024.jpg",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/TP1-1024x1024.jpg",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/TP5-1024x1024.jpg",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/TP14.jpeg",
+      "/public/teamevents/pongal/1-pongOl.jpg",
+      "/public/teamevents/pongal/2-pongOl.jpg",
+      "/public/teamevents/pongal/3-pongOl.jpg",
+      "/public/teamevents/pongal/4-pongOl.jpg",
+      "/public/teamevents/pongal/5-pongOl.jpg",
+      "/public/teamevents/pongal/6-pongOl.jpg",
+      "/public/teamevents/pongal/7-pongOl.jpg",
+      "/public/teamevents/pongal/8-pongOl.jpg",
+      "/public/teamevents/pongal/9-pongOl.jpg",
+      "/public/teamevents/pongal/10-pongOl.jpg",
+      "/public/teamevents/pongal/11-pongOl.jpg",
+      "/public/teamevents/pongal/12-pongOl.jpg",
+      "/public/teamevents/pongal/13-pongOl.jpg",
+      "/public/teamevents/pongal/14-pongOl.jpg",
+      "/public/teamevents/pongal/15-pongOl.jpg",
     ],
   },
   "pickle-ball-2025": {
@@ -191,21 +202,21 @@ This event demonstrated our respect for Tamil culture and traditions, fostering 
     title: "Port City BPO: Pickle Ball Event",
     date: "8 January 2025",
     shortDescription: "Pickle Ball",
-     thumbnail:"https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/pickleball7-1024x768.jpeg",
+     thumbnail:"/public/teamevents/pickleball/pickleball.jpg",
     description: `Port City BPO organized an exciting Pickle Ball tournament, promoting health, wellness, and friendly competition among employees. Teams from various departments competed in this fast-growing sport, which combines elements of tennis, badminton, and table tennis.
 
 The event included training sessions for beginners, competitive matches for experienced players, and a family-friendly atmosphere with refreshments and music. Trophies and prizes were awarded to winning teams and individuals.
 
 This initiative encouraged active lifestyles, team building, and provided a fun break from daily work routines, strengthening relationships across the organization.`,
     photos: [
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/pickleball1.jpeg",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/pickleball3.jpeg",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/pickleball6.jpeg",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/pickleball6.jpeg",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/pickleball8.jpeg",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/pickleball4.jpeg",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/pickleball7-1024x768.jpeg",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/pickleball5.jpeg",
+      "/public/teamevents/pickleball/1-pickleball.jpg",
+      "/public/teamevents/pickleball/2-pickleball.jpg",
+      "/public/teamevents/pickleball/3-pickleball.jpg",
+      "/public/teamevents/pickleball/4-pickleball.jpg",
+      "/public/teamevents/pickleball/5-pickleball.jpg",
+      "/public/teamevents/pickleball/6-pickleball.jpg",
+      "/public/teamevents/pickleball/7-pickleball.jpg",
+      "/public/teamevents/pickleball/8-pickleball.jpg",
     ],
   },
   "new-year-2025": {
@@ -213,21 +224,21 @@ This initiative encouraged active lifestyles, team building, and provided a fun 
     title: "Port City BPO: New Year 2025",
     date: "2 January 2025",
     shortDescription: "Happy New Year 2025",
-     thumbnail:"https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/NY4-1024x854.jpg",
+     thumbnail:"/public/teamevents/newyear2025/newyear2025.jpg ",
     description: `Port City BPO welcomed 2025 with enthusiasm and optimism, gathering employees for a New Year celebration focused on goal-setting, team building, and shared vision. Leadership shared strategic priorities for the year ahead, and employees participated in workshops designed to align personal goals with company objectives.
 
 The celebration included a回顾 of 2024 achievements, recognition of outstanding teams, and interactive sessions where employees shared their aspirations for 2025. A festive lunch and entertainment rounded out the day.
 
 This event energized our workforce and created momentum for a year of innovation, growth, and collective success.`,
     photos: [
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/NY3-1024x768.jpg",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/NY8.jpg",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/NY2-1024x768.jpg",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/NY6.jpg",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/NY7-768x1024.jpg",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/NY10-1024x768.jpg",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/NY4-1024x854.jpg",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/NY9-1024x672.jpg",
+      "/public/teamevents/newyear2025/1-newyear2025.jpg",
+      "/public/teamevents/newyear2025/2-newyear2025.jpg",
+      "/public/teamevents/newyear2025/3-newyear2025.jpg",
+      "/public/teamevents/newyear2025/4-newyear2025.jpg",
+      "/public/teamevents/newyear2025/5-newyear2025.jpg",
+      "/public/teamevents/newyear2025/6-newyear2025.jpg",
+      "/public/teamevents/newyear2025/7-newyear2025.jpg",
+      "/public/teamevents/newyear2025/8-newyear2025.jpg",
     ],
   },
   "secret-santa-2024": {
@@ -235,19 +246,19 @@ This event energized our workforce and created momentum for a year of innovation
     title: "Port City BPO: Secret Santa X'mas event",
     date: "5 December 2024",
     shortDescription: "Our prep for the 2024 X'mas Party",
-     thumbnail:"https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/Secret-Santa-2-scaled-768x1024.jpeg",
+     thumbnail:"/public/teamevents/secretsanta/secretsanta.jpg",
     description: `The Secret Santa event at Port City BPO brought the spirit of giving to our workplace during the 2024 Christmas season. Employees participated enthusiastically in the gift exchange, with weeks of anticipation building up to the big reveal.
 
 The event featured festive decorations, holiday treats, caroling, and the heartwarming moment when colleagues discovered who their Secret Santa was. The joy and laughter shared during this celebration created lasting memories.
 
 This tradition exemplifies the warm, caring culture at Port City BPO, where employees genuinely care for one another and celebrate the spirit of giving.`,
     photos: [
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/Carol-Practices-6.jpeg",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/Donuts.jpeg",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/Secret-Santa-2-scaled-768x1024.jpeg",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/10/actual-image-name.jpg",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/Secret-Santa-4-scaled-768x1024.jpeg",
-      "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/Secret-Santa-11-scaled-768x1024.jpeg",
+      "/public/teamevents/secretsanta/1-secretsanta.jpg",
+      "/public/teamevents/secretsanta/2-secretsanta.jpg",
+      "/public/teamevents/secretsanta/3-secretsanta.jpg",
+      "/public/teamevents/secretsanta/4-secretsanta.jpg",
+      "/public/teamevents/secretsanta/5-secretsanta.jpg",
+      "/public/teamevents/secretsanta/6-secretsanta.jpg",
     ],
   },
   "xmas-party-2024": {
@@ -255,16 +266,28 @@ This tradition exemplifies the warm, caring culture at Port City BPO, where empl
     title: "Port City BPO: X'mas 2024 Party",
     date: "2 December 2024",
     shortDescription: "Our 2024 X'mas Party",
-     thumbnail:"https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/PCBSL_01225-1-1024x576.jpg",
+     thumbnail:"/public/teamevents/xmassparty/xmassparty.jpg",
     description: `Port City BPO's 2024 Christmas Party was a spectacular celebration of the year's achievements and the holiday spirit. The event featured a beautifully decorated venue, delicious festive feast, live music, and dancing that continued late into the evening.
 
 Employees received special Christmas gifts from the company, and a raffle draw with exciting prizes added to the excitement. The party included a photo booth, Secret Santa gift exchange, and a heartfelt speech from leadership expressing gratitude for the team's hard work throughout the year.
 
 This annual tradition reinforces our team culture, celebrates our collective successes, and sends everyone into the holiday season with joy and appreciation.`,
     photos: [
-      "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1482517967863-00e15c9b44be?auto=format&fit=crop&w=1200&q=80",
+      "/public/teamevents/xmassparty/1-xmass.jpg",
+      "/public/teamevents/xmassparty/2-xmass.jpg",
+      "/public/teamevents/xmassparty/3-xmass.jpg",
+      "/public/teamevents/xmassparty/4-xmass.jpg",
+      "/public/teamevents/xmassparty/5-xmass.jpg",
+      "/public/teamevents/xmassparty/6-xmass.jpg",
+      "/public/teamevents/xmassparty/7-xmass.jpg",
+      "/public/teamevents/xmassparty/8-xmass.jpg",
+      "/public/teamevents/xmassparty/9-xmass.jpg",
+      "/public/teamevents/xmassparty/10-xmass.jpg",
+      "/public/teamevents/xmassparty/11-xmass.jpg",
+      "/public/teamevents/xmassparty/12-xmass.jpg",
+      "/public/teamevents/xmassparty/13-xmass.jpg",
+      "/public/teamevents/xmassparty/14-xmass.jpg",
+      "/public/teamevents/xmassparty/15-xmass.jpg",
     ],
   },
 };
@@ -280,21 +303,38 @@ function TeamEvents() {
     <div className="min-h-screen bg-white -mt-4">
       
       {/* Hero Section */}
-      <header
-        className="relative h-130 flex items-center"
-        style={{
-          backgroundImage: `url(https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/Newsroom-page-desktop.jpg)`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        <div className="relative z-10 max-w-7xl mx-auto px-6 text-white">
-          <h1 className="max-w-2xl text-4xl md:text-7xl font-bold">Team Events</h1>
-        </div>
-      </header>
+       {/* Hero Section */}
+<header className="relative h-[460px] md:h-[440px] lg:h-[520px] flex items-center overflow-hidden">
+  {/* Mobile Background (visible on small screens) */}
+  <div
+    className="absolute inset-0 bg-cover bg-center md:hidden"
+    style={{
+      backgroundImage: `url('https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/Newsroom-page-mobile.jpg')`,
+    }}
+  />
+  
+  {/* Desktop Background (visible on medium screens and up) */}
+  <div
+    className="absolute inset-0 bg-cover bg-center hidden md:block"
+    style={{
+      backgroundImage: `url('https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/Newsroom-page-desktop.jpg')`,
+    }}
+  />
+
+
+  {/* Content Container */}
+  <div className=" z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 absolute top-1/5 lg:top-0 lg:relative ">
+    {/* Text aligned left on mobile, center on tablet/desktop (or keep left if preferred) */}
+    <div className="text-left md:text-center max-w-4xl">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white tracking-tight leading-tight ">
+        Team Events
+      </h1>
+    </div>
+  </div>
+</header>
 
       {/* Team Events Grid */}
-      <main className="max-w-10/12 mx-auto px-6 py-16">
+      <main className="max-w-10/12 mx-auto  py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {teamEvents.map((event) => (
             <div
@@ -403,17 +443,16 @@ export function TeamEventDetail() {
 
   return (
     <div className="min-h-screen bg-white">
-      <Navbar />
       
       {/* Hero Section with Title and Date */}
-      <div className="relative bg-[#0670b2] text-white py-10 text-left">
-        <div className="max-w-10/12 mx-auto px-6">
+      <div className="relative bg-[#0670b2] text-white py-10 text-left mt-4 lg:mt-0">
+        <div className="max-w-10/12 mx-auto ">
           <h1 className="heading font-bold">{event.title}</h1>
         </div>
       </div>
 
       {/* Description Section */}
-      <section className="max-w-10/12 mx-auto px-6 py-6">
+      <section className="max-w-10/12 mx-auto  py-6">
         <div className="prose prose-lg max-w-none">
           {event.description.split('\n\n').map((paragraph, idx) => (
             <p key={idx} className="text-gray-600 leading-relaxed mb-6">
@@ -425,7 +464,7 @@ export function TeamEventDetail() {
 
       {/* Photos Gallery Section */}
       <section className="bg-gray-50 py-16">
-        <div className="max-w-10/12 mx-auto px-6">
+        <div className="max-w-10/12 mx-auto ">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {event.photos.map((photo, idx) => (
               <div

@@ -6,21 +6,48 @@ import { Clock, TimerIcon } from 'lucide-react';
 
 // CSR Data Object
 const csrData = {
+  "sustaining-ecosystems-kalpitiya": {
+  id: "sustaining-ecosystems-kalpitiya",
+  title: "Sustaining Ecosystems for Tomorrow – Mangrove Conservation in Kalpitiya",
+  date: "25 may 2026",
+  shortDescription: "Sustaining Ecosystems for Tomorrow – Mangrove Conservation in Kalpitiya Building..",
+  thumbnail: "/public/corporate/ecosystem/ecosystem.png",
+  description: `Building on the success and valuable experience gained from our previous CSR initiatives, Port City BPO is proud to launch its 19th Corporate Social Responsibility project – the Mangrove Restoration & Conservation Project in Kalpitiya. This initiative reflects our continued commitment to environmental sustainability and our responsibility towards preserving Sri Lanka’s natural ecosystems for future generations.
+
+Mangrove ecosystems play a critical role in coastal protection, biodiversity conservation, and climate change mitigation. Through this project, we aim to actively contribute to the restoration and protection of these vital natural habitats, strengthening coastal resilience while supporting long-term ecological balance.
+
+In collaboration with the Lanka Mangrove Museum, this initiative facilitates the planting of 500 mangrove saplings in Ammathottama, Kalpitiya. The project combines hands-on conservation efforts with environmental education, community engagement, and reinforcing awareness.`,
+  photos: [
+    "/public/corporate/ecosystem/1-ecosystem.png",
+    "/public/corporate/ecosystem/2-ecosystem.png",
+    "/public/corporate/ecosystem/3-ecosystem.png",
+    "/public/corporate/ecosystem/4-ecosystem.png",
+    "/public/corporate/ecosystem/5-ecosystem.png",
+    "/public/corporate/ecosystem/6-ecosystem.png",
+    "/public/corporate/ecosystem/7-ecosystem.png",
+    "/public/corporate/ecosystem/8-ecosystem.png",
+    "/public/corporate/ecosystem/9-ecosystem.png",
+    "/public/corporate/ecosystem/10-ecosystem.png",
+  ]
+},
   "smarter-classrooms-hatton": {
     id: "smarter-classrooms-hatton",
     title: "Smarter Classrooms for Tomorrow: Empowering Young Minds in Hatton",
     date: "5 May 2026",
     shortDescription: "Smarter Classrooms for Tomorrow: Empowering Young Minds in Hatton At...",
-    description: `Port City BPO proudly launched the "Smarter Classrooms for Tomorrow" initiative in Hatton, aimed at transforming educational spaces into modern, technology-enabled learning environments. This project focused on providing essential digital infrastructure, including computers, smart boards, and educational software to underprivileged schools in the Hatton region.
+    thumbnail:"/public/corporate/smartclassroom/smartclassroom.png",
+    description: `At Port City BPO, we remain dedicated to creating meaningful and lasting community impact through purposeful Corporate Social Responsibility initiatives. Our latest CSR project, “Smarter Classrooms for Tomorrow – Empowering Young Minds in Hatton,” reflects our continued commitment to advancing education and equal opportunities for underserved communities.
 
-The initiative benefited over 500 students by giving them access to digital learning tools that were previously unavailable. Teachers received specialized training to effectively integrate technology into their daily lesson plans, ensuring sustainable impact.
+Through this initiative, we donated a state-of-the-art smart board to a school in Hatton, helping transform traditional learning into an interactive, engaging, and future-ready experience. This upgrade supports teachers in delivering dynamic lessons and equips students with the digital tools they need to think creatively, learn effectively, and prepare for the world ahead.
 
-This project represents Port City BPO's commitment to bridging the digital divide in Sri Lanka's education sector. By empowering young minds with technology, we are helping build a brighter future for the next generation of leaders, innovators, and change-makers.`,
+By bridging the digital divide and enriching the learning environment, this project reinforces our belief that every child deserves access to modern education and the chance to unlock their full potential. Port City BPO is proud to stand with the Hatton community as we work together.`,
     photos: [
-      "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=1200&q=80",
+      "/public/corporate/smartclassroom/1-smartclassroom.png",
+      "/public/corporate/smartclassroom/2-smartclassroom.png",
+      "/public/corporate/smartclassroom/3-smartclassroom.png",
+      "/public/corporate/smartclassroom/4-smartclassroom.png",
+      "/public/corporate/smartclassroom/5-smartclassroom.png",
+      "/public/corporate/smartclassroom/6-smartclassroom.png",
     ]
   },
   "games-of-love-hope": {
@@ -28,15 +55,24 @@ This project represents Port City BPO's commitment to bridging the digital divid
     title: "සෙනෙහසේ අවුරුදු සෙල්ලම් – Games of Love & Hope: A New Year Celebration of Heart, Unity & Hope",
     date: "4 May 2026",
     shortDescription: "සෙනෙහසේ අවුරුදු සෙල්ලම් – Games of Love & Hope: A...",
-    description: `Port City BPO organized "Games of Love & Hope," a special Sinhala and Tamil New Year celebration that brought together children from underprivileged backgrounds for a day filled with traditional games, cultural activities, and festive joy. The event was designed to promote unity, cultural harmony, and community spirit.
+    thumbnail:"/public/corporate/gamesoflove/gamesoflove.png",
+    description: `At Port City BPO, we believe in creating moments of joy, connection, and hope for communities. “සෙනෙහසේ අවුරුදු සෙල්ලම් – Games of Love & Hope” is a heartfelt Corporate Social Responsibility initiative dedicated to celebrating the Sinhala and Tamil New Year with children and families affected by thalassemia.
 
-Over 200 children participated in traditional New Year games such as Kotta Pora, Kana Mutti, and Raban Padeema. The event also included a gift distribution ceremony where each child received school supplies, clothing, and sweets.
+This initiative is centered around bringing the spirit of Avurudu to life through traditional games, shared experiences, and festive activities that foster unity, happiness, and inclusivity. By creating a space filled with laughter, cultural celebration, and togetherness, the event aims to uplift the emotional wellbeing of thalassemia patients, offering them a day where they are celebrated, supported, and surrounded by positivity.
 
-This celebration exemplified our commitment to spreading joy and hope within communities, ensuring that every child feels valued and included, regardless of their background.`,
+Beyond the celebrations, this initiative reflects our deeper commitment to standing in solidarity with individuals facing ongoing health challenges. We recognize that while medical support is essential.`,
     photos: [
-      "https://images.unsplash.com/photo-1533587851505-d119c13b508b?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1517299321609-52687d1bc55a?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1464349153735-7db50ed83c84?auto=format&fit=crop&w=1200&q=80",
+      "/public/corporate/gamesoflove/1-gamesoflove.png",
+      "/public/corporate/gamesoflove/2-gamesoflove.png",
+      "/public/corporate/gamesoflove/3-gamesoflove.png",
+      "/public/corporate/gamesoflove/4-gamesoflove.png",
+      "/public/corporate/gamesoflove/5-gamesoflove.png",
+      "/public/corporate/gamesoflove/6-gamesoflove.png",
+      "/public/corporate/gamesoflove/7-gamesoflove.png",
+      "/public/corporate/gamesoflove/8-gamesoflove.png",
+      "/public/corporate/gamesoflove/9-gamesoflove.png",
+      "/public/corporate/gamesoflove/10-gamesoflove.png",
+      "/public/corporate/gamesoflove/11-gamesoflove.png",
     ]
   },
   "flow-of-hope": {
@@ -44,15 +80,24 @@ This celebration exemplified our commitment to spreading joy and hope within com
     title: "Flow of hope – Enhancing Access to Clean, Sustainable Water at Senanayake Maha Pirivena",
     date: "30 March 2026",
     shortDescription: "Flow of hope – Enhancing Access to Clean, Sustainable Water...",
-    description: `Access to clean water is a fundamental human right. Port City BPO's "Flow of Hope" initiative focused on installing a sustainable water purification and distribution system at Senanayake Maha Pirivena, providing clean drinking water to over 300 monks and students daily.
+    thumbnail:"/public/corporate/flowofhope/flowofhope.png",
+    description: `At Port City BPO, we remain dedicated to driving meaningful, long-term community development through purposeful Corporate Social Responsibility initiatives. Our 13th CSR project, the Water Supply Improvement Project at Senanayake Maha Pirivena, reflects our ongoing commitment to supporting education, wellbeing, and sustainable living for underserved groups.
 
-The project included the installation of advanced water filtration units, storage tanks, and distribution pipelines. We also conducted workshops on water conservation and hygiene practices to ensure long-term sustainability.
+This project focuses on upgrading and modernising the existing water infrastructure to ensure uninterrupted access to clean, safe, and adequate water for 60 monks and 340 residential students who rely on these facilities daily. By enhancing the well structure, strengthening pipeline networks, installing a more efficient pump system, and improving storage capabilities, the initiative addresses a vital resource need that directly impacts health, hygiene, and overall quality of life.
 
-This initiative has dramatically improved the quality of life at the Pirivena, reducing waterborne diseases and allowing students to focus better on their studies.`,
+Beyond infrastructure improvements, the project reinforces our belief that access to clean water is a fundamental right and a foundation for personal and community growth. Reliable water supply not only improves daily living conditions but also empowers students to focus on their studies without disruptions, supports the monastic community, and contributes to a healthier, more resilient environment.
+
+Through this initiative, Port City BPO continues to foster sustainable change, create meaningful social impact, and uplift the communities that shape the future of our nation. We are proud to stand alongside institutions that nurture learning, discipline, and cultural heritage, and look forward to delivering more projects that bring lasting value to society.`,
     photos: [
-      "https://images.unsplash.com/photo-1548839140-29a749e1cf4d?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1581093458791-9f3c3900df4b?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1581093573221-1e1c9c5e8e1d?auto=format&fit=crop&w=1200&q=80",
+      "/public/corporate/flowofhope/1-flowofhope.png",
+      "/public/corporate/flowofhope/2-flowofhope.png",
+      "/public/corporate/flowofhope/3-flowofhope.png",
+      "/public/corporate/flowofhope/4-flowofhope.png",
+      "/public/corporate/flowofhope/5-flowofhope.png",
+      "/public/corporate/flowofhope/6-flowofhope.png",
+      "/public/corporate/flowofhope/7-flowofhope.png",
+      "/public/corporate/flowofhope/8-flowofhope.png",
+      "/public/corporate/flowofhope/9-flowofhope.png",
     ]
   },
   "community-relief-katupathwewa": {
@@ -60,14 +105,21 @@ This initiative has dramatically improved the quality of life at the Pirivena, r
     title: "Port City BPO's Community Relief Initiative – Katupathwewa",
     date: "25 February 2026",
     shortDescription: "Port City BPO's Community Relief Initiative – Katupathwewa At Port...",
-    description: `In response to the severe drought affecting the Katupathwewa region, Port City BPO launched a comprehensive community relief initiative to support affected families. The project provided essential supplies including dry rations, drinking water, and hygiene kits to over 150 families.
+    thumbnail:"/public/corporate/communityrelief/communityrelief.png",
+    description: `At Port City BPO, we believe that meaningful impact begins with showing up for communities during their most challenging moments. Guided by this commitment, our team extended its ongoing disaster relief efforts to the families of Katupathwewa, who were severely affected by the recent Ditwah cyclone and floods.
 
-Our team worked closely with local community leaders to identify the most vulnerable households and ensure aid reached those in greatest need. The initiative also included a mobile medical camp offering free health check-ups and medicines.
+In collaboration with our partners at Seva Lanka, we distributed essential rations and stationery at the DS Office in Katupathwewa, ensuring that children and families had access to immediate necessities as they navigate the path to recovery. These contributions offer more than supplies they bring stability, reassurance, and hope to those who are rebuilding their lives.
 
-This relief effort demonstrated our commitment to standing with communities during times of crisis, providing immediate support while exploring long-term solutions.`,
+Our support for this community has continued from the very first day of the cyclone response and will remain unwavering until families regain the strength, resilience, and confidence to move forward. Each gesture reflects our dedication to standing beside communities in times of hardship, helping them find strength through unity and collective care.
+
+This initiative highlights Port City BPO’s ongoing purpose: to uplift, empower, and stand with those who need it most. We remain deeply grateful to everyone involved and proud to play a part in helping Katupathwewa rebuild a stronger tomorrow..`,
     photos: [
-      "https://images.unsplash.com/photo-1593113630400-ea4288922497?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1200&q=80",
+      "/public/corporate/communityrelief/1-communityrelief.png",
+      "/public/corporate/communityrelief/2-communityrelief.png",
+      "/public/corporate/communityrelief/3-communityrelief.png",
+      "/public/corporate/communityrelief/4-communityrelief.png",
+      "/public/corporate/communityrelief/5-communityrelief.png",
+      "/public/corporate/communityrelief/6-communityrelief.png",
     ]
   },
   "apeksha-hospital-donation": {
@@ -75,14 +127,23 @@ This relief effort demonstrated our commitment to standing with communities duri
     title: "Donation Initiative | Apeksha National Cancer Hospital",
     date: "23 February 2026",
     shortDescription: "Donation Initiative | Apeksha National Cancer Hospital At Port City...",
-    description: `Port City BPO extended a helping hand to patients battling cancer at Apeksha National Cancer Hospital in Maharagama. Our donation initiative provided essential medical supplies, nutritional supplements, and comfort items to support patients undergoing treatment.
+    thumbnail:"/public/corporate/hospitaldonation/hospitaldonation.png",
+    description: `At Port City BPO, we believe that compassion has the power to uplift communities and bring comfort where it is needed most. Guided by this belief, our team was honoured to support patients and caregivers at the Apeksha Hospital through a special donation initiative.
 
-The donation included medicines, hospital beds, wheelchairs, and patient care supplies valued at over LKR 2 million. Our team also spent time with patients, offering emotional support and encouragement during their treatment journey.
+As part of this effort, 1,000 king coconuts were freshly cut and distributed across the hospital premises. For many patients undergoing treatment, simple gestures of nourishment and care can bring relief, hydration, and a sense of warmth during a difficult journey. This initiative was our way of standing beside them offering not just a drink, but a moment of comfort and kindness.
 
-We remain committed to supporting healthcare institutions and improving the quality of life for patients facing serious illnesses.`,
+For the families, medical staff, and everyone who walks through the corridors of the cancer hospital, these small acts of support serve as reminders that they are surrounded by a community that cares. By being present and contributing in a meaningful way, we hope to bring strength, hope, and encouragement to those facing some of life’s toughest challenges.
+
+This donation reflects Port City BPO’s ongoing commitment to supporting health and wellbeing across Sri Lanka. We are deeply grateful to everyone who helped make this initiative possible and proud to play a part in uplifting the resilient community at the Apeksha National Cancer Hospital.
+
+Together, we remain committed to creating impact rooted in empathy, humanity, and shared strength.`,
     photos: [
-      "https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1579159278902-1c733e153361?auto=format&fit=crop&w=1200&q=80",
+      "/public/corporate/hospitaldonation/1-hospitaldonation.png",
+      "/public/corporate/hospitaldonation/2-hospitaldonation.png",
+      "/public/corporate/hospitaldonation/3-hospitaldonation.png",
+      "/public/corporate/hospitaldonation/4-hospitaldonation.png",
+      "/public/corporate/hospitaldonation/5-hospitaldonation.png",
+      "/public/corporate/hospitaldonation/6-hospitaldonation.png",
     ]
   },
   "blood-donation-campaign": {
@@ -90,14 +151,21 @@ We remain committed to supporting healthcare institutions and improving the qual
     title: "Giving the Gift of Life: Port City BPO Blood Donation Campaign",
     date: "18 February 2026",
     shortDescription: "Giving the Gift of Life: Port City BPO Blood Donation...",
-    description: `In partnership with the National Blood Transfusion Service, Port City BPO organized a successful blood donation campaign that collected over 100 units of life-saving blood. Employees, their families, and community members came together to support this noble cause.
+    thumbnail:"/public/corporate/blooddonation/blooddonation.png",
+    description: `At Port City BPO, we believe that true success goes beyond performance metrics and business growth it is measured by the positive impact we create in our community. In line with this commitment, we proudly organized a Blood Donation Campaign as part of our ongoing Corporate Social Responsibility (CSR) initiatives.
 
-The campaign featured educational sessions on the importance of regular blood donation and its impact on saving lives. Donors received health screenings and post-donation care, ensuring a safe and comfortable experience.
+The campaign brought together our employees with a shared purpose: to donate blood and help save lives. The response from our team was inspiring, reflecting the compassion, unity, and social responsibility that define our workplace culture.
 
-This initiative reflects our commitment to community health and our belief that every individual can make a difference by giving the gift of life.`,
+Every unit of blood donated has the potential to save up to three lives. Through this initiative, our employees not only contributed to strengthening the national blood supply but also demonstrated that collective action can create meaningful change.
+
+We extend our sincere appreciation to all donors and volunteers who participated and supported this life-saving effort. Your generosity and commitment truly embody our values.`,
     photos: [
-      "https://images.unsplash.com/photo-1615461066841-6116e6109f8b?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1584365685547-9a5fb6f3a70c?auto=format&fit=crop&w=1200&q=80",
+      "/public/corporate/blooddonation/1-blooddonation.png",
+      "/public/corporate/blooddonation/2-blooddonation.png",
+      "/public/corporate/blooddonation/3-blooddonation.png",
+      "/public/corporate/blooddonation/4-blooddonation.png",
+      "/public/corporate/blooddonation/5-blooddonation.png",
+      "/public/corporate/blooddonation/6-blooddonation.png",
     ]
   },
   "rajanganaya-flood-relief": {
@@ -105,14 +173,23 @@ This initiative reflects our commitment to community health and our belief that 
     title: "Rajanganaya Flood Restoration Project",
     date: "13 February 2026",
     shortDescription: "Rajanganaya Flood Restoration Project At Port City BPO, we believe...",
-    description: `Following devastating floods in Rajanganaya, Port City BPO launched a comprehensive restoration project to help affected communities rebuild their lives. The initiative provided emergency relief supplies, temporary shelter materials, and support for rebuilding damaged homes.
+    thumbnail:"/public/corporate/floodrelief/floodrelief.png",
+    description: `At Port City BPO, we believe that true community strength is built through compassion, action, and collective responsibility. With this belief at our core, our team travelled to Rajanganaya to support recovery efforts following the recent floods that impacted families and disrupted daily life across the area.
 
-We distributed dry rations, drinking water, clothing, and hygiene kits to over 250 families. Additionally, we contributed to repairing damaged infrastructure including roads and community buildings.
+Day 1 marked the beginning of our contribution, as our team engaged directly with the community, offering assistance and supporting immediate restoration needs. It was a day grounded in listening, understanding, and standing beside those affected as they began rebuilding their routines and surroundings.
 
-Our team worked alongside local authorities and community organizations to ensure coordinated and effective relief efforts.`,
+On Day 2, we continued this momentum by assisting with ongoing construction efforts that are essential to restoring stability and supporting long-term recovery. Each task, each hour, and each effort reflected our commitment to helping Rajanganaya regain its strength with dignity and resilience.
+
+For the people of Rajanganaya, this project is more than an initiative it represents hope, continuity, and the reassurance that they are not facing this challenge alone. By being present on the ground, we aim to contribute not just to the rebuilding of physical spaces, but to the restoration of confidence and community spirit.
+
+This effort reflects Port City BPO’s dedication to uplifting communities and supporting what matters most to them. We are deeply grateful to everyone who contributed, collaborated, and showed unwavering commitment over these two days. Together, we continue to build communities grounded in empathy, resilience, and unity.`,
     photos: [
-      "https://images.unsplash.com/photo-1547683905-f686c993aae5?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1581092335873-5a1d1c9e4b8f?auto=format&fit=crop&w=1200&q=80",
+      "/public/corporate/floodrelief/1-floodrelief.png",
+      "/public/corporate/floodrelief/2-floodrelief.png",
+      "/public/corporate/floodrelief/3-floodrelief.png",
+      "/public/corporate/floodrelief/4-floodrelief.png",
+      "/public/corporate/floodrelief/5-floodrelief.png",
+      "/public/corporate/floodrelief/6-floodrelief.png",
     ]
   },
   "infant-jesus-church": {
@@ -120,14 +197,18 @@ Our team worked alongside local authorities and community organizations to ensur
     title: "Building Hope Together : Supporting the Construction of Infant Jesus Church – Dummalasuriya, Chilaw",
     date: "23 January 2026",
     shortDescription: "Building Hope Together : Supporting the Construction of Infant Jesus...",
-    description: `Port City BPO contributed to the construction of Infant Jesus Church in Dummalasuriya, Chilaw, supporting the local Catholic community's efforts to build a place of worship. Our donation helped fund essential construction materials and labor costs.
+    thumbnail:"/public/corporate/infrantchurch/infrantchurch.webp",
+    description: `PAt Port City BPO, we believe strong communities grow through care, connection, and shared purpose. With this belief, we were honoured to support the construction of the Infant Jesus Church in Dummalasuriya, Chilaw.
 
-The new church will serve over 500 families in the area, providing a spiritual home for generations to come. We were honored to partner with the community in bringing this vision to life.
+For the local community, this church is more than a building. It is a place of prayer, comfort, gathering, and guidance where families come together in moments of joy and challenge. By contributing to its construction, we hope to help create a lasting space of belonging and hope for generations to come.
 
-This project exemplifies our commitment to supporting religious and cultural institutions that strengthen community bonds.`,
+This initiative reflects our commitment to standing alongside communities and supporting what truly matters to them. We are grateful to everyone involved in making this possible and are proud to play a small part in strengthening the community of Dummalasuriya. Together, we continue to build communities rooted in compassion, resilience, and unity.`,
     photos: [
-      "https://images.unsplash.com/photo-1438032945730-e0eb666dc7b6?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1582653291997-079a1c04e5a1?auto=format&fit=crop&w=1200&q=80",
+      "/public/corporate/infrantchurch/1-infrantchurch.webp",
+      "/public/corporate/infrantchurch/2-infrantchurch.webp",
+      "/public/corporate/infrantchurch/3-infrantchurch.webp",
+      "/public/corporate/infrantchurch/4-infrantchurch.webp",
+      "/public/corporate/infrantchurch/5-infrantchurch.webp",
     ]
   },
   "seva-lanka-partnership": {
@@ -135,14 +216,21 @@ This project exemplifies our commitment to supporting religious and cultural ins
     title: "Supporting Communities Through Our CSR Partnership with Seva Lanka",
     date: "23 January 2026",
     shortDescription: "Supporting Communities Through Our CSR Partnership with Seva Lanka As...",
-    description: `Port City BPO established a strategic partnership with Seva Lanka, a renowned humanitarian organization, to support community development projects across Sri Lanka. This collaboration focuses on education, healthcare, and livelihood development initiatives.
+    thumbnail:"/public/corporate/sevalanka/sevalanka.webp",
+    description: `As part of our steadfast commitment to social responsibility, Port City BPO is honoured to have partnered with Seva Lanka to provide relief to communities affected by Cyclone Ditwah.
 
-Our joint projects include building school libraries, providing scholarships to deserving students, and supporting small business development in rural communities.
+Understanding the needs in the aftermath of the disaster, our joint initiative focused on supporting a facility impacted by the floods. Our team had the privilege of spending time at the clinic, where we met with expecting mothers, offering not just material support but also words of solidarity and care during a challenging time.
 
-Through this partnership, we aim to create sustainable impact and empower communities to achieve self-reliance and prosperity.`,
+This initiative underscores our core values of compassion, care, and tangible community upliftment. We are deeply grateful to Seva Lanka for their invaluable partnership and to the clinic staff for their unwavering dedication. It is a profound privilege to stand with the people of our community, continuing our legacy of purposeful corporate citizenship and reaffirming our belief in building a stronger, more caring society together`,
     photos: [
-      "https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?auto=format&fit=crop&w=1200&q=80",
+      "/public/corporate/sevalanka/1-sevalanka.webp",
+      "/public/corporate/sevalanka/2-sevalanka.webp",
+      "/public/corporate/sevalanka/3-sevalanka.webp",
+      "/public/corporate/sevalanka/4-sevalanka.webp",
+      "/public/corporate/sevalanka/5-sevalanka.webp",
+      "/public/corporate/sevalanka/6-sevalanka.webp",
+      "/public/corporate/sevalanka/7-sevalanka.webp",
+      "/public/corporate/sevalanka/8-sevalanka.webp",
     ]
   },
   "foundation-of-goodness": {
@@ -150,14 +238,17 @@ Through this partnership, we aim to create sustainable impact and empower commun
     title: "Partnering for Positive Impact with the Foundation of Goodness",
     date: "10 January 2026",
     shortDescription: "Partnering for Positive Impact with the Foundation of Goodness Port...",
-    description: `Our partnership with the Foundation of Goodness enables us to reach underserved communities across Sri Lanka with holistic development programs. Together, we support initiatives in education, vocational training, healthcare, and sports development.
+    thumbnail:"/public/corporate/goodness/goodness.png",
+    description: `Port City BPO is honoured to have partnered with the Foundation of Goodness to provide urgent relief to communities affected by the devastating floods caused by Cyclone Ditwah.
 
-Recent projects include establishing IT labs in rural schools, conducting career guidance workshops, and providing healthcare camps in remote villages.
+In response to the widespread need, our joint initiative provided general aid and essential supplies to support the Foundation of Goodness in their critical on-ground efforts. This contribution was aimed at helping affected families and individuals recover and rebuild in the aftermath of the disaster.
 
-This collaboration has touched thousands of lives, creating opportunities for youth and empowering communities to break the cycle of poverty.`,
+This initiative underscores our core values of compassion, solidarity, and tangible community upliftment. We are deeply grateful to the Foundation of Goodness for their invaluable partnership and unwavering dedication to serving those in need. It is a profound privilege to stand with the people of community, continuing our legacy of purposeful corporate citizenship and reaffirming our belief in building a stronger, more resilient society together..`,
     photos: [
-      "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=1200&q=80",
+      "/public/corporate/goodness/1-goodness.webp",
+      "/public/corporate/goodness/2-goodness.webp",
+      "/public/corporate/goodness/3-goodness.webp",
+      "/public/corporate/goodness/4-goodness.webp",
     ]
   },
   "grace-perera-home": {
@@ -165,14 +256,23 @@ This collaboration has touched thousands of lives, creating opportunities for yo
     title: "Port City BPO: CSR at Grace Perera Home for Elders",
     date: "14 October 2025",
     shortDescription: "Port City BPO: CSR at Grace Perera Home for Elders...",
-    description: `Our team visited Grace Perera Home for Elders to spend quality time with the residents and provide essential supplies including food, medicines, and comfort items. The visit included entertainment programs, health check-ups, and a special lunch prepared for the elderly residents.
+    thumbnail:"/public/corporate/elders/elders.png",
+    description: `As part of our ongoing commitment to community welfare, Port City BPO successfully completed its 5th CSR initiative at Grace Perera Elder’s Home, Kalubowila.
+Our team spent a meaningful morning sharing smiles with 35 elders by serving a wholesome Sri Lankan breakfast and donating essential sanitary and medical items to support their daily comfort and well-being.
 
-We also contributed to facility improvements including painting, repairs, and garden maintenance to create a more comfortable living environment.
-
-This initiative reflects our deep respect for elders and our commitment to ensuring they live their golden years with dignity and joy.`,
+This initiative reflects our dedication to compassion, care, and community upliftment, continuing the legacy of our previous projects.`,
     photos: [
-      "https://images.unsplash.com/photo-1581579438747-1dc8d17bbce4?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?auto=format&fit=crop&w=1200&q=80",
+      "/public/corporate/elders/1-elders.png",
+      "/public/corporate/elders/2-elders.png",
+      "/public/corporate/elders/3-elders.png",
+      "/public/corporate/elders/4-elders.png",
+      "/public/corporate/elders/5-elders.png",
+      "/public/corporate/elders/6-elders.png",
+      "/public/corporate/elders/7-elders.png",
+      "/public/corporate/elders/8-elders.png",
+      "/public/corporate/elders/9-elders.png",
+      "/public/corporate/elders/10-elders.png",
+      "/public/corporate/elders/11-elders.png",
     ]
   },
   "jayanthi-infants-centre": {
@@ -180,14 +280,18 @@ This initiative reflects our deep respect for elders and our commitment to ensur
     title: "Port City BPO: CSR at Jayanthi Infant's Centre",
     date: "9 July 2025",
     shortDescription: "Port City BPO: CSR at Jayanthi Infant's Centre Our latest...",
-    description: `Port City BPO brought smiles to the children at Jayanthi Infant's Centre through a day filled with activities, gifts, and nutritious meals. We provided educational toys, storybooks, art supplies, and clothing for all children at the center.
+    thumbnail:"/public/corporate/jayanthi/jayanthi.jpg",
+    description: `Our latest initiative took place at Jayanthi Infant’s Centre, Colombo 7, where weorganized a special donation breakfast for 20 preschool children aged 2 to 5 years.
 
-Our team organized interactive sessions including storytelling, drawing competitions, and musical games designed to stimulate learning and creativity.
-
-The visit concluded with a special lunch and distribution of gift packs, leaving the children with wonderful memories of a day dedicated entirely to their happiness.`,
+The event featured a nutritious meal, sweet treats, and personalized gift packs filled with educational and playful items. Additionally, we provided essential supplies such as milk powder, toiletries, and baby care items. The program was not only a touching experience for the children, but also created meaningful connections for our staff, strengthening our dedication to early childhood care and giving back to the community.`,
     photos: [
-      "https://images.unsplash.com/photo-1485546246426-74dc88dec4d9?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1544717305-38f314f48cba?auto=format&fit=crop&w=1200&q=80",
+      "/public/corporate/jayanthi/1-jayanthi.jpg",
+      "/public/corporate/jayanthi/2-jayanthi.jpg",
+      "/public/corporate/jayanthi/3-jayanthi.jpg",
+      "/public/corporate/jayanthi/4-jayanthi.jpg",
+      "/public/corporate/jayanthi/5-jayanthi.jpg",
+      "/public/corporate/jayanthi/6-jayanthi.jpg",
+      "/public/corporate/jayanthi/7-jayanthi.jpg",
     ]
   },
   "aloka-elders-home": {
@@ -195,14 +299,19 @@ The visit concluded with a special lunch and distribution of gift packs, leaving
     title: "Port City BPO: CSR at Aloka Elders' Home, Panadura",
     date: "3 April 2025",
     shortDescription: "Charity Program at Aloka Elders' Home, Panadura Recognizing the wisdom...",
-    description: `Our CSR initiative at Aloka Elders' Home focused on honoring the elderly residents and improving their quality of life. We provided essential supplies, medical assistance, and organized recreational activities including games, music, and storytelling sessions.
+    thumbnail:"/public/corporate/alokaelders/alokaelders.jpg",
+    description: `Recognizing the wisdom and care our elders deserve, we visited Aloka Elders’Home to provide much needed supplies and share quality time with the residents.
 
-The project included repairs and renovations to enhance the living facilities, ensuring a safe and comfortable environment for all residents.
-
-We believe every elder deserves respect, care, and dignity, and this initiative was a small step towards honoring the wisdom and contributions of our senior citizens.`,
+Our team engaged in conversations, games, and heartfelt moments touplift their spirits and demonstrate our gratitude.`,
     photos: [
-      "https://images.unsplash.com/photo-1581578735549-8c3f5a1f5b8a?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1559127634-6d8b2c1c1c1c?auto=format&fit=crop&w=1200&q=80",
+      "/public/corporate/alokaelders/1-alokaelders.jpg",
+      "/public/corporate/alokaelders/2-alokaelders.jpg",
+      "/public/corporate/alokaelders/3-alokaelders.jpg",
+      "/public/corporate/alokaelders/4-alokaelders.jpg",
+      "/public/corporate/alokaelders/5-alokaelders.jpg",
+      "/public/corporate/alokaelders/6-alokaelders.jpg",
+      "/public/corporate/alokaelders/7-alokaelders.jpg",
+      "/public/corporate/alokaelders/8-alokaelders.jpg",
     ]
   },
   "sisters-of-charity": {
@@ -210,14 +319,13 @@ We believe every elder deserves respect, care, and dignity, and this initiative 
     title: "Port City BPO: CSR at Sisters of Charity of Jesus and Mary",
     date: "11 December 2024",
     shortDescription: "Providing Stationary for the children at Sisters of Charity of...",
-    description: `Port City BPO supported the educational needs of children at Sisters of Charity of Jesus and Mary by providing comprehensive stationery packs, school bags, and educational materials. The donation benefited over 100 children, ensuring they had the necessary tools for their studies.
+    thumbnail:"/public/corporate/charity/charity.jpg",
+    description: `Education is a key to a brighter future. To empower children in the Negombo coastal line communities, we distributed essential stationery supplies, including notebooks, pens, and drawing materials.
 
-Our team also spent time engaging with the children through educational games and motivational talks, encouraging them to pursue their dreams despite challenges.
-
-This initiative underscores our commitment to education as a pathway to breaking the cycle of poverty and building brighter futures.`,
+This effort was aimed at reducing educational barriers and inspiring enthusiasm forlearning among these young students.`,
     photos: [
-      "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80",
+      "/public/corporate/charity/1-charity.jpg",
+      "/public/corporate/charity/2-charity.jpg",
     ]
   },
   "sri-jinananda-centre": {
@@ -225,14 +333,17 @@ This initiative underscores our commitment to education as a pathway to breaking
     title: "Port City BPO: CSR at Sri Jinananda Children's Development Centre",
     date: "11 December 2024",
     shortDescription: "Breakfast for the children at Sri Jinananda Children's Development Centre...",
-    description: `Our team at Port City BPO started the day early to prepare and serve a nutritious breakfast for the children at Sri Jinananda Children's Development Centre. The children were treated to a warm, healthy meal along with fruits and milk.
+    thumbnail:"/public/corporate/jinanandacentre/jinanandacentre.jpg",
+    description: `Our very first project was at Sri Jinanda Child Care Center, where we hosted a charity breakfast for the children.
 
-Beyond the breakfast, we provided essential supplies including clothing, shoes, and personal care items. The day included fun activities, games, and educational sessions designed to inspire and motivate the children.
-
-This heartwarming initiative reminded us of the power of small acts of kindness in making a significant difference in young lives.`,
+This event provided not only nutritious meals but also moments of joy and encouragement for the young ones, reinforcing our dedication to supporting early childhood development.`,
     photos: [
-      "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=1200&q=80",
+      "/public/corporate/jinanandacentre/1-jinanandacentre.jpg",
+      "/public/corporate/jinanandacentre/2-jinanandacentre.jpg",
+      "/public/corporate/jinanandacentre/3-jinanandacentre.jpg",
+      "/public/corporate/jinanandacentre/4-jinanandacentre.jpg",
+      "/public/corporate/jinanandacentre/5-jinanandacentre.jpg",
+      "/public/corporate/jinanandacentre/6-jinanandacentre.jpg"
     ]
   }
 };
@@ -245,28 +356,42 @@ function CorporateSocialResponsibility() {
   const csrEvents = Object.values(csrData).sort((a, b) => new Date(b.date) - new Date(a.date));
 
   return (
-    <div className="min-h-screen bg-white ">
+    <div className="min-h-screen bg-white">
       
-      {/* Hero Section */}
-      <header
-        className="relative h-130 flex items-center"
-        style={{
-          backgroundImage: `url(https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/Newsroom-page-desktop.jpg)`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        {/* <div className="absolute inset-0 bg-black/50"></div> */}
-        <div className="relative z-10 max-w-7xl mx-auto px-6 text-white">
-          <h1 className="max-w-2xl text-4xl md:text-7xl font-bold">Corporate Social Responsibility</h1>
-         
-        </div>
-      </header>
+     {/* Hero Section */}
+<header className="relative h-[460px] md:h-[440px] lg:h-[520px] flex items-center overflow-hidden">
+  {/* Mobile Background (visible on small screens) */}
+  <div
+    className="absolute inset-0 bg-cover bg-center md:hidden"
+    style={{
+      backgroundImage: `url('https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/Newsroom-page-mobile.jpg')`,
+    }}
+  />
+  
+  {/* Desktop Background (visible on medium screens and up) */}
+  <div
+    className="absolute inset-0 bg-cover bg-center hidden md:block"
+    style={{
+      backgroundImage: `url('https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/Newsroom-page-desktop.jpg')`,
+    }}
+  />
+
+
+  {/* Content Container */}
+  <div className=" z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 absolute top-1/5 lg:top-0 lg:relative ">
+    {/* Text aligned left on mobile, center on tablet/desktop (or keep left if preferred) */}
+    <div className="text-left md:text-center max-w-4xl">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white tracking-tight leading-tight ">
+        Corporate Social Responsibility
+      </h1>
+    </div>
+  </div>
+</header>
 
       {/* CSR Events Grid */}
-      <main className="max-w-7xl mx-auto px-6 py-16">
+      <main className="max-w-10/12 mx-auto  py-16">
        
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {csrEvents.map((event) => (
             <div
               key={event.id}
@@ -275,10 +400,10 @@ function CorporateSocialResponsibility() {
             >
               <div className="relative h-56 overflow-hidden">
                 <img
-                  src={event.photos[0]}
-                  alt={event.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
+            src={event.thumbnail || event.photos[0]} 
+            alt={event.title}
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-800 mb-3 line-clamp-2 group-hover:text-[#005ca9] transition-colors">
@@ -327,7 +452,7 @@ export function CSRDetail() {
 
   if (!event) {
     return (
-      <div className="min-h-screen bg-white ">
+      <div className="min-h-screen bg-white">
         <div className="max-w-7xl mx-auto px-6 py-32 text-center">
           <h1 className="text-4xl font-bold text-gray-800 mb-4">Event Not Found</h1>
           <p className="text-gray-600 mb-8">The CSR initiative you're looking for doesn't exist.</p>
@@ -374,17 +499,17 @@ export function CSRDetail() {
   }, [lightboxOpen]);
 
   return (
-    <div className="min-h-screen bg-white ">
+    <div className="min-h-screen bg-white">
       
       {/* Hero Section with Title and Date */}
-      <div className="relative bg-[#0670b2] text-white py-10 text-left">
+      <div className="relative bg-[#0670b2] text-white py-10 text-left mt-4 lg:mt-0">
         <div className="max-w-10/12 mx-auto px-6 py-">
           <h1 className="heading font-bold ">{event.title}</h1>
         </div>
       </div>
 
       {/* Description Section */}
-      <section className="max-w-10/12 mx-auto px-6 py-6">
+      <section className="max-w-10/12 mx-auto py-6">
         <div className="prose prose-lg max-w-none">
           {event.description.split('\n\n').map((paragraph, idx) => (
             <p key={idx} className="text-gray-600 leading-relaxed mb-6">
@@ -396,7 +521,7 @@ export function CSRDetail() {
 
       {/* Photos Gallery Section */}
       <section className="bg-gray-50 py-16">
-        <div className="max-w-10/12 mx-auto px-6">
+        <div className="max-w-10/12 mx-auto ">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {event.photos.map((photo, idx) => (
               <div

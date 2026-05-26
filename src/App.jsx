@@ -12,6 +12,8 @@ import AboutLanding from "./pages/AboutLanding";
 import Team_event, { TeamEventDetail } from "./pages/Team_event";
 import Corporate_social_responsibility, { CSRDetail } from "./pages/Corporate_social_responsibility";
 import ScrollToTop from "./components/ScrollToTop";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfUse from "./pages/TermsOfUse";
 
 function App() {
   return (
@@ -32,6 +34,8 @@ function App() {
           <Route path="/newsroom/corporate-social-responsibility/:id" element={<CSRDetail/>} />
           <Route path="/newsroom/team-events" element={<Team_event/>} />
           <Route path="/newsroom/team-events/:id" element={<TeamEventDetail/>} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-use" element={<TermsOfUse />} />
         </Routes>
       </main>
       <Footer />
