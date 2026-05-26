@@ -60,7 +60,7 @@ export default function Services() {
           backgroundPosition: "center",
         }}
       >
-        <div className="absolute inset-0 bg-black/40 md:bg-black/30"></div>
+        {/* <div className="absolute inset-0 bg-black/40 md:bg-black/30"></div> */}
         <div className="max-w-7xl mx-auto px-6 relative z-10 text-white w-full">
           <h2 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-extrabold">Services</h2>
           <p className="mt-2 text-sm md:text-base">What We Offer?</p>

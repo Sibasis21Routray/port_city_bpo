@@ -4,6 +4,7 @@ const slidesData = [
   {
     id: 1,
     heading: "An Authorised Person Approved",
+    heading2: "PORT CITY BPO",
     subheading: "By the Colombo Port City Economic Comission",
     image: "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/Home-page-1-authorised-desktop.jpg",
     mobileImage: "https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/Home-page-1-authorised-mobile.jpg",
@@ -85,7 +86,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative h-screen max-h-[600px] sm:max-h-[700px] md:h-[580px] lg:h-[680px] w-full overflow-hidden bg-[#1a1c1e] -mt-6 md:mt-0">
+    <section className="relative h-screen max-h-[650px] sm:max-h-[700px] md:h-[580px] lg:h-[680px] w-full overflow-hidden bg-[#1a1c1e] -mt-6 md:mt-0">
       <div className="relative w-full h-full">
         {slidesData.map((slide, index) => {
           const isActive = index === currentSlide;
@@ -124,10 +125,13 @@ export default function Hero() {
               {/* <div className="absolute inset-0 bg-black/50 md:bg-gradient-to-r md:from-[#216b9e]/95 md:via-[#297fb9]/85 md:to-transparent pointer-events-none" /> */}
 
               {/* Content Box */}
-              <div className="relative max-w-10/12 mx-auto h-full flex items-start md:items-center px-5 sm:px-8 md:px-12 lg:px-24 pt-10 md:pt-0">
-                <div className="w-full md:w-[55%] lg:w-[50%] select-none text-center md:text-left">
+              <div className="relative max-w-10/12 mx-auto h-full flex items-start md:items-center  pt-20 md:pt-0">
+              
+                <div className="w-full md:w-[55%] lg:w-[50%] select-none text-left">
+                  <span className="text-white font-light leading-loose ">{slide.heading2 }</span>
                   <h1 className="text-5xl xs:text-5xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-white leading-tight md:leading-[1.1] whitespace-pre-line drop-shadow-lg">
                     {slide.heading}
+                    
                   </h1>
                   <p className="mt-2 sm:mt-3 md:mt-4 text-xl sm:text-xl md:text-xl lg:text-xl text-white/90 font-medium tracking-wide max-w-full md:max-w-[90%]">
                     {slide.subheading}
@@ -145,10 +149,10 @@ export default function Hero() {
       <button
         onClick={handlePrev}
         type="button"
-        className="absolute left-2 sm:left-4 md:left-6 top-1/2 -translate-y-1/2 z-20 text-white/60 hover:text-white bg-black/20 hover:bg-black/40 rounded-full p-1.5 sm:p-2 transition-all cursor-pointer focus:outline-none backdrop-blur-sm"
+        className="absolute left-2 sm:left-4 md:left-6 top-1/2 -translate-y-1/2 z-20 top-3/5 lg:top-1/2 text-white hover:text-white  p-1.5 sm:p-2 transition-all cursor-pointer "
         aria-label="Previous slide"
       >
-        <svg className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+        <svg className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="4">
           <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
         </svg>
       </button>
@@ -156,10 +160,10 @@ export default function Hero() {
       <button
         onClick={handleNext}
         type="button"
-        className="absolute right-2 sm:right-4 md:right-6 top-1/2 -translate-y-1/2 z-20 text-white/60 hover:text-white bg-black/20 hover:bg-black/40 rounded-full p-1.5 sm:p-2 transition-all cursor-pointer focus:outline-none backdrop-blur-sm"
+        className="absolute right-2 sm:right-4 md:right-6 top-3/5 lg:top-1/2 -translate-y-1/2 z-20 text-white hover:text-white  p-1.5 sm:p-2 transition-all cursor-pointer "
         aria-label="Next slide"
       >
-        <svg className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+        <svg className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="4">
           <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
         </svg>
       </button>

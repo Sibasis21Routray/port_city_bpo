@@ -3,6 +3,51 @@ import { motion } from "framer-motion";
 
 export default function ContactSection() {
   const [textLength, setTextLength] = useState(0);
+  const [formData, setFormData] = useState({
+    firstName: "",
+    email: "",
+    phone: "",
+    message: ""
+  });
+
+  const handleChange = (e) => {
+    const { id, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [id]: value
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    
+    const { firstName, email, phone, message } = formData;
+    
+    // Build the email body
+    const emailBody = `
+Name: ${firstName}
+Email: ${email}
+Phone: ${phone || "Not provided"}
+
+Message:
+${message}
+    `.trim();
+    
+    // Create mailto link
+    const mailtoLink = `mailto:contactus@portcitybpo.lk?subject=Contact Form Submission from ${firstName}&body=${encodeURIComponent(emailBody)}`;
+    
+    // Open default email client
+    window.location.href = mailtoLink;
+    
+    // Optional: Reset form after submission
+    setFormData({
+      firstName: "",
+      email: "",
+      phone: "",
+      message: ""
+    });
+    setTextLength(0);
+  };
 
   return (
     <section
@@ -97,7 +142,7 @@ export default function ContactSection() {
           </p>
         </motion.div>
 
-        <form className="w-full max-w-xl flex flex-col gap-8">
+        <form onSubmit={handleSubmit} className="w-full max-w-xl flex flex-col gap-8">
           {/* First Name */}
           <motion.div
             initial={{ y: 35, opacity: 0 }}
@@ -109,6 +154,8 @@ export default function ContactSection() {
             <input
               type="text"
               id="firstName"
+              value={formData.firstName}
+              onChange={handleChange}
               placeholder="First Name *"
               className="w-full bg-transparent border-b border-gray-300 pb-2 text-sm outline-none focus:border-[#1a6596] transition-all duration-300 placeholder-gray-500"
               required
@@ -126,6 +173,8 @@ export default function ContactSection() {
             <input
               type="email"
               id="email"
+              value={formData.email}
+              onChange={handleChange}
               placeholder="Email Address *"
               className="w-full bg-transparent border-b border-gray-300 pb-2 text-sm outline-none focus:border-[#1a6596] transition-all duration-300 placeholder-gray-500"
               required
@@ -143,6 +192,8 @@ export default function ContactSection() {
             <input
               type="tel"
               id="phone"
+              value={formData.phone}
+              onChange={handleChange}
               placeholder="Phone Number"
               className="w-full bg-transparent border-b border-gray-300 pb-2 text-sm outline-none focus:border-[#1a6596] transition-all duration-300 placeholder-gray-500"
             />
@@ -157,9 +208,15 @@ export default function ContactSection() {
             className="relative border border-gray-300 p-2 h-32 rounded-sm group focus-within:border-[#1a6596] transition-colors"
           >
             <textarea
+              id="message"
+              value={formData.message}
+              onChange={(e) => {
+                handleChange(e);
+                setTextLength(e.target.value.length);
+              }}
               className="w-full h-full resize-none bg-transparent outline-none text-sm text-gray-700"
               maxLength={180}
-              onChange={(e) => setTextLength(e.target.value.length)}
+              placeholder="Your message..."
             ></textarea>
 
             <span className="absolute bottom-2 right-2 text-xs text-gray-500 bg-white px-1">

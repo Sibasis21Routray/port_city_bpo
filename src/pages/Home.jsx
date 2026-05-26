@@ -1,4 +1,3 @@
-
 import Hero from "../components/Hero";
 import About from "../components/About";
 import Services from "../components/Services";
@@ -6,7 +5,7 @@ import VideoSection from "../components/VideoSection";
 import { useNavigate } from "react-router-dom";
 
 export default function Home({ onNavigate }) {
-  const navigate =useNavigate();
+  const navigate = useNavigate();
   return (
     <div className="min-h-screen bg-white">
       <main>
@@ -17,7 +16,7 @@ export default function Home({ onNavigate }) {
         <VideoSection />
 
         <div
-          className="relative w-full min-h-[380px] md:min-h-[460px] lg:min-h-[500px] bg-cover bg-center flex items-center overflow-hidden select-none"
+          className="relative w-full min-h-[380px] md:min-h-[460px] lg:min-h-[500px] bg-cover bg-no-repeat flex items-center overflow-hidden select-none bg-[position:40%_center] md:bg-center"
           style={{
             backgroundImage: `url('https://portcitybpo.lk/wp-content/uploads/2024/01/CS-bottom-banner-home.webp')`,
           }}
@@ -57,7 +56,9 @@ export default function Home({ onNavigate }) {
                   <div className="absolute -left-1.5 -top-1.5 w-12 h-8 sm:w-16 sm:h-10 bg-[#ff9933]" />
 
                   <button
-                    onClick={()=>{navigate("/contact")}}
+                    onClick={() => {
+                      navigate("/contact");
+                    }}
                     type="button"
                     className="relative z-10 inline-flex items-center justify-between bg-[#f8f9fa] px-4 sm:px-6 py-2.5 sm:py-3 min-w-[140px] sm:min-w-[160px] text-base sm:text-[18px] font-bold text-black tracking-tight shadow-md hover:bg-white hover:shadow-lg transition-all duration-150 cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#ffcc00] focus:ring-offset-2"
                   >
@@ -85,4 +86,3 @@ export default function Home({ onNavigate }) {
     </div>
   );
 }
-

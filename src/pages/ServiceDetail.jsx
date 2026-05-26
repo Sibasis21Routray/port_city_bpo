@@ -23,8 +23,8 @@ const serviceData = {
       backgroundImage: "https://portcitybpo.lk/wp-content/uploads/2024/01/CS-bottom-banner-home.webp"
     },
     solutions: {
-      heading: "Our Customer Service Outsourcing Solutions",
-      subheading: "Comprehensive support tailored to your business needs",
+      heading: "Our Customer Service",
+      subheading: "Outsourcing Solutions",
       items: [
         {
           icon: <Award size={32} className="text-[#f4a631]" />,
@@ -614,13 +614,6 @@ export default function ServiceDetail() {
     };
   }, []);
 
-  // Dynamic styling based on service type
-  const styleConfig = {
-    "customer-service-outsourcing": { accentHex: "#0ea5e9", subtitleClass: "text-sky-400" },
-    "technical-support-outsourcing": { accentHex: "#fb923c", subtitleClass: "text-orange-400" },
-    "data-entry-and-processing-outsourcing": { accentHex: "#3b82f6", subtitleClass: "text-blue-400" },
-  }[serviceId] || { accentHex: "#0ea5e9", subtitleClass: "text-sky-400" };
-
   return (
     <div className="min-h-screen bg-white ">
       <style jsx>{`
@@ -714,7 +707,7 @@ export default function ServiceDetail() {
       >
         <div className="absolute inset-0 bg-sky-600 opacity-20"></div>
         <div className="mx-auto px-6 text-white">
-          <h1 className="heading font-bold">{data.title}</h1>
+          <h1 className="text-4xl md:text-6xl font-bold text-center">{data.title}</h1>
         </div>
       </header>
 
@@ -725,7 +718,7 @@ export default function ServiceDetail() {
               <img src={data.introImg} alt={data.title} className="w-full h-auto rounded-[55px_10px_55px_10px] md:rounded-[55px_10px_55px_10px] object-cover" />
             </div>
             <div ref={headingRef} className="opacity-0">
-              <h2 className="heading font-bold text-sky-700 mb-6">What is {data.title}?</h2>
+              <h2 className="heading font-bold text-sky-700 mb-6 text-center md:text-left">What is {data.title}?</h2> 
               <p className="text-gray-700 leading-8 mb-6">{data.intro}</p>
             </div>
           </div>
@@ -742,7 +735,7 @@ export default function ServiceDetail() {
 
           <div className="relative z-10 max-w-10/12 mx-auto">
             <div className="text-center heading mb-14">
-              <h2 className="text-[#0b2545] tracking-tight leading-tight">
+              <h2 className="text-[#0b2545]  tracking-tight leading-tight ">
                 {data.solutions.heading}
               </h2>
               <span className="block font-bold text-[#005ca9] tracking-tight leading-tight mt-1">
@@ -785,7 +778,7 @@ export default function ServiceDetail() {
           <div className="max-w-10/12 mx-auto px-6 sm:px-12">
             <div className="text-center mb-16 md:mb-24">
               <span className="block subheading font-light text-[#005ca9] uppercase mb-2">
-                {data?.playbook?.subheading || "PLAYBOOK"}
+                PLAYBOOK
               </span>
               <h2 className="heading font-bold text-black tracking-tight">
                 {data?.playbook?.heading || "Our Playbook"}

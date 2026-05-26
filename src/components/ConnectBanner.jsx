@@ -6,7 +6,7 @@ const ConnectBanner = ({
   
   // Title text
   title = "Let's Elevate Your Technical Support Strategy",
-  titleClassName = "text-[32px] sm:text-[38px] md:text-[44px] font-bold tracking-tight leading-tight text-white",
+  titleClassName = "text-[32px] sm:text-[38px] md:text-[44px] font-bold tracking-tight leading-tight text-white text-center md:text-left",
   
   // Description text
   description = null,
@@ -89,64 +89,69 @@ const ConnectBanner = ({
 
   return (
     <section
-      className={`relative w-full min-h-[380px] md:h-[460px] lg:h-[500px] bg-cover bg-center flex items-center overflow-hidden select-none ${containerClassName}`}
-      style={{
-        backgroundImage: `url('${backgroundImage}')`,
-      }}
-    >
-      {/* Optional overlay */}
-      {overlayClassName && <div className={`absolute inset-0 pointer-events-none ${overlayClassName}`} />}
-      
-      <div className={innerContainerClassName}>
-        {/* Left Side: Copywriting Content Stack */}
-        <div className={leftColumnClassName}>
-          <h2 className={titleClassName}>
-            {title}
-          </h2>
+  className={`
+    relative w-full min-h-[380px] md:h-[460px] lg:h-[500px] 
+    bg-cover bg-no-repeat flex items-center overflow-hidden select-none 
+    bg-[position:30%_center] md:bg-center
+    ${containerClassName}
+  `}
+  style={{
+    backgroundImage: `url('${backgroundImage}')`,
+  }}
+>
+  {/* Optional overlay */}
+  {overlayClassName && <div className={`absolute inset-0 pointer-events-none ${overlayClassName}`} />}
+  
+  <div className={innerContainerClassName}>
+    {/* Left Side: Copywriting Content Stack */}
+    <div className={leftColumnClassName}>
+      <h2 className={titleClassName}>
+        {title}
+      </h2>
 
-          <div className={descriptionClassName}>
-            {description || defaultDescription}
-            {children}
-          </div>
-
-          {/* Precision Offset-Accent CTA Button Group */}
-          <div className={buttonContainerClassName}>
-            {/* The exact geometric orange angle backing box from the image */}
-            {accentBox && <div className={accentBoxClassName} />}
-
-            <button
-              onClick={handleButtonClick}
-              type="button"
-              className={buttonClassName}
-            >
-              <span>{buttonText}</span>
-              {buttonIcon && (
-                <svg
-                  className="w-3.5 h-3.5 text-black ml-4"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  strokeWidth="2.5"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
-              )}
-            </button>
-          </div>
-        </div>
-        
-        {/* Right Column (optional) */}
-        {rightColumn && (
-          <div className="flex justify-end items-center">
-            {rightColumn}
-          </div>
-        )}
+      <div className={descriptionClassName}>
+        {description || defaultDescription}
+        {children}
       </div>
-    </section>
+
+      {/* Precision Offset-Accent CTA Button Group */}
+      <div className={buttonContainerClassName}>
+        {/* The exact geometric orange angle backing box from the image */}
+        {accentBox && <div className={accentBoxClassName} />}
+
+        <button
+          onClick={handleButtonClick}
+          type="button"
+          className={buttonClassName}
+        >
+          <span>{buttonText}</span>
+          {buttonIcon && (
+            <svg
+              className="w-3.5 h-3.5 text-black ml-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              strokeWidth="2.5"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          )}
+        </button>
+      </div>
+    </div>
+    
+    {/* Right Column (optional) */}
+    {rightColumn && (
+      <div className="flex justify-end items-center">
+        {rightColumn}
+      </div>
+    )}
+  </div>
+</section>
   );
 };
 

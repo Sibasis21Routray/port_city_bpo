@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <section className="py-16 md:py-24 bg-white">
-      <div className="max-w-10/12 mx-auto px-6 sm:px-12 lg:px-16 grid gap-10 md:gap-16 md:grid-cols-[1.15fr_1fr] items-center">
+      <div className="max-w-10/12 mx-auto px-0 sm:px-12 lg:px-16 grid gap-10 md:gap-16 md:grid-cols-[1.15fr_1fr] items-center">
         
         {/* Left Side: Custom Asymmetric Rounded Image */}
         <div className="w-full">

@@ -27,7 +27,7 @@ const services = [
 export default function Services() {
   return (
     <section className="py-16 md:py-14 bg-[#f5f5f5]">
-      <div className="max-w-10/12 mx-auto px-6 sm:px-12 lg:px-16">
+      <div className="max-w-10/12 mx-auto px-0 sm:px-12 lg:px-16">
         
         {/* Section Heading */}
         <h2 className="heading text-[#005ca9] tracking-normal uppercase mb-10 md:mb-12">

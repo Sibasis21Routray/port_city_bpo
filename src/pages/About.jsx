@@ -245,33 +245,36 @@ export default function About({ onNavigate }) {
         <main>
           {/* Hero Section - Responsive */}
           <section className="relative text-white">
-  <img
-    src="https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/WHO-WE-ARE-desktop.jpg"
-    alt="Who we are background"
-    className="absolute inset-0 w-full object-cover opacity-100"
-    style={{ height: "400px" }}
-  />
-  <div className="absolute inset-0 bg-[#0169ab]/30" style={{ height: "400px" }}></div>
-  <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 text-center" style={{ paddingTop: "160px", paddingBottom: "160px" }}>
-    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold uppercase tracking-[0.1em]">
-      WHO WE ARE
-    </h1>
-  </div>
-</section>
-
+            <img
+              src="https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/WHO-WE-ARE-desktop.jpg"
+              alt="Who we are background"
+              className="absolute inset-0 w-full object-cover opacity-100"
+              style={{ height: "400px" }}
+            />
+            <div
+              className="absolute inset-0 bg-[#0169ab]/30"
+              style={{ height: "400px" }}
+            ></div>
+            <div
+              className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 text-center"
+              style={{ paddingTop: "160px", paddingBottom: "160px" }}
+            >
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold uppercase tracking-[0.1em] mt-5">
+                WHO WE ARE
+              </h1>
+            </div>
+          </section>
 
           {/* Main Content - Responsive */}
-          <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-white">
-            <div className="max-w-10/12 mx-auto  space-y-12 sm:space-y-16 md:space-y-20 flex flex-col justify-center items-center">
+          <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-white ">
+            <div className="max-w-full lg:max-w-10/12 mx-auto  space-y-2 sm:space-y-16 md:space-y-20 flex flex-col justify-center items-center px-5">
               <div className="space-y-4 sm:space-y-6 md:space-y-8  xl:px-20">
                 <div className="mb-8 sm:mb-10 md:mb-12">
-                <p className="text-xs uppercase tracking-[0.35em] text-sky-500 mb-3 mt-5">
-                  about
-                </p>
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900">
-                  Who We Are  
-                </h2>
-              </div>
+                  
+                  <h2 className="heading font-bold text-[#005ca9] tracking-tight leading-tight uppercase">
+                    Who We Are
+                  </h2>
+                </div>
 
                 <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
                   Port City BPO is a Business Process Outsourcing (BPO) company.
@@ -344,7 +347,7 @@ export default function About({ onNavigate }) {
               </div>
 
               {/* Aitken Spence Section - Responsive */}
-              <section className="bg-white py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-12 xl:px-20 select-none">
+              <section className="bg-white py-12 sm:py-16 md:py-20 px-0 sm:px-6 lg:px-12 xl:px-20 select-none">
                 <div className="mx-auto">
                   <div className="space-y-4 sm:space-y-5 md:space-y-6 mb-10 sm:mb-12 md:mb-16">
                     <h3 className="text-2xl sm:text-3xl md:text-[34px] lg:text-[40px] font-bold text-[#005ca9] tracking-tight leading-tight uppercase">
@@ -363,7 +366,10 @@ export default function About({ onNavigate }) {
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 items-start">
                     {categories.map((cat, idx) => (
-                      <div key={idx} className="flex flex-col space-y-4 sm:space-y-5">
+                      <div
+                        key={idx}
+                        className="flex flex-col space-y-4 sm:space-y-5"
+                      >
                         <div className="rounded-[16px] sm:rounded-[20px] overflow-hidden bg-white shadow-[0_4px_25px_rgba(0,0,0,0.04)] border border-slate-100 aspect-square max-w-[280px] sm:max-w-[320px] lg:max-w-full mx-auto lg:mx-0">
                           <img
                             src={cat.img}
@@ -392,8 +398,8 @@ export default function About({ onNavigate }) {
               </section>
 
               {/* IRIS Corporation Section - Responsive */}
-              <section className="bg-white py-12 sm:py-16 md:py-20  select-none">
-                <div className="max-w-10/12 mx-auto">
+              <section className="bg-white py-12 sm:py-16 md:py-20 px-0 sm:px-6 lg:px-12 xl:px-20  select-none">
+                <div className="">
                   <div className="space-y-4 sm:space-y-5 md:space-y-6 mb-10 sm:mb-12 md:mb-16">
                     <h3 className="text-2xl sm:text-3xl md:text-[34px] lg:text-[40px] font-bold text-[#005ca9] tracking-tight leading-tight uppercase">
                       IRIS CORPORATION BERHAD
@@ -411,7 +417,10 @@ export default function About({ onNavigate }) {
 
                   <div className="grid gap-6 sm:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-start">
                     {portfolioData.map((column, colIdx) => (
-                      <div key={colIdx} className="flex flex-col space-y-4 sm:space-y-5">
+                      <div
+                        key={colIdx}
+                        className="flex flex-col space-y-4 sm:space-y-5"
+                      >
                         <div className="rounded-[16px] sm:rounded-[20px] overflow-hidden bg-white shadow-[0_4px_25px_rgba(0,0,0,0.04)] border border-slate-100 aspect-square">
                           <img
                             src={column.img}
@@ -440,8 +449,8 @@ export default function About({ onNavigate }) {
               </section>
 
               {/* Port City BPO Section - Responsive */}
-              <section className="w-full py-12 sm:py-16 md:py-20 select-none">
-                <div className="max-w-10/12 mx-auto">
+              <section className="bg-white py-12 sm:py-16 md:py-20 px-0 sm:px-6 lg:px-12 xl:px-20  select-none">
+                <div className=" mx-auto">
                   <div className="flex flex-col md:flex-row items-center md:items-start gap-8 sm:gap-10 md:gap-12 lg:gap-20">
                     <div className="w-full md:w-auto flex-shrink-0 max-w-[400px] sm:max-w-[500px] rounded-[16px] overflow-hidden bg-white shadow-[0_4px_25px_rgba(0,0,0,0.03)] border border-slate-200/60 aspect-[4/3]">
                       <img
@@ -474,7 +483,7 @@ export default function About({ onNavigate }) {
               </section>
 
               {/* CPCEC Section - Responsive */}
-              <div className="max-w-10/12 flex flex-col md:flex-row gap-8 sm:gap-10 md:gap-12 lg:gap-16 justify-center items-center  py-6 sm:py-8">
+              <div className=" px-0 sm:px-6 lg:px-12 xl:px-20  flex flex-col md:flex-row gap-8 sm:gap-10 md:gap-12 lg:gap-16 justify-center items-center  py-6 sm:py-8">
                 <div className="flex-1">
                   <h3 className="text-2xl sm:text-3xl md:text-[32px] lg:text-[38px] xl:text-[44px] font-bold text-[#005ca9] tracking-tight leading-tight uppercase font-sans">
                     THE COLOMBO PORT CITY ECONOMIC COMMISSION (CPCEC)
@@ -532,30 +541,31 @@ export default function About({ onNavigate }) {
       <div className="min-h-screen bg-white ">
         <main>
           <section className="relative overflow-hidden bg-slate-950 text-white">
-  <img
-    src="https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/COVERAGE-desktop.jpg"
-    alt="Geographic coverage background"
-    className="absolute inset-0 w-screen object- opacity-100"
-    style={{ height: "400px" }}
-  />
-  <div className="absolute inset-0 bg-blue-900/30" style={{ height: "400px" }}></div>
-  <div className="relative z-10 max-w-10/12 mx-auto px-4 sm:px-6 text-center" style={{ paddingTop: "160px", paddingBottom: "160px" }}>
-    <p className="text-xs sm:text-sm uppercase tracking-[0.2em] sm:tracking-[0.3em] text-sky-300 mb-3 sm:mb-4">
-      Coverage
-    </p>
-    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold uppercase tracking-[0.1em]">
-      Geographic Coverage
-    </h1>
-  </div>
-</section>
+            <img
+              src="https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/COVERAGE-desktop.jpg"
+              alt="Geographic coverage background"
+              className="absolute inset-0 w-screen object- opacity-100"
+              style={{ height: "500px" }}
+            />
+            <div
+              className="absolute inset-0 bg-[#0169ab]/30"
+              style={{ height: "500px" }}
+            ></div>
+            <div
+              className="relative z-10 max-w-10/12 mx-auto px-4 sm:px-6 text-center"
+              style={{ paddingTop: "160px", paddingBottom: "160px" }}
+            >
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold uppercase tracking-[0.1em]">
+                Geographic Coverage
+              </h1>
+            </div>
+          </section>
 
           <section className="py-12 sm:py-16 md:py-20">
             <div className="max-w-10/12 mx-auto px-4 sm:px-6">
               <div className="mb-8 sm:mb-10 md:mb-12">
-                <p className="text-xs uppercase tracking-[0.35em] text-sky-500 mb-3">
-                  Countries We Serve
-                </p>
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900">
+                
+                <h2 className="heading font-bold text-[#005ca9] tracking-tight leading-tight uppercase">
                   COUNTRIES WE SERVE
                 </h2>
                 <p className="mt-4 text-slate-600 text-sm sm:text-base max-w-3xl">
@@ -606,23 +616,26 @@ export default function About({ onNavigate }) {
       <div className="min-h-screen bg-white ">
         <main>
           <section className="relative overflow-hidden bg-slate-950 text-white">
-  <img
-    src="https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/Board-of-directors-desktop_.jpg"
-    alt="background"
-    className="absolute inset-0 w-full object-cover opacity-100"
-    style={{ height: "400px" }}
-  />
-  <div className="absolute inset-0 bg-blue-900/30" style={{ height: "400px" }}></div>
-  <div className="relative z-10 max-w-10/12 mx-auto px-4 sm:px-6 text-center" style={{ paddingTop: "160px", paddingBottom: "160px" }}>
-    <p className="text-xs sm:text-sm uppercase tracking-[0.2em] sm:tracking-[0.3em] text-sky-300 mb-3 sm:mb-4">
-      Board
-    </p>
-    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold uppercase tracking-[0.1em]">
-      Board of Directors
-    </h1>
-  </div>
-</section>
-
+            <img
+              src="https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/Board-of-directors-desktop_.jpg"
+              alt="background"
+              className="absolute inset-0 w-full object-cover opacity-100"
+              style={{ height: "500px" }}
+            />
+             <div
+              className="absolute inset-0 bg-[#0169ab]/30"
+              style={{ height: "500px" }}
+            ></div>
+            <div
+              className="relative z-10 max-w-10/12 mx-auto px-4 sm:px-6 text-center"
+              style={{ paddingTop: "160px", paddingBottom: "160px" }}
+            >
+              
+              <h1 className="heading uppercase tracking-[0.1em]">
+                Board of Directors
+              </h1>
+            </div>
+          </section>
 
           <section className="py-12 sm:py-16 md:py-20">
             <div className="max-w-10/12 mx-auto px-4 sm:px-6">
@@ -689,23 +702,28 @@ export default function About({ onNavigate }) {
       <div className="min-h-screen bg-white ">
         <main>
           <section className="relative overflow-hidden text-white">
-  <img
-    src="https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/LEADERSHIP-desktop.jpg"
-    alt="Leadership team background"
-    className="absolute inset-0 w-full object-cover opacity-100"
-    style={{ height: "600px" }}
-  />
-  <div className="absolute inset-0 bg-blue-900/30" style={{ height: "400px" }}></div>
-  <div className="relative z-10 max-w-10/12 mx-auto px-4 sm:px-6 text-center" style={{ paddingTop: "160px", paddingBottom: "160px" }}>
-    <p className="text-xs sm:text-sm uppercase tracking-[0.2em] sm:tracking-[0.3em] text-sky-300 mb-3 sm:mb-4">
-      Leadership
-    </p>
-    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold uppercase tracking-[0.1em]">
-      Leadership Team
-    </h1>
-  </div>
-</section>
-
+            <img
+              src="https://images.weserv.nl/?url=portcitybpo.lk/wp-content/uploads/2025/02/LEADERSHIP-desktop.jpg"
+              alt="Leadership team background"
+              className="absolute inset-0 w-full object-cover opacity-100"
+              style={{ height: "600px" }}
+            />
+            <div
+              className="absolute inset-0 bg-[#0169ab]/30"
+              style={{ height: "500px" }}
+            ></div>
+            <div
+              className="relative z-10 max-w-10/12 mx-auto px-4 sm:px-6 text-center"
+              style={{ paddingTop: "160px", paddingBottom: "160px" }}
+            >
+              <p className="text-xs sm:text-sm uppercase tracking-[0.2em] sm:tracking-[0.3em] text-sky-300 mb-3 sm:mb-4">
+                Leadership
+              </p>
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold uppercase tracking-[0.1em]">
+                Leadership Team
+              </h1>
+            </div>
+          </section>
 
           <section className="py-12 sm:py-16 md:py-20">
             <div className="max-w-10/12 mx-auto px-4 sm:px-6">
@@ -729,7 +747,7 @@ export default function About({ onNavigate }) {
                       <img
                         src={member.image || heroImg}
                         alt={member.name}
-                        className="h-full w-full object-cover aspect-square sm:aspect-auto"
+                        className="h-full w-full object-cover aspect-auto "
                       />
                     </div>
                     <div className="pt-4 sm:pt-5 md:pt-6 text-center">

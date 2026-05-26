@@ -42,7 +42,7 @@ const newsroomItems = [
 
 const DropdownArrow = ({ isOpen }) => (
   <svg
-    className={`w-2.5 h-2.5 ml-1.5 transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}
+    className={`w-5  h-6 ml-1.5 transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}
     fill="currentColor"
     viewBox="0 0 24 24"
   >
@@ -132,7 +132,7 @@ export default function Navbar() {
     if (path === "/") return "home";
     if (path === "/contact") return "contact";
     if (path === "/careers") return "careers";
-    if (path === "/value") return "value";
+    if (path === "/value-proposition") return "value";
     if (path === "/services") return "services";
     if (path.startsWith("/about")) return "about";
     if (path.startsWith("/service")) return "services";
@@ -162,17 +162,16 @@ export default function Navbar() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-black text-white font-sans border-b border-white/10 select-none">
-      {/* Primary Bar Component Header */}
-      <div className=" mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-20 h-16 sm:h-20 lg:h-24">
-
-        {/* Logo - Left on desktop, centered on mobile */}
-        <div className="flex-1 lg:flex-none">
+      {/* Primary Bar Component Header - Increased height on mobile */}
+      <div className="mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-20 h-20 sm:h-20 lg:h-24">
+        {/* Logo - Right on mobile, Left on desktop */}
+        <div className="lg:flex-none order-last lg:order-first">
           <button
             type="button"
             onClick={() => handleNavigate("/")}
             className="flex items-center focus:outline-none bg-transparent border-none p-0 cursor-pointer"
           >
-            <div className="h-12 sm:h-16 lg:h-20 flex items-center">
+            <div className="h-14 sm:h-16 lg:h-20 flex items-center">
               <img
                 src="https://portcitybpo.lk/wp-content/uploads/2023/12/Port-City-BPO-logo-hd-1-980x833.webp"
                 alt="Port City BPO Brand Logo"
@@ -189,7 +188,7 @@ export default function Navbar() {
             onClick={() => handleNavigate("/")}
             className={`${linkClass("home")} bg-transparent border-none cursor-pointer p-0`}
           >
-            Home
+             <span className="text-[16px]"> Home</span>
           </button>
 
           {/* Services Structural Mega Menu Toggle Link */}
@@ -202,25 +201,25 @@ export default function Navbar() {
             <button
               type="button"
               onClick={() => handleNavigate("/services")}
-              className={`${linkClass("services")} bg-transparent border-none cursor-pointer p-0 flex items-center`}
+              className={`${linkClass("services")} bg-transparent border-none cursor-pointer p-0 flex items-center text-[16px]`}
             >
-              Services <DropdownArrow isOpen={showServices} />
+             <span className="text-[16px]"> Services</span> <DropdownArrow isOpen={showServices} />
             </button>
 
             {/* Services Mega Menu Container - Column layout */}
             {showServices && (
               <div
-                className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-80 bg-white rounded-lg shadow-2xl z-50"
+                className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-80 bg-white z-50"
                 onMouseEnter={handleServicesMouseEnter}
                 onMouseLeave={handleServicesMouseLeave}
               >
-                <div className="py-4">
+                <div className="py-0">
                   {subServices.map((item) => (
                     <button
                       key={item.id}
                       type="button"
                       onClick={() => handleNavigate(`/service/${item.id}`)}
-                      className="w-full px-6 py-3 text-left text-[14px] text-gray-700 hover:text-[#FFCC00] hover:bg-gray-50 font-medium transition-colors border-none bg-transparent cursor-pointer"
+                      className="w-full px-6 py-3 text-left text-[16px] text-sky-600 hover:text-[#f4a631] hover:bg-gray-50 font-medium transition-colors border-gray-300 border-b bg-transparent cursor-pointer"
                     >
                       {item.label}
                     </button>
@@ -232,10 +231,10 @@ export default function Navbar() {
 
           <button
             type="button"
-            onClick={() => handleNavigate("/value")}
+            onClick={() => handleNavigate("/value-proposition")}
             className={`${linkClass("value")} bg-transparent border-none cursor-pointer p-0`}
           >
-            Value Proposition
+             <span className="text-[16px]"> Value Proposition</span>
           </button>
 
           {/* About Us Mega Menu Toggle Link */}
@@ -250,23 +249,23 @@ export default function Navbar() {
               onClick={() => handleNavigate("/about")}
               className={`${linkClass("about")} bg-transparent border-none cursor-pointer p-0 flex items-center`}
             >
-              About Us <DropdownArrow isOpen={showAbout} />
+              <span className="text-[16px]"> About Us</span> <DropdownArrow isOpen={showAbout} />
             </button>
 
             {/* About Us Mega Menu Container - Column layout */}
             {showAbout && (
               <div
-                className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-64 bg-white rounded-lg shadow-2xl z-50"
+                className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-80 bg-white z-50"
                 onMouseEnter={handleAboutMouseEnter}
                 onMouseLeave={handleAboutMouseLeave}
               >
-                <div className="py-4">
+                <div className="py-0">
                   {aboutItems.map((item) => (
                     <button
                       key={item.id}
                       type="button"
                       onClick={() => handleNavigate(`/about/${item.id}`)}
-                      className="w-full px-6 py-3 text-left text-[14px] text-gray-700 hover:text-[#FFCC00] hover:bg-gray-50 font-medium transition-colors border-none bg-transparent cursor-pointer"
+                      className="w-full px-6 py-3 text-left text-[16px] text-sky-600 hover:text-[#f4a631] hover:bg-gray-50 font-medium transition-colors border-gray-300 border-b bg-transparent cursor-pointer"
                     >
                       {item.label}
                     </button>
@@ -286,23 +285,23 @@ export default function Navbar() {
             <div
               className={`${linkClass("newsroom")} flex items-center cursor-default`}
             >
-              Newsroom <DropdownArrow isOpen={showNewsroom} />
+              <span className="text-[16px]"> Newsroom</span> <DropdownArrow isOpen={showNewsroom} />
             </div>
 
             {/* Newsroom Mega Menu Container - Column layout */}
             {showNewsroom && (
               <div
-                className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-64 bg-white rounded-lg shadow-2xl z-50"
+                className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-80 bg-white z-50"
                 onMouseEnter={handleNewsroomMouseEnter}
                 onMouseLeave={handleNewsroomMouseLeave}
               >
-                <div className="py-4">
+                <div className="py-0">
                   {newsroomItems.map((item) => (
                     <button
                       key={item.id}
                       type="button"
                       onClick={() => handleNavigate(`/newsroom/${item.id}`)}
-                      className="w-full px-6 py-3 text-left text-[14px] text-gray-700 hover:text-[#FFCC00] hover:bg-gray-50 font-medium transition-colors border-none bg-transparent cursor-pointer"
+                      className="w-full px-6 py-3 text-left text-[16px] text-sky-600 hover:text-[#f4a631] hover:bg-gray-50 font-medium transition-colors border-gray-300 border-b bg-transparent cursor-pointer"
                     >
                       {item.label}
                     </button>
@@ -317,7 +316,7 @@ export default function Navbar() {
             onClick={() => handleNavigate("/careers")}
             className={`${linkClass("careers")} bg-transparent border-none cursor-pointer p-0`}
           >
-            Careers
+            <span className="text-[16px]"> Careers</span>
           </button>
 
           <button
@@ -325,12 +324,12 @@ export default function Navbar() {
             onClick={() => handleNavigate("/contact")}
             className={`${linkClass("contact")} bg-transparent border-none cursor-pointer p-0`}
           >
-            Contact Us
+            <span className="text-[16px]"> Contact Us</span>
           </button>
         </nav>
 
         {/* Mobile Sidebar Interactive Launcher - Left side on mobile */}
-        <div className="lg:hidden flex justify-end flex-1">
+        <div className="lg:hidden flex justify-start flex-1 order-first lg:order-last">
           <button
             type="button"
             onClick={() => setMobileOpen((prev) => !prev)}
@@ -344,149 +343,185 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Sidebar Slide out Overlay Drawer - Opening from LEFT */}
+      {/* Mobile Sidebar Slide out Overlay Drawer */}
       {mobileOpen && (
         <>
-          {/* Backdrop */}
+          {/* Backdrop matching your dark system look */}
           <div
-            className="fixed inset-0 bg-black/60 z-40 lg:hidden transition-opacity duration-300"
+            className="fixed inset-0 bg-black/40 z-40 lg:hidden transition-opacity duration-300"
             onClick={() => setMobileOpen(false)}
           />
 
-          {/* Drawer from left */}
-          <div className="fixed top-0 left-0 bottom-0 w-80 bg-black text-white lg:hidden flex flex-col z-50 shadow-2xl transform transition-transform duration-300 ease-out">
-            <div className="flex justify-between items-center px-6 h-20 border-b border-white/10">
-              <div className="h-12 w-auto">
-                <img src="https://portcitybpo.lk/wp-content/uploads/2023/12/Port-City-BPO-logo-hd-1-980x833.webp" alt="Port City BPO" className="h-full w-auto object-contain" />
-              </div>
+          {/* Drawer configured to match screenshot styling exactly */}
+          <div className="fixed top-0 right-0 bottom-0 left-0 bg-[#fbfbfb] text-[#333333] lg:hidden flex flex-col z-50 overflow-y-auto px-6 pt-5">
+            
+            {/* Top Close Section */}
+            <div className="flex justify-end mb-6">
               <button
                 type="button"
                 onClick={() => setMobileOpen(false)}
-                className="h-10 w-10 text-white flex items-center justify-center bg-transparent border-none cursor-pointer hover:bg-white/10 rounded-lg transition-colors"
+                className="h-[42px] w-[52px] border border-[#f0d09e] rounded-md bg-transparent flex items-center justify-center text-[#e2a951] font-light text-xl cursor-pointer"
                 aria-label="Close menu"
               >
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
+                X
               </button>
             </div>
 
-            <div className="p-6 overflow-y-auto flex-1">
-              <nav className="space-y-5 text-[16px]">
-                <button 
-                  type="button" 
-                  onClick={() => handleNavigate("/")} 
-                  className="w-full text-left py-2 text-[#4dacf9] hover:text-[#FFCC00] block font-medium bg-transparent border-none cursor-pointer transition-colors"
-                >
-                  Home
-                </button>
+            {/* Menu List */}
+            <nav className="flex flex-col space-y-7 text-[16px] font-normal tracking-wide pl-2">
+              <button 
+                type="button" 
+                onClick={() => handleNavigate("/")} 
+                className="w-full text-left text-[#222222] bg-transparent border-none cursor-pointer"
+              >
+                Home
+              </button>
 
-                <div>
+              <div className="w-full">
+                <div className="flex justify-between items-center w-full">
+                  <span 
+                    onClick={handleMobileServiceClick} 
+                    className="text-[#222222] cursor-pointer flex-1"
+                  >
+                    Services
+                  </span>
                   <button
                     type="button"
                     onClick={(e) => {
                       e.stopPropagation();
                       setShowMobileServices((s) => !s);
                     }}
-                    className="w-full text-left py-2 text-[#4dacf9] hover:text-[#FFCC00] flex justify-between items-center font-medium bg-transparent border-none cursor-pointer transition-colors"
+                    className="h-7 w-[52px] rounded-full border border-zinc-500 flex items-center justify-center bg-transparent cursor-pointer text-[#333333]"
                   >
-                    <span onClick={handleMobileServiceClick}>Services</span>
-                    <DropdownArrow isOpen={showMobileServices} />
+                    <svg
+                      className={`w-4 h-4 transition-transform duration-200 ${showMobileServices ? "rotate-180" : ""}`}
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      viewBox="0 0 24 24"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
                   </button>
-                  {showMobileServices && (
-                    <div className="pl-4 mt-2 space-y-2 border-l border-white/20">
-                      {subServices.map((s) => (
-                        <button 
-                          key={s.id} 
-                          onClick={() => handleNavigate(`/service/${s.id}`)} 
-                          className="block w-full text-left py-2 text-[14px] text-zinc-400 hover:text-[#FFCC00] transition-colors bg-transparent border-none cursor-pointer"
-                        >
-                          {s.label}
-                        </button>
-                      ))}
-                    </div>
-                  )}
                 </div>
+                {showMobileServices && (
+                  <div className="pl-4 mt-3 space-y-3 border-l border-zinc-200">
+                    {subServices.map((s) => (
+                      <button 
+                        key={s.id} 
+                        onClick={() => handleNavigate(`/service/${s.id}`)} 
+                        className="block w-full text-left py-1 text-[15px] text-zinc-600 hover:text-amber-500 transition-colors bg-transparent border-none cursor-pointer"
+                      >
+                        {s.label}
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
 
-                <button 
-                  type="button" 
-                  onClick={() => handleNavigate("/value")} 
-                  className="w-full text-left py-2 text-[#4dacf9] hover:text-[#FFCC00] block font-medium bg-transparent border-none cursor-pointer transition-colors"
-                >
-                  Value Proposition
-                </button>
+              <button 
+                type="button" 
+                onClick={() => handleNavigate("/value-proposition")} 
+                className="w-full text-left text-[#222222] bg-transparent border-none cursor-pointer"
+              >
+                Value Proposition
+              </button>
 
-                <div>
+              <div className="w-full">
+                <div className="flex justify-between items-center w-full">
+                  <span 
+                    onClick={handleMobileAboutClick} 
+                    className="text-[#222222] cursor-pointer flex-1"
+                  >
+                    About Us
+                  </span>
                   <button
                     type="button"
                     onClick={(e) => {
                       e.stopPropagation();
                       setShowMobileAbout((s) => !s);
                     }}
-                    className="w-full text-left py-2 text-[#4dacf9] hover:text-[#FFCC00] flex justify-between items-center font-medium bg-transparent border-none cursor-pointer transition-colors"
+                    className="h-7 w-[52px] rounded-full border border-zinc-500 flex items-center justify-center bg-transparent cursor-pointer text-[#333333]"
                   >
-                    <span onClick={handleMobileAboutClick}>About Us</span>
-                    <DropdownArrow isOpen={showMobileAbout} />
+                    <svg
+                      className={`w-4 h-4 transition-transform duration-200 ${showMobileAbout ? "rotate-180" : ""}`}
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      viewBox="0 0 24 24"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
                   </button>
-                  {showMobileAbout && (
-                    <div className="pl-4 mt-2 space-y-2 border-l border-white/20">
-                      {aboutItems.map((a) => (
-                        <button 
-                          key={a.id} 
-                          onClick={() => handleNavigate(`/about/${a.id}`)} 
-                          className="block w-full text-left py-2 text-[14px] text-zinc-400 hover:text-[#FFCC00] transition-colors bg-transparent border-none cursor-pointer"
-                        >
-                          {a.label}
-                        </button>
-                      ))}
-                    </div>
-                  )}
                 </div>
+                {showMobileAbout && (
+                  <div className="pl-4 mt-3 space-y-3 border-l border-zinc-200">
+                    {aboutItems.map((a) => (
+                      <button 
+                        key={a.id} 
+                        onClick={() => handleNavigate(`/about/${a.id}`)} 
+                        className="block w-full text-left py-1 text-[15px] text-zinc-600 hover:text-amber-500 transition-colors bg-transparent border-none cursor-pointer"
+                      >
+                        {a.label}
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
 
-                <div>
+              <div className="w-full">
+                <div className="flex justify-between items-center w-full">
+                  <span className="text-[#222222]">Newsroom</span>
                   <button
                     type="button"
                     onClick={(e) => {
                       e.stopPropagation();
                       setShowMobileNewsroom((s) => !s);
                     }}
-                    className="w-full text-left py-2 text-[#4dacf9] hover:text-[#FFCC00] flex justify-between items-center font-medium bg-transparent border-none cursor-pointer transition-colors"
+                    className="h-7 w-[52px] rounded-full border border-zinc-500 flex items-center justify-center bg-transparent cursor-pointer text-[#333333]"
                   >
-                    <span>Newsroom</span>
-                    <DropdownArrow isOpen={showMobileNewsroom} />
+                    <svg
+                      className={`w-4 h-4 transition-transform duration-200 ${showMobileNewsroom ? "rotate-180" : ""}`}
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      viewBox="0 0 24 24"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
                   </button>
-                  {showMobileNewsroom && (
-                    <div className="pl-4 mt-2 space-y-2 border-l border-white/20">
-                      {newsroomItems.map((n) => (
-                        <button 
-                          key={n.id} 
-                          onClick={() => handleNavigate(`/newsroom/${n.id}`)} 
-                          className="block w-full text-left py-2 text-[14px] text-zinc-400 hover:text-[#FFCC00] transition-colors bg-transparent border-none cursor-pointer"
-                        >
-                          {n.label}
-                        </button>
-                      ))}
-                    </div>
-                  )}
                 </div>
+                {showMobileNewsroom && (
+                  <div className="pl-4 mt-3 space-y-3 border-l border-zinc-200 ">
+                    {newsroomItems.map((n) => (
+                      <button 
+                        key={n.id} 
+                        onClick={() => handleNavigate(`/newsroom/${n.id}`)} 
+                        className="block w-full text-left py-1 text-[15px] text-zinc-600 hover:text-amber-500 transition-colors bg-transparent border-none cursor-pointer"
+                      >
+                        {n.label}
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
 
-                <button 
-                  type="button" 
-                  onClick={() => handleNavigate("/careers")} 
-                  className="w-full text-left py-2 text-[#4dacf9] hover:text-[#FFCC00] block font-medium bg-transparent border-none cursor-pointer transition-colors"
-                >
-                  Careers
-                </button>
+              <button 
+                type="button" 
+                onClick={() => handleNavigate("/careers")} 
+                className="w-full text-left text-[#999999] bg-transparent border-none cursor-pointer"
+              >
+                Careers
+              </button>
 
-                <button 
-                  type="button" 
-                  onClick={() => handleNavigate("/contact")} 
-                  className="w-full text-left py-2 text-[#4dacf9] hover:text-[#FFCC00] block font-medium bg-transparent border-none cursor-pointer transition-colors"
-                >
-                  Contact Us
-                </button>
-              </nav>
-            </div>
+              <button 
+                type="button" 
+                onClick={() => handleNavigate("/contact")} 
+                className="w-full text-left text-[#222222] bg-transparent border-none cursor-pointer"
+              >
+                Contact Us
+              </button>
+            </nav>
           </div>
         </>
       )}
