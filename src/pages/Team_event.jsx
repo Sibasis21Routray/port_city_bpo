@@ -12,7 +12,7 @@ const teamEventsData = {
     date: "5 May 2026",
     shortDescription:
       "Sinhala and Tamil New Year Celebrations at Port City BPO...",
-      thumbnail: "/public/teamevents/tamilnewyear/tamilnewyearcelebrations.png",
+      thumbnail: "/teamevents/tamilnewyear/tamilnewyearcelebrations.png",
     description: `Port City BPO celebrated the Sinhala and Tamil New Year with great enthusiasm and cultural spirit. The event brought together employees from all backgrounds to participate in traditional games, enjoy festive meals, and embrace the rich cultural heritage of Sri Lanka.
 
 Our celebration featured traditional customs, joyful moments, and shared experiences that reflected the spirit of Avurudu. From warm interactions to festive activities, the event created an atmosphere filled with positivity and connection. It was a meaningful opportunity for our employees to appreciate our heritage while strengthening the bond we share as one team at Port City BPO.
@@ -23,16 +23,16 @@ We extend our heartfelt wishes to everyone for a joyful, prosperous, and blessed
 
 සුභ අලුත් අවුරුද්දක් වේවා! இனிய புத்தாண்டு நல்வாழ்த்துக்கள்!`,
     photos: [
-      "/public/teamevents/tamilnewyear/1-tamilnewyear.png",
-      "/public/teamevents/tamilnewyear/2-tamilnewyear.png",
-      "/public/teamevents/tamilnewyear/3-tamilnewyear.png",
-      "/public/teamevents/tamilnewyear/4-tamilnewyear.png",
-      "/public/teamevents/tamilnewyear/5-tamilnewyear.png",
-      "/public/teamevents/tamilnewyear/6-tamilnewyear.png",
-      "/public/teamevents/tamilnewyear/7-tamilnewyear.png",
-      "/public/teamevents/tamilnewyear/8-tamilnewyear.png",
-      "/public/teamevents/tamilnewyear/9-tamilnewyear.png",
-      "/public/teamevents/tamilnewyear/10-tamilnewyear.png",
+      "/teamevents/tamilnewyear/1-tamilnewyear.png",
+      "/teamevents/tamilnewyear/2-tamilnewyear.png",
+      "/teamevents/tamilnewyear/3-tamilnewyear.png",
+      "/teamevents/tamilnewyear/4-tamilnewyear.png",
+      "/teamevents/tamilnewyear/5-tamilnewyear.png",
+      "/teamevents/tamilnewyear/6-tamilnewyear.png",
+      "/teamevents/tamilnewyear/7-tamilnewyear.png",
+      "/teamevents/tamilnewyear/8-tamilnewyear.png",
+      "/teamevents/tamilnewyear/9-tamilnewyear.png",
+      "/teamevents/tamilnewyear/10-tamilnewyear.png",
     ],
   },
   "womens-day-2026": {
@@ -41,7 +41,7 @@ We extend our heartfelt wishes to everyone for a joyful, prosperous, and blessed
     date: "10 March 2026",
     shortDescription:
       "Celebrating the Strength and Impact of Women Around the World...",
-      thumbnail:"/public/teamevents/womenaroundworld/womenaroundworld.png",
+      thumbnail:"/teamevents/womenaroundworld/womenaroundworld.png",
     description: `On the occasion of International Women’s Day, we take a moment to celebrate the remarkable women who continue to inspire, lead, and shape our world in countless ways.
 
 Women play an invaluable role in every sphere of life — as leaders, professionals, caregivers, innovators, and changemakers. Their resilience, dedication, and passion continue to drive progress within families, workplaces, communities, and societies across the globe.
@@ -54,12 +54,12 @@ Today, and every day, we celebrate the achievements, resilience, and inspiring j
 
 Happy International Women’s Day to all the incredible women around the world.`,
     photos: [
-      "/public/teamevents/womenaroundworld/1-womenaroundworld.png",
-      "/public/teamevents/womenaroundworld/2-womenaroundworld.png",
-      "/public/teamevents/womenaroundworld/3-womenaroundworld.png",
-      "/public/teamevents/womenaroundworld/4-womenaroundworld.png",
-      "/public/teamevents/womenaroundworld/5-womenaroundworld.png",
-      "/public/teamevents/womenaroundworld/6-womenaroundworld.png",
+      "/teamevents/womenaroundworld/1-womenaroundworld.png",
+      "/teamevents/womenaroundworld/2-womenaroundworld.png",
+      "/teamevents/womenaroundworld/3-womenaroundworld.png",
+      "/teamevents/womenaroundworld/4-womenaroundworld.png",
+      "/teamevents/womenaroundworld/5-womenaroundworld.png",
+      "/teamevents/womenaroundworld/6-womenaroundworld.png",
     ],
   },
   "talent-lift-2026": {
@@ -68,7 +68,7 @@ Happy International Women’s Day to all the incredible women around the world.`
     date: "23 February 2026",
     shortDescription:
       "Port City BPO Showcases Career Pathways at Talent Lift 2026...",
-      thumbnail:"/public/teamevents/careerpath/careerpath.png",
+      thumbnail:"/teamevents/careerpath/careerpath.png",
     description: `Port City BPO proudly participated in Talent Lift 2026, the annual career fair organized by The Open
 
 University of Sri Lanka. The event brought together a dynamic crowd of undergraduates and graduates seeking guidance, industry exposure, and meaningful career opportunities.
@@ -79,14 +79,14 @@ Our presence at Talent Lift reinforced our dedication to supporting the next gen
 
 As we continue to expand and innovate, Port City BPO remains committed to creating pathways that uplift talent, inspire ambition, and contribute to shaping Sri Lanka’s future workforce.`,
     photos: [
-     "/public/teamevents/careerpath/1-careerpathways.png",
-      "/public/teamevents/careerpath/2-careerpathways.png",
-      "/public/teamevents/careerpath/3-careerpathways.png",
-      "/public/teamevents/careerpath/4-careerpathways.png",
-        "/public/teamevents/careerpath/5-careerpathways.png",
-      "/public/teamevents/careerpath/6-careerpathways.png",
-      "/public/teamevents/careerpath/7-careerpathways.png",
-      "/public/teamevents/careerpath/8-careerpathways.png"
+     "/teamevents/careerpath/1-careerpathways.png",
+      "/teamevents/careerpath/2-careerpathways.png",
+      "/teamevents/careerpath/3-careerpathways.png",
+      "/teamevents/careerpath/4-careerpathways.png",
+        "/teamevents/careerpath/5-careerpathways.png",
+      "/teamevents/careerpath/6-careerpathways.png",
+      "/teamevents/careerpath/7-careerpathways.png",
+      "/teamevents/careerpath/8-careerpathways.png"
     ],
   },
   "new-year-2026-welcome": {
@@ -95,19 +95,19 @@ As we continue to expand and innovate, Port City BPO remains committed to creati
     date: "10 January 2026",
     shortDescription:
       "A Shared Welcome to 2026 To welcome 2026, we gathered...",
-       thumbnail:"/public/teamevents/welcome2026/welcome2026.png",
+       thumbnail:"/teamevents/welcome2026/welcome2026.png",
     description: `To welcome 2026, we gathered in the spirit of togetherness. Our celebration was built around a shared meal and the easy comfort of fellowship.
 
 The morning centred on the warmth of good food and the steady hum of conversation. As we shared dishes and stories, we naturally turned our focus toward the new year, embracing its warmth among our family.
 
 It was a heartfelt and grounded beginning moment of community to carry with us into all that 2026 will bring.`,
     photos: [
-      "/public/teamevents/welcome2026/1-welcome2026.png",
-      "/public/teamevents/welcome2026/2-welcome2026.png",
-      "/public/teamevents/welcome2026/3-welcome2026.png",
-      "/public/teamevents/welcome2026/4-welcome2026.png",
-      "/public/teamevents/welcome2026/5-welcome2026.png",
-      "/public/teamevents/welcome2026/6-welcome2026.png",
+      "/teamevents/welcome2026/1-welcome2026.png",
+      "/teamevents/welcome2026/2-welcome2026.png",
+      "/teamevents/welcome2026/3-welcome2026.png",
+      "/teamevents/welcome2026/4-welcome2026.png",
+      "/teamevents/welcome2026/5-welcome2026.png",
+      "/teamevents/welcome2026/6-welcome2026.png",
     ],
       
   },
@@ -117,19 +117,19 @@ It was a heartfelt and grounded beginning moment of community to carry with us i
     date: "10 January 2026",
     shortDescription:
       "Secret Santa celebration 2025 Port City BPO was filled with...",
-       thumbnail:"/public/teamevents/santacelebration/santacelebrations2025.png",
+       thumbnail:"/teamevents/santacelebration/santacelebrations2025.png",
     description: `Port City BPO was filled with more than just the usual buzz of productivity it was alive with the whispered excitement and twinkling anticipation of our Secret Santa celebration.
 
 Gifts appeared like quiet surprises, wrapped in holiday cheer and thoughtful mystery. The air hummed with laughter, genuine smiles, and the warm joy of discovering not just presents, but the kindness behind them. It was a beautiful reminder of the wonderful team spirit and connection that make our workplace special.
 
 A heartfelt thank you to everyone who participated and helped orchestrate this lovely tradition. Here’s to carrying this spark of festive warmth and camaraderie with us into the new year.`,
     photos: [
-      "/public/teamevents/santacelebration/1-santacelebration.png",
-      "/public/teamevents/santacelebration/2-santacelebration.png",
-      "/public/teamevents/santacelebration/3-santacelebration.png",
-      "/public/teamevents/santacelebration/4-santacelebration.png",
-      "/public/teamevents/santacelebration/5-santacelebration.png",
-      "/public/teamevents/santacelebration/6-santacelebration.png"
+      "/teamevents/santacelebration/1-santacelebration.png",
+      "/teamevents/santacelebration/2-santacelebration.png",
+      "/teamevents/santacelebration/3-santacelebration.png",
+      "/teamevents/santacelebration/4-santacelebration.png",
+      "/teamevents/santacelebration/5-santacelebration.png",
+      "/teamevents/santacelebration/6-santacelebration.png"
     ],
   },
   "ica-marathon-2025": {
@@ -137,18 +137,18 @@ A heartfelt thank you to everyone who participated and helped orchestrate this l
     title: "More Than Just a Finish Line: Port City BPO runs the ICA 2025",
     date: "10 January 2026",
     shortDescription: "More Than Just a Finish Line: Port City BPO runs...",
-     thumbnail:"/public/teamevents/halfmarathon/halfmarathon2025.png",
+     thumbnail:"/teamevents/halfmarathon/halfmarathon2025.png",
     description: `It wasn’t just about the miles. It was in the rhythmic sound of thousands of footsteps hitting the pavement in sync and the high-fives from strangers that gave us a second wind just when we needed it most. We didn’t just move as runners; we moved as part of the city’s heartbeat.
 
 In our day-to-day, we focus on precision and KPIs. But on the pavement, we were reminded that our greatest strength is our connection. Crossing the finish line breathless and sweaty wasn’t just about the medals it was about the shared pride of knowing we did it together.
 
 We are incredibly proud of our team for their spirit and for representing Port City BPO.`,
     photos: [
-      "/public/teamevents/halfmarathon/1-halfmarathon.png",
-      "/public/teamevents/halfmarathon/2-halfmarathon.png",
-      "/public/teamevents/halfmarathon/3-halfmarathon.png",
-      "/public/teamevents/halfmarathon/4-halfmarathon.png",
-      "/public/teamevents/halfmarathon/5-halfmarathon.png"
+      "/teamevents/halfmarathon/1-halfmarathon.png",
+      "/teamevents/halfmarathon/2-halfmarathon.png",
+      "/teamevents/halfmarathon/3-halfmarathon.png",
+      "/teamevents/halfmarathon/4-halfmarathon.png",
+      "/teamevents/halfmarathon/5-halfmarathon.png"
     ],
   },
   "chinese-new-year-2025": {
@@ -156,16 +156,16 @@ We are incredibly proud of our team for their spirit and for representing Port C
     title: "Port City BPO: Chinese New Year 2025",
     date: "29 January 2025",
     shortDescription: "Gong Xi Fa Cai!",
-     thumbnail:"/public/teamevents/chainesenewyear/chainesenewyeear.jpg",
+     thumbnail:"/teamevents/chainesenewyear/chainesenewyeear.jpg",
     description: `Port City BPO celebrated Chinese New Year 2025 with vibrant festivities honoring the Year of the Dragon. The office was decorated in traditional red and gold, and employees enjoyed authentic Chinese cuisine, cultural performances, and the traditional exchange of red envelopes (Ang Pao).
 
 The celebration included a Lion Dance performance, which brought energy and good fortune to our workplace. Employees learned about Chinese New Year traditions and participated in calligraphy workshops.
 
 This event reflected our commitment to cultural diversity and creating an inclusive environment where all traditions are celebrated and respected.`,
     photos: [
-      "/public/teamevents/chainesenewyear/1-chinesenewyear.jpg",
-      "/public/teamevents/chainesenewyear/2-chinesenewyear.jpg",
-      "/public/teamevents/chainesenewyear/3-chinesenewyear.jpg",
+      "/teamevents/chainesenewyear/1-chinesenewyear.jpg",
+      "/teamevents/chainesenewyear/2-chinesenewyear.jpg",
+      "/teamevents/chainesenewyear/3-chinesenewyear.jpg",
     ],
   },
   "thai-pongal-2025": {
@@ -173,28 +173,28 @@ This event reflected our commitment to cultural diversity and creating an inclus
     title: "Port City BPO: Thai Pongal Celebration",
     date: "16 January 2025",
     shortDescription: "Thai Pongal 2025",
-     thumbnail:"/public/teamevents/pongal/pongol.jpg",
+     thumbnail:"/teamevents/pongal/pongol.jpg",
     description: `Port City BPO celebrated Thai Pongal, the Tamil harvest festival, with traditional rituals and festivities. The celebration included the preparation of Pongal (sweet rice dish) in new clay pots, traditional kolam (rangoli) decorations, and cultural performances by employees.
 
 Team members learned about the significance of thanking the Sun God for a bountiful harvest and participated in traditional games. A special feast featuring authentic Tamil cuisine brought everyone together in celebration.
 
 This event demonstrated our respect for Tamil culture and traditions, fostering an inclusive workplace where all cultural celebrations are acknowledged.`,
     photos: [
-      "/public/teamevents/pongal/1-pongOl.jpg",
-      "/public/teamevents/pongal/2-pongOl.jpg",
-      "/public/teamevents/pongal/3-pongOl.jpg",
-      "/public/teamevents/pongal/4-pongOl.jpg",
-      "/public/teamevents/pongal/5-pongOl.jpg",
-      "/public/teamevents/pongal/6-pongOl.jpg",
-      "/public/teamevents/pongal/7-pongOl.jpg",
-      "/public/teamevents/pongal/8-pongOl.jpg",
-      "/public/teamevents/pongal/9-pongOl.jpg",
-      "/public/teamevents/pongal/10-pongOl.jpg",
-      "/public/teamevents/pongal/11-pongOl.jpg",
-      "/public/teamevents/pongal/12-pongOl.jpg",
-      "/public/teamevents/pongal/13-pongOl.jpg",
-      "/public/teamevents/pongal/14-pongOl.jpg",
-      "/public/teamevents/pongal/15-pongOl.jpg",
+      "/teamevents/pongal/1-pongOl.jpg",
+      "/teamevents/pongal/2-pongOl.jpg",
+      "/teamevents/pongal/3-pongOl.jpg",
+      "/teamevents/pongal/4-pongOl.jpg",
+      "/teamevents/pongal/5-pongOl.jpg",
+      "/teamevents/pongal/6-pongOl.jpg",
+      "/teamevents/pongal/7-pongOl.jpg",
+      "/teamevents/pongal/8-pongOl.jpg",
+      "/teamevents/pongal/9-pongOl.jpg",
+      "/teamevents/pongal/10-pongOl.jpg",
+      "/teamevents/pongal/11-pongOl.jpg",
+      "/teamevents/pongal/12-pongOl.jpg",
+      "/teamevents/pongal/13-pongOl.jpg",
+      "/teamevents/pongal/14-pongOl.jpg",
+      "/teamevents/pongal/15-pongOl.jpg",
     ],
   },
   "pickle-ball-2025": {
@@ -202,21 +202,21 @@ This event demonstrated our respect for Tamil culture and traditions, fostering 
     title: "Port City BPO: Pickle Ball Event",
     date: "8 January 2025",
     shortDescription: "Pickle Ball",
-     thumbnail:"/public/teamevents/pickleball/pickleball.jpg",
+     thumbnail:"/teamevents/pickleball/pickleball.jpg",
     description: `Port City BPO organized an exciting Pickle Ball tournament, promoting health, wellness, and friendly competition among employees. Teams from various departments competed in this fast-growing sport, which combines elements of tennis, badminton, and table tennis.
 
 The event included training sessions for beginners, competitive matches for experienced players, and a family-friendly atmosphere with refreshments and music. Trophies and prizes were awarded to winning teams and individuals.
 
 This initiative encouraged active lifestyles, team building, and provided a fun break from daily work routines, strengthening relationships across the organization.`,
     photos: [
-      "/public/teamevents/pickleball/1-pickleball.jpg",
-      "/public/teamevents/pickleball/2-pickleball.jpg",
-      "/public/teamevents/pickleball/3-pickleball.jpg",
-      "/public/teamevents/pickleball/4-pickleball.jpg",
-      "/public/teamevents/pickleball/5-pickleball.jpg",
-      "/public/teamevents/pickleball/6-pickleball.jpg",
-      "/public/teamevents/pickleball/7-pickleball.jpg",
-      "/public/teamevents/pickleball/8-pickleball.jpg",
+      "/teamevents/pickleball/1-pickleball.jpg",
+      "/teamevents/pickleball/2-pickleball.jpg",
+      "/teamevents/pickleball/3-pickleball.jpg",
+      "/teamevents/pickleball/4-pickleball.jpg",
+      "/teamevents/pickleball/5-pickleball.jpg",
+      "/teamevents/pickleball/6-pickleball.jpg",
+      "/teamevents/pickleball/7-pickleball.jpg",
+      "/teamevents/pickleball/8-pickleball.jpg",
     ],
   },
   "new-year-2025": {
@@ -224,21 +224,21 @@ This initiative encouraged active lifestyles, team building, and provided a fun 
     title: "Port City BPO: New Year 2025",
     date: "2 January 2025",
     shortDescription: "Happy New Year 2025",
-     thumbnail:"/public/teamevents/newyear2025/newyear2025.jpg ",
+     thumbnail:"/teamevents/newyear2025/newyear2025.jpg ",
     description: `Port City BPO welcomed 2025 with enthusiasm and optimism, gathering employees for a New Year celebration focused on goal-setting, team building, and shared vision. Leadership shared strategic priorities for the year ahead, and employees participated in workshops designed to align personal goals with company objectives.
 
 The celebration included a回顾 of 2024 achievements, recognition of outstanding teams, and interactive sessions where employees shared their aspirations for 2025. A festive lunch and entertainment rounded out the day.
 
 This event energized our workforce and created momentum for a year of innovation, growth, and collective success.`,
     photos: [
-      "/public/teamevents/newyear2025/1-newyear2025.jpg",
-      "/public/teamevents/newyear2025/2-newyear2025.jpg",
-      "/public/teamevents/newyear2025/3-newyear2025.jpg",
-      "/public/teamevents/newyear2025/4-newyear2025.jpg",
-      "/public/teamevents/newyear2025/5-newyear2025.jpg",
-      "/public/teamevents/newyear2025/6-newyear2025.jpg",
-      "/public/teamevents/newyear2025/7-newyear2025.jpg",
-      "/public/teamevents/newyear2025/8-newyear2025.jpg",
+      "/teamevents/newyear2025/1-newyear2025.jpg",
+      "/teamevents/newyear2025/2-newyear2025.jpg",
+      "/teamevents/newyear2025/3-newyear2025.jpg",
+      "/teamevents/newyear2025/4-newyear2025.jpg",
+      "/teamevents/newyear2025/5-newyear2025.jpg",
+      "/teamevents/newyear2025/6-newyear2025.jpg",
+      "/teamevents/newyear2025/7-newyear2025.jpg",
+      "/teamevents/newyear2025/8-newyear2025.jpg",
     ],
   },
   "secret-santa-2024": {
@@ -246,19 +246,19 @@ This event energized our workforce and created momentum for a year of innovation
     title: "Port City BPO: Secret Santa X'mas event",
     date: "5 December 2024",
     shortDescription: "Our prep for the 2024 X'mas Party",
-     thumbnail:"/public/teamevents/secretsanta/secretsanta.jpg",
+     thumbnail:"/teamevents/secretsanta/secretsanta.jpg",
     description: `The Secret Santa event at Port City BPO brought the spirit of giving to our workplace during the 2024 Christmas season. Employees participated enthusiastically in the gift exchange, with weeks of anticipation building up to the big reveal.
 
 The event featured festive decorations, holiday treats, caroling, and the heartwarming moment when colleagues discovered who their Secret Santa was. The joy and laughter shared during this celebration created lasting memories.
 
 This tradition exemplifies the warm, caring culture at Port City BPO, where employees genuinely care for one another and celebrate the spirit of giving.`,
     photos: [
-      "/public/teamevents/secretsanta/1-secretsanta.jpg",
-      "/public/teamevents/secretsanta/2-secretsanta.jpg",
-      "/public/teamevents/secretsanta/3-secretsanta.jpg",
-      "/public/teamevents/secretsanta/4-secretsanta.jpg",
-      "/public/teamevents/secretsanta/5-secretsanta.jpg",
-      "/public/teamevents/secretsanta/6-secretsanta.jpg",
+      "/teamevents/secretsanta/1-secretsanta.jpg",
+      "/teamevents/secretsanta/2-secretsanta.jpg",
+      "/teamevents/secretsanta/3-secretsanta.jpg",
+      "/teamevents/secretsanta/4-secretsanta.jpg",
+      "/teamevents/secretsanta/5-secretsanta.jpg",
+      "/teamevents/secretsanta/6-secretsanta.jpg",
     ],
   },
   "xmas-party-2024": {
@@ -266,28 +266,28 @@ This tradition exemplifies the warm, caring culture at Port City BPO, where empl
     title: "Port City BPO: X'mas 2024 Party",
     date: "2 December 2024",
     shortDescription: "Our 2024 X'mas Party",
-     thumbnail:"/public/teamevents/xmassparty/xmassparty.jpg",
+     thumbnail:"/teamevents/xmassparty/xmassparty.jpg",
     description: `Port City BPO's 2024 Christmas Party was a spectacular celebration of the year's achievements and the holiday spirit. The event featured a beautifully decorated venue, delicious festive feast, live music, and dancing that continued late into the evening.
 
 Employees received special Christmas gifts from the company, and a raffle draw with exciting prizes added to the excitement. The party included a photo booth, Secret Santa gift exchange, and a heartfelt speech from leadership expressing gratitude for the team's hard work throughout the year.
 
 This annual tradition reinforces our team culture, celebrates our collective successes, and sends everyone into the holiday season with joy and appreciation.`,
     photos: [
-      "/public/teamevents/xmassparty/1-xmass.jpg",
-      "/public/teamevents/xmassparty/2-xmass.jpg",
-      "/public/teamevents/xmassparty/3-xmass.jpg",
-      "/public/teamevents/xmassparty/4-xmass.jpg",
-      "/public/teamevents/xmassparty/5-xmass.jpg",
-      "/public/teamevents/xmassparty/6-xmass.jpg",
-      "/public/teamevents/xmassparty/7-xmass.jpg",
-      "/public/teamevents/xmassparty/8-xmass.jpg",
-      "/public/teamevents/xmassparty/9-xmass.jpg",
-      "/public/teamevents/xmassparty/10-xmass.jpg",
-      "/public/teamevents/xmassparty/11-xmass.jpg",
-      "/public/teamevents/xmassparty/12-xmass.jpg",
-      "/public/teamevents/xmassparty/13-xmass.jpg",
-      "/public/teamevents/xmassparty/14-xmass.jpg",
-      "/public/teamevents/xmassparty/15-xmass.jpg",
+      "/teamevents/xmassparty/1-xmass.jpg",
+      "/teamevents/xmassparty/2-xmass.jpg",
+      "/teamevents/xmassparty/3-xmass.jpg",
+      "/teamevents/xmassparty/4-xmass.jpg",
+      "/teamevents/xmassparty/5-xmass.jpg",
+      "/teamevents/xmassparty/6-xmass.jpg",
+      "/teamevents/xmassparty/7-xmass.jpg",
+      "/teamevents/xmassparty/8-xmass.jpg",
+      "/teamevents/xmassparty/9-xmass.jpg",
+      "/teamevents/xmassparty/10-xmass.jpg",
+      "/teamevents/xmassparty/11-xmass.jpg",
+      "/teamevents/xmassparty/12-xmass.jpg",
+      "/teamevents/xmassparty/13-xmass.jpg",
+      "/teamevents/xmassparty/14-xmass.jpg",
+      "/teamevents/xmassparty/15-xmass.jpg",
     ],
   },
 };
