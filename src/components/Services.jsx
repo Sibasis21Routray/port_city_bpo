@@ -2,6 +2,7 @@
 import csImg from "../assets/CS-Outsourcing.webp";
 import marketingImg from "../assets/Marketing.webp";
 import dataEntryImg from "../assets/Data-entry-and-processing.webp";
+import { useNavigate } from "react-router-dom";
 
 const services = [
   {
@@ -25,6 +26,7 @@ const services = [
 ];
 
 export default function Services() {
+  const navigate = useNavigate();
   return (
     <section className="py-16 md:py-14 bg-[#f5f5f5]">
       <div className="max-w-10/12 mx-auto px-0 sm:px-12 lg:px-16">
@@ -74,7 +76,7 @@ export default function Services() {
             <div className="absolute -left-1.5 -top-1.5 w-16 h-10 bg-[#ff9933]" />
             
             <button
-              onClick={() => onNavigate && onNavigate("contact")}
+              onClick={() => navigate("/contact")}
               type="button"
               className="relative z-10 inline-flex items-center justify-between bg-[#f8f9fa] px-6 py-3 min-w-[160px] text-[18px] font-bold text-black tracking-tight shadow-md hover:bg-white transition-colors duration-150 cursor-pointer focus:outline-none"
             >
