@@ -76,7 +76,7 @@ export default function Services() {
             <div className="absolute -left-1.5 -top-1.5 w-16 h-10 bg-[#ff9933]" />
             
             <button
-              onClick={() => navigate("/contact")}
+              onClick={() => navigate("/services")}
               type="button"
               className="relative z-10 inline-flex items-center justify-between bg-[#f8f9fa] px-6 py-3 min-w-[160px] text-[18px] font-bold text-black tracking-tight shadow-md hover:bg-white transition-colors duration-150 cursor-pointer focus:outline-none"
             >
