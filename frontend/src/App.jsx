@@ -14,6 +14,7 @@ import Corporate_social_responsibility, { CSRDetail } from "./pages/Corporate_so
 import ScrollToTop from "./components/ScrollToTop";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfUse from "./pages/TermsOfUse";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -36,6 +37,9 @@ function App() {
           <Route path="/newsroom/team-events/:id" element={<TeamEventDetail/>} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-use" element={<TermsOfUse />} />
+
+         
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
       <Footer />
