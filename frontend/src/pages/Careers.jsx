@@ -629,7 +629,7 @@ export default function Careers() {
                     className="rounded-2xl border border-slate-200 bg-white shadow-md overflow-hidden h-full relative group"
                     transition={{ duration: 0.3 }}
                   >
-                    <div className="w-full aspect-[1/1.414] bg-white overflow-hidden relative flex items-center justify-center p-0">
+                    <div className="w-full aspect-[1/1.514] bg-white overflow-hidden relative flex items-center justify-center p-0">
                       <img
                         src={job.image}
                         alt={job.title}
@@ -637,14 +637,14 @@ export default function Careers() {
                       />
                       
                       {/* Apply Now Button - Hidden by default, shows on hover */}
-                      <div className="absolute inset-0 flex items-center justify-center mt-[48vh] md:mt-[25vh] lg:mt-[58vh] opacity-100 transition-opacity duration-300">
+                      <div className="absolute inset-0 flex items-center justify-center mt-[50vh] md:mt-[30vh] lg:mt-[50vh] opacity-100 transition-opacity duration-300">
                         <button
                           onClick={() => handleApplyNow(job.title)}
                           className="
                             group/btn
                             relative
                             overflow-hidden
-                            px-6 py-3 md:px-10 md:py-4
+                            px-6 py-2 md:px-10 md:py-2
                             rounded-full
                             bg-gradient-to-r from-[#005ca9] via-[#0c71c3] to-[#1a8ad4]
                             text-white
