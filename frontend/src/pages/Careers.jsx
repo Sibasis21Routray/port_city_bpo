@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
+import { Turnstile } from "@marsidev/react-turnstile";
 import { motion, AnimatePresence } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -10,6 +11,7 @@ import ConnectBanner from "../components/ConnectBanner";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import SEO from "../components/SEO";
 
 const jobs = [
   {
@@ -177,6 +179,21 @@ const ApplicationFormModal = ({ isOpen, onClose, jobTitle, showToast }) => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errors, setErrors] = useState({});
+  const [turnstileToken, setTurnstileToken] = useState(null);
+  const [turnstileError, setTurnstileError] = useState(false);
+  const turnstileRef = useRef(null);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isOpen]);
+
   const URI=`${import.meta.env.VITE_API_URL}`
 
   const handleChange = (e) => {
@@ -228,6 +245,11 @@ const ApplicationFormModal = ({ isOpen, onClose, jobTitle, showToast }) => {
       newErrors.termsAccepted = "You must accept the terms and conditions";
     }
     
+    if (!turnstileToken) {
+      setTurnstileError(true);
+      newErrors.turnstile = "Please complete the security verification";
+    }
+    
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
@@ -251,10 +273,11 @@ const ApplicationFormModal = ({ isOpen, onClose, jobTitle, showToast }) => {
     submitData.append("jobTitle", jobTitle);
     submitData.append("cv", formData.cv);
     submitData.append("termsAccepted", formData.termsAccepted);
+    submitData.append("turnstileToken", turnstileToken);
     
 // console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>",submitData)
 
-    const response = await fetch(`${URI}/api/jobs/apply`, {
+    const response = await fetch(`${URI}/jobs/apply`, {
       method: "POST",
       body: submitData,
     });
@@ -275,6 +298,10 @@ const ApplicationFormModal = ({ isOpen, onClose, jobTitle, showToast }) => {
       termsAccepted: false,
       cv: null,
     });
+    setTurnstileToken(null);
+    if (turnstileRef.current) {
+      turnstileRef.current.reset();
+    }
     
     setTimeout(() => {
       onClose();
@@ -285,6 +312,10 @@ const ApplicationFormModal = ({ isOpen, onClose, jobTitle, showToast }) => {
     console.error("Error submitting application:", error);
     showToast(error.message || "Failed to submit application. Please try again.", "error");
     setIsSubmitting(false);
+    if (turnstileRef.current) {
+      turnstileRef.current.reset();
+    }
+    setTurnstileToken(null);
   }
 };
 
@@ -293,7 +324,7 @@ const ApplicationFormModal = ({ isOpen, onClose, jobTitle, showToast }) => {
 
   return (
     <AnimatePresence>
-      <div className="fixed inset-0 z-50 overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+      <div className="fixed inset-0 z-50 overflow-y-hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -309,8 +340,8 @@ const ApplicationFormModal = ({ isOpen, onClose, jobTitle, showToast }) => {
           transition={{ type: "spring", damping: 25, stiffness: 300 }}
           className="relative min-h-screen md:min-h-0 flex items-center justify-center p-4"
         >
-          <div className="relative bg-white rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
-            <div className="sticky top-0 bg-[#005ca9] rounded-t-2xl p-6 text-white z-10">
+          <div className="relative bg-white rounded-2xl shadow-2xl max-w-2xl w-full max-h-[100vh] flex flex-col overflow-hidden">
+            <div className="shrink-0 bg-[#005ca9] p-6 text-white z-10">
               <div className="flex justify-between items-start">
                 <div>
                   <h3 className="text-2xl font-bold" id="modal-title">
@@ -328,7 +359,7 @@ const ApplicationFormModal = ({ isOpen, onClose, jobTitle, showToast }) => {
                 </button>
               </div>
             </div>
-
+            <div className="flex-1 overflow-y-auto">
             <form onSubmit={handleSubmit} className="p-6 space-y-6">
               <div>
                 <label htmlFor="fullName" className="block text-sm font-semibold text-gray-700 mb-1">
@@ -443,12 +474,55 @@ const ApplicationFormModal = ({ isOpen, onClose, jobTitle, showToast }) => {
                 </div>
                 <div className="ml-3 text-sm">
                   <label htmlFor="termsAccepted" className="text-gray-700">
-                    I agree to the Terms and Conditions and confirm that the information provided is accurate.
-                  </label>
+    I agree to the{" "}
+    <a
+      href="/terms-of-use"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-[#005ca9] hover:underline font-medium"
+      onClick={(e) => e.stopPropagation()}
+    >
+      Terms and Conditions
+    </a>{" "}
+    and confirm that the information provided is accurate.
+  </label>
                   {errors.termsAccepted && (
                     <p className="mt-1 text-sm text-red-500">{errors.termsAccepted}</p>
                   )}
                 </div>
+              </div>
+
+              {/* Cloudflare Turnstile */}
+              <div className={`flex flex-col items-start ${turnstileError ? "border border-red-300 rounded-lg p-2" : ""}`}>
+                <Turnstile
+                  siteKey={import.meta.env.VITE_TURNSTILE_SITE_KEY || "YOUR_SITE_KEY"}
+                  onSuccess={(token) => {
+                    setTurnstileToken(token);
+                    setTurnstileError(false);
+                    if (errors.turnstile) {
+                      setErrors((prev) => {
+                        const newErrors = { ...prev };
+                        delete newErrors.turnstile;
+                        return newErrors;
+                      });
+                    }
+                  }}
+                  onError={() => {
+                    setTurnstileError(true);
+                    setTurnstileToken(null);
+                  }}
+                  onExpire={() => {
+                    setTurnstileError(true);
+                    setTurnstileToken(null);
+                  }}
+                  ref={turnstileRef}
+                  options={{ theme: "light", size: "normal" }}
+                />
+                {(errors.turnstile || turnstileError) && (
+                  <p className="mt-1 text-sm text-red-500">
+                    Please complete the security verification
+                  </p>
+                )}
               </div>
 
               <div className="flex gap-3">
@@ -478,6 +552,7 @@ const ApplicationFormModal = ({ isOpen, onClose, jobTitle, showToast }) => {
                 </button>
               </div>
             </form>
+            </div>
           </div>
         </motion.div>
       </div>
@@ -521,6 +596,12 @@ export default function Careers() {
 
   return (
     <div className="min-h-screen bg-white">
+
+      <SEO
+  title="Careers | Join Port City BPO (Pvt) Ltd"
+  description="Explore career opportunities at Port City BPO. Join our team and build your future with a CPCEC-authorised Business Process Outsourcing company committed to innovation, integrity, and professional growth."
+  url="https://portcitybpo.lk/careers"
+/>
       <ToastContainer toasts={toasts} removeToast={removeToast} />
 
       <main>
@@ -718,7 +799,7 @@ export default function Careers() {
             formText="here"
             descriptionMiddle=" or drop us an email at"
             email="contactus@portcitybpo.lk"
-            emailText="contactus@portcitybpo.lk"
+            emailText=" contactus@portcitybpo.lk"
             descriptionSuffix=". We're eager to hear from you!"
             buttonText="Contact Us"
             backgroundImage="/careers/9-careers.webp"

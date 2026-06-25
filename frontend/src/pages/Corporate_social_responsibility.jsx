@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import ConnectBanner from '../components/ConnectBanner';
 import { Clock, TimerIcon } from 'lucide-react';
+import SEO from '../components/SEO';
 
 // CSR Data Object
 const csrData = {
@@ -357,7 +358,11 @@ function CorporateSocialResponsibility() {
 
   return (
     <div className="min-h-screen bg-white">
-      
+      <SEO
+  title="Corporate Social Responsibility | Port City BPO (Pvt) Ltd"
+  description="Discover Port City BPO's Corporate Social Responsibility initiatives, focused on community development, sustainability, ethical business practices, employee well-being, and creating a positive social impact."
+  url="https://portcitybpo.lk/newsroom/corporate-social-responsibility"
+/>
      {/* Hero Section */}
 <header className="relative h-[460px] md:h-[440px] lg:h-[520px] flex items-center overflow-hidden">
   {/* Mobile Background (visible on small screens) */}
@@ -441,7 +446,7 @@ function CorporateSocialResponsibility() {
   );
 }
 
-// Individual CSR Event Detail Page Component
+
 // Individual CSR Event Detail Page Component
 export function CSRDetail() {
   const { id } = useParams();

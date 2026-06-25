@@ -9,8 +9,64 @@ console.log("🔑 API Key Exists:", !!process.env.BREVO_API_KEY);
 
 export const applyForJob = async (req, res) => {
   try {
-    const { fullName, email, phone, nationalId, jobTitle, termsAccepted } = req.body;
+    const { fullName, email, phone, nationalId, jobTitle, termsAccepted, turnstileToken } = req.body;
     const cvFile = req.file;
+
+    // Validate Turnstile token
+    if (!turnstileToken) {
+      return res.status(400).json({
+        success: false,
+        message: "Security verification required. Please complete the CAPTCHA.",
+      });
+    }
+
+    if (!process.env.TURNSTILE_SECRET_KEY) {
+      console.error("❌ Missing Turnstile secret key");
+      return res.status(500).json({
+        success: false,
+        message: "Security configuration error",
+      });
+    }
+
+    let turnstileVerified = false;
+    try {
+      const turnstileResponse = await axios.post(
+        "https://challenges.cloudflare.com/turnstile/v0/siteverify",
+        new URLSearchParams({
+          secret: process.env.TURNSTILE_SECRET_KEY,
+          response: turnstileToken,
+          remoteip: req.ip || req.connection.remoteAddress || req.headers['x-forwarded-for'] || '',
+        }),
+        {
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+          },
+        }
+      );
+
+      if (turnstileResponse.data.success) {
+        turnstileVerified = true;
+      } else {
+        console.error("❌ Turnstile verification failed:", turnstileResponse.data);
+        return res.status(400).json({
+          success: false,
+          message: "Security verification failed. Please try again.",
+        });
+      }
+    } catch (turnstileError) {
+      console.error("❌ Turnstile verification error:", turnstileError.message);
+      return res.status(500).json({
+        success: false,
+        message: "Security verification service unavailable. Please try again later.",
+      });
+    }
+
+    if (!turnstileVerified) {
+      return res.status(400).json({
+        success: false,
+        message: "Security verification failed. Please refresh and try again.",
+      });
+    }
 
     // Validate required fields
     if (!fullName || !email || !phone || !nationalId || !jobTitle || !cvFile) {

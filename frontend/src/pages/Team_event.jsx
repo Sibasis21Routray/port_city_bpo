@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
-import Navbar from '../components/Navbar';
-import ConnectBanner from '../components/ConnectBanner';
-import { Clock } from 'lucide-react';
+import React, { useState, useEffect } from "react";
+import { useParams, useNavigate } from "react-router-dom";
+import Navbar from "../components/Navbar";
+import ConnectBanner from "../components/ConnectBanner";
+import { Clock } from "lucide-react";
+import SEO from "../components/SEO";
 
 // Team Events Data Object
 const teamEventsData = {
@@ -12,7 +13,7 @@ const teamEventsData = {
     date: "5 May 2026",
     shortDescription:
       "Sinhala and Tamil New Year Celebrations at Port City BPO...",
-      thumbnail: "/teamevents/tamilnewyear/tamilnewyearcelebrations.png",
+    thumbnail: "/teamevents/tamilnewyear/tamilnewyearcelebrations.png",
     description: `Port City BPO celebrated the Sinhala and Tamil New Year with great enthusiasm and cultural spirit. The event brought together employees from all backgrounds to participate in traditional games, enjoy festive meals, and embrace the rich cultural heritage of Sri Lanka.
 
 Our celebration featured traditional customs, joyful moments, and shared experiences that reflected the spirit of Avurudu. From warm interactions to festive activities, the event created an atmosphere filled with positivity and connection. It was a meaningful opportunity for our employees to appreciate our heritage while strengthening the bond we share as one team at Port City BPO.
@@ -41,7 +42,7 @@ We extend our heartfelt wishes to everyone for a joyful, prosperous, and blessed
     date: "10 March 2026",
     shortDescription:
       "Celebrating the Strength and Impact of Women Around the World...",
-      thumbnail:"/teamevents/womenaroundworld/womenaroundworld.png",
+    thumbnail: "/teamevents/womenaroundworld/womenaroundworld.png",
     description: `On the occasion of International Women’s Day, we take a moment to celebrate the remarkable women who continue to inspire, lead, and shape our world in countless ways.
 
 Women play an invaluable role in every sphere of life — as leaders, professionals, caregivers, innovators, and changemakers. Their resilience, dedication, and passion continue to drive progress within families, workplaces, communities, and societies across the globe.
@@ -68,7 +69,7 @@ Happy International Women’s Day to all the incredible women around the world.`
     date: "23 February 2026",
     shortDescription:
       "Port City BPO Showcases Career Pathways at Talent Lift 2026...",
-      thumbnail:"/teamevents/careerpath/careerpath.png",
+    thumbnail: "/teamevents/careerpath/careerpath.png",
     description: `Port City BPO proudly participated in Talent Lift 2026, the annual career fair organized by The Open
 
 University of Sri Lanka. The event brought together a dynamic crowd of undergraduates and graduates seeking guidance, industry exposure, and meaningful career opportunities.
@@ -79,14 +80,14 @@ Our presence at Talent Lift reinforced our dedication to supporting the next gen
 
 As we continue to expand and innovate, Port City BPO remains committed to creating pathways that uplift talent, inspire ambition, and contribute to shaping Sri Lanka’s future workforce.`,
     photos: [
-     "/teamevents/careerpath/1-careerpathways.png",
+      "/teamevents/careerpath/1-careerpathways.png",
       "/teamevents/careerpath/2-careerpathways.png",
       "/teamevents/careerpath/3-careerpathways.png",
       "/teamevents/careerpath/4-careerpathways.png",
-        "/teamevents/careerpath/5-careerpathways.png",
+      "/teamevents/careerpath/5-careerpathways.png",
       "/teamevents/careerpath/6-careerpathways.png",
       "/teamevents/careerpath/7-careerpathways.png",
-      "/teamevents/careerpath/8-careerpathways.png"
+      "/teamevents/careerpath/8-careerpathways.png",
     ],
   },
   "new-year-2026-welcome": {
@@ -95,7 +96,7 @@ As we continue to expand and innovate, Port City BPO remains committed to creati
     date: "10 January 2026",
     shortDescription:
       "A Shared Welcome to 2026 To welcome 2026, we gathered...",
-       thumbnail:"/teamevents/welcome2026/welcome2026.png",
+    thumbnail: "/teamevents/welcome2026/welcome2026.png",
     description: `To welcome 2026, we gathered in the spirit of togetherness. Our celebration was built around a shared meal and the easy comfort of fellowship.
 
 The morning centred on the warmth of good food and the steady hum of conversation. As we shared dishes and stories, we naturally turned our focus toward the new year, embracing its warmth among our family.
@@ -109,7 +110,6 @@ It was a heartfelt and grounded beginning moment of community to carry with us i
       "/teamevents/welcome2026/5-welcome2026.png",
       "/teamevents/welcome2026/6-welcome2026.png",
     ],
-      
   },
   "secret-santa-2025": {
     id: "secret-santa-2025",
@@ -117,7 +117,7 @@ It was a heartfelt and grounded beginning moment of community to carry with us i
     date: "10 January 2026",
     shortDescription:
       "Secret Santa celebration 2025 Port City BPO was filled with...",
-       thumbnail:"/teamevents/santacelebration/santacelebrations2025.png",
+    thumbnail: "/teamevents/santacelebration/santacelebrations2025.png",
     description: `Port City BPO was filled with more than just the usual buzz of productivity it was alive with the whispered excitement and twinkling anticipation of our Secret Santa celebration.
 
 Gifts appeared like quiet surprises, wrapped in holiday cheer and thoughtful mystery. The air hummed with laughter, genuine smiles, and the warm joy of discovering not just presents, but the kindness behind them. It was a beautiful reminder of the wonderful team spirit and connection that make our workplace special.
@@ -129,7 +129,7 @@ A heartfelt thank you to everyone who participated and helped orchestrate this l
       "/teamevents/santacelebration/3-santacelebration.png",
       "/teamevents/santacelebration/4-santacelebration.png",
       "/teamevents/santacelebration/5-santacelebration.png",
-      "/teamevents/santacelebration/6-santacelebration.png"
+      "/teamevents/santacelebration/6-santacelebration.png",
     ],
   },
   "ica-marathon-2025": {
@@ -137,7 +137,7 @@ A heartfelt thank you to everyone who participated and helped orchestrate this l
     title: "More Than Just a Finish Line: Port City BPO runs the ICA 2025",
     date: "10 January 2026",
     shortDescription: "More Than Just a Finish Line: Port City BPO runs...",
-     thumbnail:"/teamevents/halfmarathon/halfmarathon2025.png",
+    thumbnail: "/teamevents/halfmarathon/halfmarathon2025.png",
     description: `It wasn’t just about the miles. It was in the rhythmic sound of thousands of footsteps hitting the pavement in sync and the high-fives from strangers that gave us a second wind just when we needed it most. We didn’t just move as runners; we moved as part of the city’s heartbeat.
 
 In our day-to-day, we focus on precision and KPIs. But on the pavement, we were reminded that our greatest strength is our connection. Crossing the finish line breathless and sweaty wasn’t just about the medals it was about the shared pride of knowing we did it together.
@@ -148,7 +148,7 @@ We are incredibly proud of our team for their spirit and for representing Port C
       "/teamevents/halfmarathon/2-halfmarathon.png",
       "/teamevents/halfmarathon/3-halfmarathon.png",
       "/teamevents/halfmarathon/4-halfmarathon.png",
-      "/teamevents/halfmarathon/5-halfmarathon.png"
+      "/teamevents/halfmarathon/5-halfmarathon.png",
     ],
   },
   "chinese-new-year-2025": {
@@ -156,7 +156,7 @@ We are incredibly proud of our team for their spirit and for representing Port C
     title: "Port City BPO: Chinese New Year 2025",
     date: "29 January 2025",
     shortDescription: "Gong Xi Fa Cai!",
-     thumbnail:"/teamevents/chainesenewyear/chainesenewyeear.jpg",
+    thumbnail: "/teamevents/chainesenewyear/chainesenewyeear.jpg",
     description: ``,
     photos: [
       "/teamevents/chainesenewyear/1-chinesenewyear.jpg",
@@ -169,7 +169,7 @@ We are incredibly proud of our team for their spirit and for representing Port C
     title: "Port City BPO: Thai Pongal Celebration",
     date: "16 January 2025",
     shortDescription: "Thai Pongal 2025",
-     thumbnail:"/teamevents/pongal/pongol.jpg",
+    thumbnail: "/teamevents/pongal/pongol.jpg",
     description: ``,
     photos: [
       "/teamevents/pongal/1-pongol.jpg",
@@ -194,7 +194,7 @@ We are incredibly proud of our team for their spirit and for representing Port C
     title: "Port City BPO: Pickle Ball Event",
     date: "8 January 2025",
     shortDescription: "Pickle Ball",
-     thumbnail:"/teamevents/pickleball/pickleball.jpg",
+    thumbnail: "/teamevents/pickleball/pickleball.jpg",
     description: ``,
     photos: [
       "/teamevents/pickleball/1-pickleball.jpg",
@@ -212,7 +212,7 @@ We are incredibly proud of our team for their spirit and for representing Port C
     title: "Port City BPO: New Year 2025",
     date: "2 January 2025",
     shortDescription: "Happy New Year 2025",
-     thumbnail:"/teamevents/newyear2025/newyear2025.jpg ",
+    thumbnail: "/teamevents/newyear2025/newyear2025.jpg ",
     description: ``,
     photos: [
       "/teamevents/newyear2025/1-newyear2025.jpg",
@@ -230,7 +230,7 @@ We are incredibly proud of our team for their spirit and for representing Port C
     title: "Port City BPO: Secret Santa X'mas event",
     date: "5 December 2024",
     shortDescription: "Our prep for the 2024 X'mas Party",
-     thumbnail:"/teamevents/secretsanta/secretsanta.jpg",
+    thumbnail: "/teamevents/secretsanta/secretsanta.jpg",
     description: ``,
     photos: [
       "/teamevents/secretsanta/1-secretsanta.jpg",
@@ -246,7 +246,7 @@ We are incredibly proud of our team for their spirit and for representing Port C
     title: "Port City BPO: X'mas 2024 Party",
     date: "2 December 2024",
     shortDescription: "Our 2024 X'mas Party",
-     thumbnail:"/teamevents/xmassparty/xmassparty.jpg",
+    thumbnail: "/teamevents/xmassparty/xmassparty.jpg",
     description: ``,
     photos: [
       "/teamevents/xmassparty/1-xmass.jpg",
@@ -273,41 +273,46 @@ function TeamEvents() {
   const navigate = useNavigate();
 
   // Convert object to array for mapping
-  const teamEvents = Object.values(teamEventsData).sort((a, b) => new Date(b.date) - new Date(a.date));
+  const teamEvents = Object.values(teamEventsData).sort(
+    (a, b) => new Date(b.date) - new Date(a.date),
+  );
 
   return (
     <div className="min-h-screen bg-white -mt-4">
-      
+      <SEO
+  title="Team Events | Life at Port City BPO"
+  description="Explore team events at Port City BPO and discover our collaborative workplace culture through employee engagement activities, celebrations, training programs, and team-building initiatives."
+  url="https://portcitybpo.lk/newsroom/team-events"
+/>
       {/* Hero Section */}
-       {/* Hero Section */}
-<header className="relative h-[460px] md:h-[440px] lg:h-[520px] flex items-center overflow-hidden">
-  {/* Mobile Background (visible on small screens) */}
-  <div
-    className="absolute inset-0 bg-cover bg-center md:hidden"
-    style={{
-      backgroundImage: `url('/teamevents/1-teamevent.jpg')`,
-    }}
-  />
-  
-  {/* Desktop Background (visible on medium screens and up) */}
-  <div
-    className="absolute inset-0 bg-cover bg-center hidden md:block"
-    style={{
-      backgroundImage: `url('/corporate/2-corporate.jpg')`,
-    }}
-  />
+      {/* Hero Section */}
+      <header className="relative h-[460px] md:h-[440px] lg:h-[520px] flex items-center overflow-hidden">
+        {/* Mobile Background (visible on small screens) */}
+        <div
+          className="absolute inset-0 bg-cover bg-center md:hidden"
+          style={{
+            backgroundImage: `url('/teamevents/1-teamevent.jpg')`,
+          }}
+        />
 
+        {/* Desktop Background (visible on medium screens and up) */}
+        <div
+          className="absolute inset-0 bg-cover bg-center hidden md:block"
+          style={{
+            backgroundImage: `url('/corporate/2-corporate.jpg')`,
+          }}
+        />
 
-  {/* Content Container */}
-  <div className=" z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 absolute top-1/5 lg:top-0 lg:relative ">
-    {/* Text aligned left on mobile, center on tablet/desktop (or keep left if preferred) */}
-    <div className="text-left md:text-center max-w-4xl">
-      <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white tracking-tight leading-tight ">
-        Team Events
-      </h1>
-    </div>
-  </div>
-</header>
+        {/* Content Container */}
+        <div className=" z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 absolute top-1/5 lg:top-0 lg:relative ">
+          {/* Text aligned left on mobile, center on tablet/desktop (or keep left if preferred) */}
+          <div className="text-left md:text-center max-w-4xl">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white tracking-tight leading-tight ">
+              Team Events
+            </h1>
+          </div>
+        </div>
+      </header>
 
       {/* Team Events Grid */}
       <main className="max-w-10/12 mx-auto  py-16">
@@ -319,12 +324,12 @@ function TeamEvents() {
               className="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer border border-gray-100"
             >
               <div className="relative h-56 overflow-hidden">
-          {/* 👇 UPDATED THIS LINE 👇 */}
-          <img
-            src={event.thumbnail || event.photos[0]} 
-            alt={event.title}
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-          />
+                {/* 👇 UPDATED THIS LINE 👇 */}
+                <img
+                  src={event.thumbnail || event.photos[0]}
+                  alt={event.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-800 mb-3 line-clamp-2 group-hover:text-[#005ca9] transition-colors">
@@ -333,10 +338,12 @@ function TeamEvents() {
                 <p className="text-gray-600 mb-4 line-clamp-3">
                   {event.shortDescription}
                 </p>
-                
-                <div className='flex gap-2 mt-1 items-center'>
+
+                <div className="flex gap-2 mt-1 items-center">
                   <Clock className="w-4 h-4 inline-block text-gray-600" />
-                  <p className="text-sm text-gray-600 font-light">{event.date}</p>
+                  <p className="text-sm text-gray-600 font-light">
+                    {event.date}
+                  </p>
                 </div>
               </div>
             </div>
@@ -373,10 +380,14 @@ export function TeamEventDetail() {
     return (
       <div className="min-h-screen bg-white">
         <div className="max-w-7xl mx-auto px-6 py-32 text-center">
-          <h1 className="text-4xl font-bold text-gray-800 mb-4">Event Not Found</h1>
-          <p className="text-gray-600 mb-8">The team event you're looking for doesn't exist.</p>
+          <h1 className="text-4xl font-bold text-gray-800 mb-4">
+            Event Not Found
+          </h1>
+          <p className="text-gray-600 mb-8">
+            The team event you're looking for doesn't exist.
+          </p>
           <button
-            onClick={() => navigate('/newsroom/team-events')}
+            onClick={() => navigate("/newsroom/team-events")}
             className="bg-[#005ca9] text-white px-6 py-3 rounded-lg hover:bg-[#004a8a] transition-colors"
           >
             Back to Team Events
@@ -389,12 +400,12 @@ export function TeamEventDetail() {
   const openLightbox = (index) => {
     setCurrentImageIndex(index);
     setLightboxOpen(true);
-    document.body.style.overflow = 'hidden';
+    document.body.style.overflow = "hidden";
   };
 
   const closeLightbox = () => {
     setLightboxOpen(false);
-    document.body.style.overflow = 'auto';
+    document.body.style.overflow = "auto";
   };
 
   const nextImage = () => {
@@ -402,24 +413,25 @@ export function TeamEventDetail() {
   };
 
   const prevImage = () => {
-    setCurrentImageIndex((prev) => (prev - 1 + event.photos.length) % event.photos.length);
+    setCurrentImageIndex(
+      (prev) => (prev - 1 + event.photos.length) % event.photos.length,
+    );
   };
 
   // Handle keyboard navigation
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (!lightboxOpen) return;
-      if (e.key === 'Escape') closeLightbox();
-      if (e.key === 'ArrowRight') nextImage();
-      if (e.key === 'ArrowLeft') prevImage();
+      if (e.key === "Escape") closeLightbox();
+      if (e.key === "ArrowRight") nextImage();
+      if (e.key === "ArrowLeft") prevImage();
     };
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
   }, [lightboxOpen]);
 
   return (
     <div className="min-h-screen bg-white">
-      
       {/* Hero Section with Title and Date */}
       <div className="relative bg-[#0670b2] text-white py-10 text-left mt-4 lg:mt-0">
         <div className="max-w-10/12 mx-auto ">
@@ -430,7 +442,7 @@ export function TeamEventDetail() {
       {/* Description Section */}
       <section className="max-w-10/12 mx-auto  py-6">
         <div className="prose prose-lg max-w-none">
-          {event.description.split('\n\n').map((paragraph, idx) => (
+          {event.description.split("\n\n").map((paragraph, idx) => (
             <p key={idx} className="text-gray-600 leading-relaxed mb-6">
               {paragraph}
             </p>
@@ -461,7 +473,7 @@ export function TeamEventDetail() {
 
       {/* Lightbox Modal */}
       {lightboxOpen && (
-        <div 
+        <div
           className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center"
           onClick={closeLightbox}
         >
@@ -471,8 +483,18 @@ export function TeamEventDetail() {
             className="absolute top-4 right-4 z-10 text-white hover:text-gray-300 transition-colors"
             aria-label="Close"
           >
-            <svg className="w-6 h-6 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            <svg
+              className="w-6 h-6 md:w-8 md:h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
+              />
             </svg>
           </button>
 
@@ -486,8 +508,18 @@ export function TeamEventDetail() {
               className="absolute left-4 z-10 text-white hover:text-gray-300 transition-colors bg-black/50 rounded-full p-2 hover:bg-black/70"
               aria-label="Previous image"
             >
-              <svg className="w-8 h-8 md:w-10 md:h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              <svg
+                className="w-8 h-8 md:w-10 md:h-10"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M15 19l-7-7 7-7"
+                />
               </svg>
             </button>
           )}
@@ -502,8 +534,18 @@ export function TeamEventDetail() {
               className="absolute right-4 z-10 text-white hover:text-gray-300 transition-colors bg-black/50 rounded-full p-2 hover:bg-black/70"
               aria-label="Next image"
             >
-              <svg className="w-8 h-8 md:w-10 md:h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              <svg
+                className="w-8 h-8 md:w-10 md:h-10"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
               </svg>
             </button>
           )}
@@ -526,11 +568,21 @@ export function TeamEventDetail() {
       {/* Back Button */}
       <div className="max-w-10/12 mx-auto py-12">
         <button
-          onClick={() => navigate('/newsroom/team-events')}
+          onClick={() => navigate("/newsroom/team-events")}
           className="inline-flex items-center text-[#005ca9] font-semibold hover:text-[#ff9933] transition-colors"
         >
-          <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+          <svg
+            className="w-5 h-5 mr-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M15 19l-7-7 7-7"
+            />
           </svg>
           Back to All Team Events
         </button>

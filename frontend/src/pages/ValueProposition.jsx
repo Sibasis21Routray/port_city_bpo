@@ -1,6 +1,7 @@
 import { Check, Star } from "lucide-react";
 import Navbar from "../components/Navbar";
 import ConnectBanner from "../components/ConnectBanner";
+import SEO from "../components/SEO";
 
 export default function ValueProposition() {
   const cards = [
@@ -33,8 +34,12 @@ export default function ValueProposition() {
 
   return (
     <div className="min-h-screen bg-white">
-      <Navbar />
-      
+      <SEO
+        title="Value Proposition | Port City BPO (Pvt) Ltd's Competitive Edge"
+        description="Discover Port City BPO's competitive edge through innovative business process outsourcing solutions, CPCEC authorization, operational excellence, and a commitment to quality, security, and client success."
+        url="https://portcitybpo.lk/value-proposition"
+      />
+
       <header className="relative w-full min-h-[440px] md:min-h-[480px] lg:min-h-[520px] flex items-center overflow-hidden bg-[#0c1e3a]">
         {/* Mobile background (hidden on tablet/desktop) */}
         <div

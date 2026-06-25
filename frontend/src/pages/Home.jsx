@@ -3,11 +3,17 @@ import About from "../components/About";
 import Services from "../components/Services";
 import VideoSection from "../components/VideoSection";
 import { useNavigate } from "react-router-dom";
+import SEO from "../components/SEO";
 
 export default function Home({ onNavigate }) {
   const navigate = useNavigate();
   return (
     <div className="min-h-screen bg-white">
+      <SEO
+  title="Port City BPO (Pvt) Ltd | Business Process Outsourcing & Offshore Solutions"
+  description="Port City BPO is a CPCEC-authorised Business Process Outsourcing (BPO) company delivering customer support, back-office operations, finance, HR, and scalable offshore solutions for businesses worldwide."
+  url="https://portcitybpo.lk/"
+/>
       <main>
         <Hero />
 

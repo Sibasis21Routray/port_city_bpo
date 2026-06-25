@@ -1,8 +1,14 @@
 import React from "react";
+import SEO from "../components/SEO";
 
 export default function PrivacyPolicy() {
   return (
     <div className="min-h-screen bg-white font-sans text-slate-800 antialiased selection:bg-blue-500/20">
+      <SEO
+  title="Privacy Policy | Port City BPO (Pvt) Ltd"
+  description="Read Port City BPO's Privacy Policy to understand how we collect, use, store, and protect your personal information when you use our website and services."
+  url="https://portcitybpo.lk/privacy-policy"
+/>
       {/* Hero Section Banner */}
       <div className="relative w-full h-[260px] md:h-[340px] overflow-hidden flex items-center justify-center">
         {/* Background Image */}

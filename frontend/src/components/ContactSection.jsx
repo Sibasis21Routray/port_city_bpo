@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
+import { Turnstile } from "@marsidev/react-turnstile";
+import SEO from "./SEO";
 
 export default function ContactSection() {
   const [textLength, setTextLength] = useState(0);
@@ -11,8 +13,9 @@ export default function ContactSection() {
     phone: "",
     message: ""
   });
-
-  
+  const [turnstileToken, setTurnstileToken] = useState(null);
+  const [turnstileError, setTurnstileError] = useState(false);
+  const turnstileRef = useRef(null);
 
   const handleChange = (e) => {
     const { id, value } = e.target;
@@ -42,6 +45,11 @@ export default function ContactSection() {
       setFormStatus({ type: "error", message: "Please enter your message" });
       return false;
     }
+    if (!turnstileToken) {
+      setTurnstileError(true);
+      setFormStatus({ type: "error", message: "Please complete the security verification" });
+      return false;
+    }
     return true;
   };
 
@@ -54,15 +62,17 @@ export default function ContactSection() {
     setFormStatus({ type: "", message: "" });
 
     try {
-      // Replace with your actual backend URL
-      const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+      const API_URL = import.meta.env.VITE_API_URL ;
       
       const response = await fetch(`${API_URL}/api/contact`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          ...formData,
+          turnstileToken: turnstileToken
+        }),
       });
 
       const data = await response.json();
@@ -81,6 +91,12 @@ export default function ContactSection() {
           message: "",
         });
         setTextLength(0);
+        setTurnstileToken(null);
+        
+        // Reset Turnstile widget
+        if (turnstileRef.current) {
+          turnstileRef.current.reset();
+        }
         
         // Clear success message after 5 seconds
         setTimeout(() => {
@@ -91,6 +107,11 @@ export default function ContactSection() {
           type: "error", 
           message: data.message || "Failed to send message. Please try again." 
         });
+        // Reset Turnstile on error
+        if (turnstileRef.current) {
+          turnstileRef.current.reset();
+        }
+        setTurnstileToken(null);
       }
     } catch (error) {
       console.error("Contact form error:", error);
@@ -98,6 +119,11 @@ export default function ContactSection() {
         type: "error", 
         message: "Network error. Please check your connection and try again." 
       });
+      // Reset Turnstile on error
+      if (turnstileRef.current) {
+        turnstileRef.current.reset();
+      }
+      setTurnstileToken(null);
     } finally {
       setIsLoading(false);
     }
@@ -108,6 +134,11 @@ export default function ContactSection() {
       id="contact"
       className="flex flex-col md:flex-row w-full bg-white overflow-hidden"
     >
+      <SEO
+        title="Contact Port City BPO (Pvt) Ltd | Contact Us"
+        description="Contact Port City BPO for business process outsourcing (BPO) services, customer support, back-office operations, and business inquiries. Our team is ready to assist you."
+        url="https://portcitybpo.lk/contact"
+      />
       {/* Left Side */}
       <motion.div
         initial={{ x: -120, opacity: 0 }}
@@ -196,15 +227,18 @@ export default function ContactSection() {
           </p>
         </motion.div>
 
-        <form onSubmit={handleSubmit} className="w-full max-w-xl flex flex-col gap-8">
+        <form
+          onSubmit={handleSubmit}
+          className="w-full max-w-xl flex flex-col gap-8"
+        >
           {/* Status Message */}
           {formStatus.message && (
             <motion.div
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               className={`p-3 rounded-sm text-sm ${
-                formStatus.type === "success" 
-                  ? "bg-green-50 text-green-800 border border-green-200" 
+                formStatus.type === "success"
+                  ? "bg-green-50 text-green-800 border border-green-200"
                   : "bg-red-50 text-red-800 border border-red-200"
               }`}
             >
@@ -278,8 +312,8 @@ export default function ContactSection() {
             transition={{ duration: 0.6, delay: 0.6 }}
             viewport={{ once: true }}
             className={`relative border ${
-              formStatus.type === "error" && !formData.message 
-                ? "border-red-300" 
+              formStatus.type === "error" && !formData.message
+                ? "border-red-300"
                 : "border-gray-300"
             } p-2 h-32 rounded-sm group focus-within:border-[#1a6596] transition-colors`}
           >
@@ -301,6 +335,39 @@ export default function ContactSection() {
             </span>
           </motion.div>
 
+          {/* Cloudflare Turnstile */}
+          <motion.div
+            initial={{ y: 35, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.65 }}
+            viewport={{ once: true }}
+            className={`flex flex-col items-start ${turnstileError ? "border border-red-300 rounded-sm p-2" : ""}`}
+          >
+            <Turnstile
+              siteKey={import.meta.env.VITE_TURNSTILE_SITE_KEY || "YOUR_SITE_KEY"}
+              onSuccess={(token) => {
+                setTurnstileToken(token);
+                setTurnstileError(false);
+                if (formStatus.message) setFormStatus({ type: "", message: "" });
+              }}
+              onError={() => {
+                setTurnstileError(true);
+                setTurnstileToken(null);
+              }}
+              onExpire={() => {
+                setTurnstileError(true);
+                setTurnstileToken(null);
+              }}
+              ref={turnstileRef}
+              options={{ theme: "light", size: "normal" }}
+            />
+            {turnstileError && (
+              <p className="text-xs text-red-500 mt-2">
+                Please complete the security verification
+              </p>
+            )}
+          </motion.div>
+
           {/* Button Section */}
           <motion.div
             initial={{ y: 35, opacity: 0 }}
@@ -309,62 +376,6 @@ export default function ContactSection() {
             viewport={{ once: true }}
             className="flex flex-col gap-6 mt-2"
           >
-            {/* Mock Cloudflare */}
-            {/* <div className="flex items-center justify-between border border-gray-200 bg-gray-50 rounded-sm px-4 py-2 w-64 shadow-sm h-16">
-              <div className="flex items-center space-x-3">
-                <div className="bg-green-600 rounded-full w-6 h-6 flex items-center justify-center shrink-0">
-                  <svg
-                    className="w-4 h-4 text-white"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="3"
-                      d="M5 13l4 4L19 7"
-                    ></path>
-                  </svg>
-                </div>
-
-                <span className="text-sm font-medium text-gray-800">
-                  Success!
-                </span>
-              </div>
-
-              <div className="flex flex-col items-center justify-center border-l border-gray-200 pl-3">
-                <div className="flex items-center relative h-6 w-12">
-                  <svg viewBox="0 0 100 50" className="w-10 h-5" fill="none">
-                    <path
-                      d="M20 30a10 10 0 0 1 10-10 15 15 0 0 1 25-5 15 15 0 0 1 15 15 10 10 0 0 1 10 10H20z"
-                      fill="#f38020"
-                    />
-                    <path
-                      d="M30 35a8 8 0 0 1 8-8 12 12 0 0 1 20-4 12 12 0 0 1 12 12 8 8 0 0 1 8 8H30z"
-                      fill="#404041"
-                    />
-                  </svg>
-                </div>
-
-                <span className="text-[9px] text-gray-600 font-bold tracking-tighter mt-1">
-                  CLOUDFLARE
-                </span>
-
-                <div className="flex space-x-1 text-[7px] text-gray-500 mt-[1px]">
-                  <a href="#" className="hover:underline">
-                    Privacy
-                  </a>
-
-                  <span>•</span>
-
-                  <a href="#" className="hover:underline">
-                    Terms
-                  </a>
-                </div>
-              </div>
-            </div> */}
-
             {/* Submit Button */}
             <motion.button
               whileHover={{ x: isLoading ? 0 : 8 }}

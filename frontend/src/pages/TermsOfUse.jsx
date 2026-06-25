@@ -1,8 +1,14 @@
 import React from "react";
+import SEO from "../components/SEO";
 
 export default function TermsOfUse() {
   return (
     <div className="min-h-screen bg-white font-sans text-slate-800 antialiased selection:bg-blue-500/20">
+      <SEO
+  title="Terms of Use | Port City BPO (Pvt) Ltd"
+  description="Read the Terms of Use for Port City BPO. Learn about the conditions governing the use of our website, services, intellectual property, user responsibilities, and legal obligations."
+  url="https://portcitybpo.lk/terms-of-use"
+/>
       {/* Hero Section Banner */}
       <div className="relative w-full h-[260px] md:h-[340px] overflow-hidden flex items-center justify-center">
         {/* Background Image */}

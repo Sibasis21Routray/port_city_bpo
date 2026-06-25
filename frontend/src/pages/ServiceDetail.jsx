@@ -3,6 +3,7 @@ import { useEffect, useRef } from "react";
 import Navbar from "../components/Navbar";
 import { Award, Zap, Clock, Globe, Target, TrendingUp, Shield, Cpu, CheckCircle, Database, FileText, BarChart3, Copy, Clipboard, Calendar, Megaphone } from "lucide-react";
 import ConnectBanner from "../components/ConnectBanner";
+import SEO from "../components/SEO";
 
 const serviceData = {
   "customer-service-outsourcing": {
@@ -10,6 +11,14 @@ const serviceData = {
     intro: "Customer Service Outsourcing is the practice of entrusting customer support operations to a specialized third-party provider. It allows businesses to focus on core competencies while ensuring that customer interactions are handled efficiently and professionally. By leveraging outsourcing, companies can enhance customer satisfaction, optimize operational costs, and access global support resources, including multilingual assistance and 24/7 service availability.",
     introImg: "/servicedetails/1-servicedetails.jpg",
     bgImage: "/servicedetails/2-servicedetails.jpg",
+
+    seo: {
+      title: "Customer Service Outsourcing | Port City BPO (Pvt) Ltd",
+      description:
+        "Enhance customer satisfaction with Port City BPO's customer service outsourcing solutions, including multilingual support, technical assistance, order management, and 24/7 customer care.",
+      url: "https://portcitybpo.lk/service/customer-service-outsourcing",
+    },
+
     connectBanner: {
       title: "Let's Elevate Your Customer Service Experience",
       descriptionPrefix: "Partner with us for an efficient and customer-focused outsourcing solution. Get in touch with us ",
@@ -96,6 +105,14 @@ const serviceData = {
     intro: "Technical Support Outsourcing is the process of delegating IT-related support functions to a specialized service provider. This approach enables businesses to access expert technical assistance without the need for in-house IT teams, reducing costs while ensuring top-tier support. From troubleshooting hardware and software issues to managing networks, cloud computing, and cybersecurity, outsourcing technical support helps businesses stay competitive in the digital landscape.\n\nBy leveraging outsourced technical support, companies benefit from 24/7 assistance, scalability, and access to cutting-edge technology solutions, ensuring seamless IT operations and enhanced user experiences.",
     introImg: "/servicedetails/4-servicedetails.png",
     bgImage: "/servicedetails/5-servicedetails.jpg",
+
+     seo: {
+    title: "Technical Support Outsourcing | Port City BPO (Pvt) Ltd",
+    description:
+      "Port City BPO provides technical support outsourcing services, including IT help desk, cloud support, cybersecurity, network management, software troubleshooting, and 24/7 technical assistance.",
+    url: "https://portcitybpo.lk/service/technical-support-outsourcing",
+  },
+
     connectBanner: {
       title: "Let's Elevate Your Technical Support Strategy",
       descriptionPrefix: "Partner with us for expert, reliable, and cost-effective technical support outsourcing. Get in touch with us ",
@@ -182,6 +199,15 @@ const serviceData = {
     intro: "Data Entry and Processing Outsourcing involves delegating data-related tasks to specialized service providers to ensure efficiency, accuracy, and security. Businesses dealing with large volumes of data benefit from streamlined workflows, reduced operational costs, and enhanced data integrity. Whether it's manual data entry, data cleansing, conversion, or analysis, outsourcing these tasks allows organizations to focus on core business operations while maintaining high data quality and compliance.\n\nBy leveraging outsourced technical support, companies benefit from 24/7 assistance, scalability, and access to cutting-edge technology solutions, ensuring seamless IT operations and enhanced user experiences.",
     introImg: "/servicedetails/7-servicedetails.png",
     bgImage: "/servicedetails/8-servicedetails.jpg",
+
+    seo: {
+    title: "Data Entry & Processing Outsourcing | Port City BPO (Pvt) Ltd",
+    description:
+      "Streamline your business with Port City BPO's data entry and processing outsourcing services, including data cleansing, document digitization, OCR, data conversion, and quality assurance.",
+    url: "https://portcitybpo.lk/service/data-entry-and-processing-outsourcing",
+  },
+
+
     connectBanner: {
       title: "Optimize Your Data Processing with Us",
       descriptionPrefix: "Let us handle your data entry and processing needs with precision and efficiency. Get in touch with us ",
@@ -268,6 +294,16 @@ const serviceData = {
     intro: "Human Resources Outsourcing (HRO) is the process of delegating HR functions to a third-party provider, allowing businesses to focus on their core operations while ensuring efficient and compliant workforce management. By outsourcing HR tasks such as recruitment, payroll processing, employee relations, and compliance management, companies can reduce administrative burdens, cut costs, and improve operational efficiency. HRO provides access to expert HR professionals, advanced technology, and scalable solutions tailored to meet evolving business needs.\n\nBy leveraging outsourced technical support, companies benefit from 24/7 assistance, scalability, and access to cutting-edge technology solutions, ensuring seamless IT operations and enhanced user experiences.",
     introImg: "/servicedetails/10-servicedetails.jpg",
     bgImage: "/servicedetails/11-servicedetails.jpg",
+
+
+     seo: {
+    title: "Human Resources Outsourcing | Port City BPO (Pvt) Ltd",
+    description:
+      "Optimize your workforce with Port City BPO's Human Resources Outsourcing services, including recruitment, payroll, employee relations, HR compliance, onboarding, and workforce management.",
+    url: "https://portcitybpo.lk/service/human-resources-outsourcing",
+  },
+
+
     connectBanner: {
       title: "Streamline Your HR Operations Today",
       descriptionPrefix: "Partner with us for efficient and compliant HR outsourcing solutions. Get in touch with us ",
@@ -354,6 +390,14 @@ const serviceData = {
     intro: "Finance and Accounting Outsourcing (FAO) is the practice of delegating financial operations and accounting tasks to a third-party service provider. This allows businesses to focus on core activities while ensuring financial accuracy, compliance, and efficiency. FAO covers a wide range of financial functions, including bookkeeping, tax management, payroll processing, financial reporting, and risk assessment. By outsourcing these services, companies can reduce costs, streamline financial operations, and gain access to expert financial professionals.\n\nBy leveraging outsourced technical support, companies benefit from 24/7 assistance, scalability, and access to cutting-edge technology solutions, ensuring seamless IT operations and enhanced user experiences.",
     introImg: "/servicedetails/13-servicedetails.jpg",
     bgImage: "/servicedetails/14-servicedetails.jpg",
+    seo: {
+    title: "Finance & Accounting Outsourcing | Port City BPO (Pvt) Ltd",
+    description:
+      "Streamline your financial operations with Port City BPO's finance and accounting outsourcing services, including bookkeeping, payroll, tax compliance, financial reporting, and risk management.",
+    url: "https://portcitybpo.lk/service/finance-and-accounting-outsourcing",
+  },
+
+
     connectBanner: {
       title: "Transform Your Financial Operations Today",
       descriptionPrefix: "Partner with us for expert finance and accounting outsourcing solutions. Get in touch with us ",
@@ -440,6 +484,15 @@ const serviceData = {
     intro: "Marketing Outsourcing is the practice of entrusting marketing functions to an external team of experts, allowing businesses to focus on core operations while benefiting from specialized marketing strategies. It covers a wide range of services, from lead generation and brand positioning to digital marketing and campaign management. By outsourcing marketing, businesses can leverage industry expertise, advanced technology, and cost-effective solutions to maximize their brand reach and customer engagement.\n\nBy leveraging outsourced technical support, companies benefit from 24/7 assistance, scalability, and access to cutting-edge technology solutions, ensuring seamless IT operations and enhanced user experiences.",
     introImg: "/servicedetails/16-servicedetails.jpg",
     bgImage: "/servicedetails/17-servicedetails.jpg",
+
+    seo: {
+    title: "Marketing Outsourcing | Port City BPO (Pvt) Ltd",
+    description:
+      "Grow your business with Port City BPO's marketing outsourcing services, including digital marketing, SEO, lead generation, social media management, branding, and campaign management.",
+    url: "https://portcitybpo.lk/service/marketing-outsourcing",
+  },
+
+
     connectBanner: {
       title: "Boost Your Marketing with Our Expertise",
       descriptionPrefix: "Let us take your marketing efforts to the next level. Get in touch with us ",
@@ -616,6 +669,11 @@ export default function ServiceDetail() {
 
   return (
     <div className="min-h-screen bg-white ">
+       <SEO
+        title={data.seo.title}
+        description={data.seo.description}
+        url={data.seo.url}
+      />
       <style jsx>{`
         @keyframes slideFromTop {
           0% {

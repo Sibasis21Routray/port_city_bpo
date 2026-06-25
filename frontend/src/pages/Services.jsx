@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import heroImg from "../assets/hero.png";
 import ConnectBanner from "../components/ConnectBanner";
+import SEO from "../components/SEO";
 
 const sections = [
   {
@@ -52,6 +53,11 @@ export default function Services() {
 
   return (
     <div className="min-h-screen bg-white ">
+      <SEO
+  title="Services | Business Process Outsourcing Solutions | Port City BPO (Pvt) Ltd"
+  description="Explore Port City BPO's comprehensive Business Process Outsourcing services, including customer support, back-office operations, finance, HR, IT-enabled services, and scalable offshore business solutions."
+  url="https://portcitybpo.lk/services"
+/>
       <header
         className="relative h-60 md:h-80 lg:h-130 flex items-center"
         style={{

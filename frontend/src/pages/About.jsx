@@ -4,6 +4,7 @@ import { ChevronDown } from "lucide-react";
 import Navbar from "../components/Navbar";
 import heroImg from "../assets/hero.png";
 import ConnectBanner from "../components/ConnectBanner";
+import SEO from "../components/SEO";
 
 const sections = [
   {
@@ -242,6 +243,11 @@ export default function About({ onNavigate }) {
   if (activeSection === "who-we-are") {
     return (
       <div className="min-h-screen bg-white ">
+        <SEO
+          title="Who We Are | Port City BPO (Pvt) Ltd"
+          description="Learn about Port City BPO, a Business Process Outsourcing (BPO) company and an Authorised Person approved by the Colombo Port City Economic Commission (CPCEC)."
+          url="https://portcitybpo.lk/about/who-we-are"
+        />
         <main>
           {/* Hero Section - Responsive */}
           <section className="relative text-white">
@@ -270,7 +276,6 @@ export default function About({ onNavigate }) {
             <div className="max-w-full lg:max-w-10/12 mx-auto  space-y-2 sm:space-y-16 md:space-y-20 flex flex-col justify-center items-center px-5">
               <div className="space-y-4 sm:space-y-6 md:space-y-8  xl:px-20">
                 <div className="mb-8 sm:mb-10 md:mb-12">
-                  
                   <h2 className="heading font-bold text-[#005ca9] tracking-tight leading-tight uppercase">
                     Who We Are
                   </h2>
@@ -539,6 +544,11 @@ export default function About({ onNavigate }) {
   if (activeSection === "geo-coverage") {
     return (
       <div className="min-h-screen bg-white ">
+        <SEO
+  title="Geographic Coverage | Port City BPO (Pvt) Ltd"
+  description="Explore Port City BPO's global service coverage across Sri Lanka, Malaysia, Hong Kong, Thailand, the Philippines, Cambodia, and other international markets."
+  url="https://portcitybpo.lk/about/geo-coverage"
+/>
         <main>
           <section className="relative overflow-hidden bg-slate-950 text-white">
             <img
@@ -614,6 +624,11 @@ export default function About({ onNavigate }) {
   if (activeSection === "board-of-directors") {
     return (
       <div className="min-h-screen bg-white ">
+        <SEO
+  title="Board of Directors | Port City BPO (Pvt) Ltd"
+  description="Meet the Board of Directors of Port City BPO, providing strategic leadership, governance, and long-term vision for the company's growth."
+  url="https://portcitybpo.lk/about/board-of-directors"
+/>
         <main>
           <section className="relative overflow-hidden bg-slate-950 text-white">
             <img
@@ -700,6 +715,11 @@ export default function About({ onNavigate }) {
   if (activeSection === "leadership") {
     return (
       <div className="min-h-screen bg-white ">
+        <SEO
+          title="Leadership Team | Port City BPO (Pvt) Ltd"
+          description="Meet the leadership team at Port City BPO driving innovation, operational excellence, and business growth through experienced management."
+          url="https://portcitybpo.lk/about/leadership"
+        />
         <main>
           <section className="relative overflow-hidden text-white">
             <img
@@ -809,6 +829,11 @@ export default function About({ onNavigate }) {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO
+          title="About Port City BPO | Business Process Outsourcing Company"
+          description="Learn about Port City BPO, a Colombo Port City Economic Commission (CPCEC) authorized Business Process Outsourcing company delivering reliable, scalable, and innovative outsourcing solutions."
+          url="https://portcitybpo.lk/about"
+        />
       <main>
         <section className="relative overflow-hidden bg-slate-950 text-white">
           <div className="absolute inset-0 bg-gradient-to-br from-sky-700 via-slate-900 to-black opacity-95"></div>

@@ -18,6 +18,9 @@ export default function Footer() {
               { label: "Services", path: "/services" },
               { label: "Value Proposition", path: "/value-proposition" },
               { label: "About Us", path: "/about" },
+              { label: "Team Events", path: "/newsroom/team-events" },
+              { label: "Corporate Social Responsibility", path: "/newsroom/corporate-social-responsibility" },
+              { label: "Careers", path: "/careers" },
               { label: "Contact Us", path: "/contact" }
             ].map((item) => (
               <li key={item.label}>
